@@ -1,7 +1,7 @@
-# when-attention-becomes-momentum
+# concept-momentum-and-investor-attention
 
-Concept-membership records for China's A-shares, the modules that turn those records into a selection score, and the code that rebuilds the tables and figures of *When attention becomes momentum: Evidence from China's A-share market*. Records stop on 2026-08-31.
-中国 A 股的概念成员记录、把这些记录变成选股评分的模块，以及重建《当注意力转化为动量：中国 A 股市场的证据》表和图的代码。记录止于 2026-08-31。
+Concept-membership records for China's A-shares, the modules that turn those records into a selection score, and the code that rebuilds the tables and figures of *Concept momentum and investor attention*. Records stop on 2026-08-31.
+中国 A 股的概念成员记录、把这些记录变成选股评分的模块，以及重建《概念动量与投资者注意力》表和图的代码。记录止于 2026-08-31。
 
 ---
 
