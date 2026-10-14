@@ -1,0 +1,436 @@
+{
+  "protocol_id": "H3_TOP20_CONDITIONAL_INTENSITY",
+  "status": "FROZEN_BEFORE_NEW_FITS_OR_EFFECTS",
+  "question": "Do F and FW jointly improve H3 Top20 selection beyond W plus 19 ordinary features and their shared missing-count summary?",
+  "interpretation": "New fixed historical diagnostic in a repeatedly studied sample; neither untouched holdout nor original preregistration, causal effect, or implementable net alpha.",
+  "inputs": [
+    {
+      "role": "ranked_features",
+      "path": "historical-reference/ranked_feature_panel.parquet",
+      "bytes": 792240924,
+      "sha256": "9dd12516fd957b5c9dc21496c6d84d6de9e6b82ff8c2e6bd4f859c9708c52bc5",
+      "mtime_utc": "2026-10-08T09:21:17.585159+00:00",
+      "mtime_is_economic_time": false,
+      "rows": 8835000,
+      "row_groups": 14,
+      "schema": "date: timestamp[ns]\ncode: large_string\nidx: int32\nmom1: float\nmom3: float\nmom5: float\nmom10: float\nmom20: float\nmom60: float\nmom120: float\nmom250: float\nrev5: float\nvol20: float\nvol60: float\namount: float\namount20: float\namount_change5_20: float\namount_change20_60: float\namihud20: float\nfloat_cap: float\ntotal_cap: float\nturnover20: float\nmissing_count: float\ngamma_calendar_FW: float\ngamma_calendar_F_only: float\ngamma_calendar_W_only: float",
+      "date_metadata": {
+        "min": "2016-12-22 00:00:00",
+        "max": "2026-08-31 00:00:00",
+        "row_groups_with_bounds": 14
+      },
+      "historical_origin": "historical-reference/ranked_feature_panel.parquet",
+      "path_from_version_root": "analysis/models_b2/B2/cache/ranked_feature_panel.parquet",
+      "runtime_path": "__MODELS__\\B2\\cache\\ranked_feature_panel.parquet"
+    },
+    {
+      "role": "prices",
+      "path": "historical-reference/prices_latest.parquet",
+      "bytes": 229609304,
+      "sha256": "16ace105205c82f7eb94eed13cb15d95ff09f3d0ca6a955cb1fa32029e523ae6",
+      "mtime_utc": "2026-10-08T08:55:43.584555+00:00",
+      "mtime_is_economic_time": false,
+      "rows": 10447754,
+      "row_groups": 86,
+      "schema": "date: timestamp[ns]\ncode: large_string\nname: large_string\nopen_adj: double\nclose_adj: double\nret: double\namount: double",
+      "date_metadata": {
+        "min": "2016-11-24 00:00:00",
+        "max": "2026-08-31 00:00:00",
+        "row_groups_with_bounds": 86
+      },
+      "historical_origin": "historical-reference/prices_latest.parquet",
+      "path_from_version_root": "analysis/core/cache/prices_latest.parquet",
+      "runtime_path": "__SNAPSHOT__\\input_recovery\\prices_latest.parquet"
+    },
+    {
+      "role": "calendar",
+      "path": "historical-reference/calendar.parquet",
+      "bytes": 21258,
+      "sha256": "3ffb617867404dad5d41f651a0157af30260ca19f949434722cfa974b0c28d68",
+      "mtime_utc": "2026-10-01T15:56:27.216961+00:00",
+      "mtime_is_economic_time": false,
+      "rows": 2373,
+      "row_groups": 1,
+      "schema": "date: timestamp[ns]\nidx: int32",
+      "date_metadata": {
+        "min": "2016-11-24 00:00:00",
+        "max": "2026-08-31 00:00:00",
+        "row_groups_with_bounds": 1
+      },
+      "historical_origin": "historical-reference/calendar.parquet",
+      "path_from_version_root": "analysis/core/cache/calendar.parquet",
+      "runtime_path": "__SNAPSHOT__\\core\\cache\\calendar.parquet"
+    },
+    {
+      "role": "csi300",
+      "path": "historical-reference/sh000300.csv",
+      "bytes": 407632,
+      "sha256": "ccd11fd5e65d6167730af7efb247cd07ad3c81d5fcc63425e5712a29c6876be4",
+      "mtime_utc": "2026-09-24T08:10:45.712702+00:00",
+      "mtime_is_economic_time": false,
+      "historical_origin": "historical-reference/sh000300.csv",
+      "path_from_version_root": "analysis/raw_snapshot/stock-main-index-data/sh000300.csv",
+      "runtime_path": "__SNAPSHOT__\\raw_snapshot\\stock-main-index-data\\sh000300.csv"
+    }
+  ],
+  "input_clock_limits": "Frozen R4 historical member/source versions retained; no new authentication of original membership release or vendor arrival/revision times.",
+  "cutoff": {
+    "observation": "2026-08-31",
+    "label_end": "2026-08-31",
+    "timezone": "Asia/Shanghai",
+    "post_cutoff_use": "No training, validation, early stopping, state calibration, feature/selection decisions, or outcomes. Filter raw CSI300 date before any price change/rolling calculation."
+  },
+  "features": {
+    "ordinary_count": 19,
+    "ordinary": [
+      "mom1",
+      "mom3",
+      "mom5",
+      "mom10",
+      "mom20",
+      "mom60",
+      "mom120",
+      "mom250",
+      "rev5",
+      "vol20",
+      "vol60",
+      "amount",
+      "amount20",
+      "amount_change5_20",
+      "amount_change20_60",
+      "amihud20",
+      "float_cap",
+      "total_cap",
+      "turnover20"
+    ],
+    "shared_missing_summary": "missing_count = number of nonfinite ordinary values /19 -0.5",
+    "baseline": [
+      "mom1",
+      "mom3",
+      "mom5",
+      "mom10",
+      "mom20",
+      "mom60",
+      "mom120",
+      "mom250",
+      "rev5",
+      "vol20",
+      "vol60",
+      "amount",
+      "amount20",
+      "amount_change5_20",
+      "amount_change20_60",
+      "amihud20",
+      "float_cap",
+      "total_cap",
+      "turnover20",
+      "missing_count",
+      "gamma_calendar_W_only"
+    ],
+    "baseline_matrix_columns": 21,
+    "enhanced": [
+      "mom1",
+      "mom3",
+      "mom5",
+      "mom10",
+      "mom20",
+      "mom60",
+      "mom120",
+      "mom250",
+      "rev5",
+      "vol20",
+      "vol60",
+      "amount",
+      "amount20",
+      "amount_change5_20",
+      "amount_change20_60",
+      "amihud20",
+      "float_cap",
+      "total_cap",
+      "turnover20",
+      "missing_count",
+      "gamma_calendar_W_only",
+      "gamma_calendar_F_only",
+      "gamma_calendar_FW"
+    ],
+    "enhanced_matrix_columns": 23,
+    "processing": "Reuse byte-hashed B2 ranked_feature_panel: current-date common-pool average percentile ranks -0.5, nonfinite ->0, Float32; no refitting preprocessing, no additional features.",
+    "core_score_ranking": "Frozen gamma/calendar F5/W10 source and exact-integer core definitions retained. E1 models reuse the existing B2 Float32 score transformations; this does not newly certify their source PIT timing."
+  },
+  "model": {
+    "library": "scikit-learn 1.8.0 archived vendor",
+    "class": "HistGradientBoostingRegressor",
+    "fits": 14,
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "params": {
+      "loss": "squared_error",
+      "quantile": null,
+      "learning_rate": 0.06,
+      "max_iter": 40,
+      "max_leaf_nodes": 15,
+      "max_depth": null,
+      "min_samples_leaf": 100,
+      "l2_regularization": 10.0,
+      "max_features": 1.0,
+      "max_bins": 63,
+      "categorical_features": "from_dtype",
+      "monotonic_cst": null,
+      "interaction_cst": null,
+      "warm_start": false,
+      "early_stopping": false,
+      "scoring": "loss",
+      "validation_fraction": 0.1,
+      "n_iter_no_change": 10,
+      "tol": 1e-07,
+      "verbose": 0,
+      "random_state": 20260923
+    },
+    "array_dtype": "contiguous Float32 NumPy arrays, all features numeric",
+    "early_stopping_note": "False already in B2/B2D; validation_fraction and stopping settings remain inactive; no random row holdout.",
+    "threads": 4,
+    "sample_weight": null,
+    "tuning": "none",
+    "target_clip": [
+      -0.8,
+      2.0
+    ],
+    "evaluation_clip": null
+  },
+  "folds": {
+    "scheme": "Annual 2020–2026; all eligible B2D signal dates in previous 3 calendar years; same rows for both models.",
+    "training_conditions": [
+      "year Y: Y-3 Jan1 <= signal_date <= Y-1 Dec31",
+      "both adjusted open endpoints strictly positive and finite",
+      "label_end <= Y-1 Dec31 23:59:59 Asia/Shanghai",
+      "label_end < logical_fit_time < first_predict_time",
+      "at least two training signal years"
+    ],
+    "logical_fit_time": "Y Jan1 00:00:00 Asia/Shanghai, an information-time boundary, not claimed historical wall-clock training",
+    "predict_time": "signal-day post-close, information as of 15:00 Asia/Shanghai; actual supplier arrival unknown",
+    "new_fit_receipt": "Record actual run timestamp separately from logical information cutoff.",
+    "boundary_table": "e1_calendar_fold_boundaries.csv"
+  },
+  "label": {
+    "H": 3,
+    "formula": "open_adj[t+4]/open_adj[t+1]-1",
+    "endpoint_join": "exact frozen global calendar; never next available stock row",
+    "last_formation": "2026-08-25",
+    "last_entry": "2026-08-26",
+    "last_exit": "2026-08-31"
+  },
+  "selection": {
+    "TopN": 20,
+    "prediction_pool": "same complete frozen B2 feature rows for each model; do not screen using future labels or future trade eligibility",
+    "sort": "prediction descending, code ascending ties",
+    "prediction_serialization": "Float32, as in B2",
+    "before_label_join": "Write and SHA-seal predictions and both Top20 lists before joining evaluation outcomes.",
+    "primary": "complete-observed mean of each fixed Top20 list; date valid only when both means finite",
+    "diagnostic": "same fixed Top20 lists, unavailable stock label contributes zero, denominator20; no p-values or extra claim",
+    "missing_guard": "Dates with zero observed outcomes cannot be silently dropped: retain calendar row, mark endpoint NA, report counts. Calendar-end immaturity is excluded by design before state gate. No reranking."
+  },
+  "statistics": {
+    "D_t": "enhanced Top20 mean H3 return minus baseline Top20 mean H3 return",
+    "weight": "equal formation-day weight",
+    "endpoints": [
+      "mean(D_t)",
+      "mean(D_t|stress_t=1)",
+      "mean(D_t|stress_t=1)-mean(D_t|stress_t=0)"
+    ],
+    "unit": "percentage points per full H3 period",
+    "economic_importance_threshold": null,
+    "economic_claim_rule": "Report magnitude and uncertainty; no claim to exclude meaningful increment without independently defensible delta."
+  },
+  "stress": {
+    "source": "../../analysis/raw_snapshot/stock-main-index-data/sh000300.csv",
+    "fields": [
+      "candle_end_time",
+      "close"
+    ],
+    "definition": "After global cutoff, simple close-to-close returns without filling; trailing20 sample std ddof=1, min_periods20, unannualized.",
+    "threshold": "For year Y, linear .90 quantile of vol20 on trading dates from Y-3 Jan1 through Y-1 Dec31. All threshold market observations known by prior-year close; this market-history calibration does not use H3 labels and therefore does not remove final four prior-year dates.",
+    "indicator": "vol20_t > threshold_Y",
+    "no_threshold_search": true,
+    "support_gate": {
+      "min_dates": 120,
+      "min_eval_years": 4,
+      "min_occupied_fixed20_blocks": 20,
+      "partition": "Global evaluation calendar 2020-01-02 through 2026-08-25, sequential nonoverlapping20-date blocks anchored at first date, include final partial block; occupied means >=1 stress date. Not claimed independent clusters."
+    },
+    "observed_support_before_any_new_model_or_effect": {
+      "candidate_not_frozen": true,
+      "threshold": "linear 90th percentile of vol20 on all prior-three-calendar-year trading dates through year-1 December31; no outcome label used",
+      "stress": "vol20_t > year_threshold",
+      "by_year": [
+        {
+          "year": 2020,
+          "eligible_dates": 243,
+          "stress_dates": 65,
+          "nonstress_dates": 178,
+          "threshold_vol20_daily_simple_return_std": 0.016662634543946522,
+          "occupied_fixed20_blocks": 6
+        },
+        {
+          "year": 2021,
+          "eligible_dates": 243,
+          "stress_dates": 0,
+          "nonstress_dates": 243,
+          "threshold_vol20_daily_simple_return_std": 0.020076881203626138,
+          "occupied_fixed20_blocks": 0
+        },
+        {
+          "year": 2022,
+          "eligible_dates": 242,
+          "stress_dates": 12,
+          "nonstress_dates": 230,
+          "threshold_vol20_daily_simple_return_std": 0.019832218011811186,
+          "occupied_fixed20_blocks": 2
+        },
+        {
+          "year": 2023,
+          "eligible_dates": 242,
+          "stress_dates": 0,
+          "nonstress_dates": 242,
+          "threshold_vol20_daily_simple_return_std": 0.019445235529990147,
+          "occupied_fixed20_blocks": 0
+        },
+        {
+          "year": 2024,
+          "eligible_dates": 242,
+          "stress_dates": 24,
+          "nonstress_dates": 218,
+          "threshold_vol20_daily_simple_return_std": 0.016439856299900343,
+          "occupied_fixed20_blocks": 2
+        },
+        {
+          "year": 2025,
+          "eligible_dates": 243,
+          "stress_dates": 20,
+          "nonstress_dates": 223,
+          "threshold_vol20_daily_simple_return_std": 0.016786558319989167,
+          "occupied_fixed20_blocks": 2
+        },
+        {
+          "year": 2026,
+          "eligible_dates": 156,
+          "stress_dates": 53,
+          "nonstress_dates": 103,
+          "threshold_vol20_daily_simple_return_std": 0.012803567519442194,
+          "occupied_fixed20_blocks": 5
+        }
+      ],
+      "stress_dates": 174,
+      "stress_years": 5,
+      "occupied_fixed20_blocks": 17,
+      "fixed20_partition_origin": "2020-01-02",
+      "occupied_block_is_not_independent_cluster": true
+    },
+    "gate_result": "FAIL_BLOCK_COVERAGE; stress mean and heterogeneity not estimable for inferential claims; do not compute their bootstrap p-values or confidence intervals."
+  },
+  "inference": {
+    "family": "Holm6, three selected E1 endpoints x L20/L60; E3 closed before effects and E2 not selected, so no automatic Holm12",
+    "cells": [
+      {
+        "id": "E1_all_dates_L20",
+        "endpoint": "all_dates",
+        "block_length": 20,
+        "status": "pending_after_freeze_and_execution",
+        "reason": null,
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": null
+      },
+      {
+        "id": "E1_all_dates_L60",
+        "endpoint": "all_dates",
+        "block_length": 60,
+        "status": "pending_after_freeze_and_execution",
+        "reason": null,
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": null
+      },
+      {
+        "id": "E1_stress_dates_L20",
+        "endpoint": "stress_dates",
+        "block_length": 20,
+        "status": "not_estimable",
+        "reason": "174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": 1
+      },
+      {
+        "id": "E1_stress_dates_L60",
+        "endpoint": "stress_dates",
+        "block_length": 60,
+        "status": "not_estimable",
+        "reason": "174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": 1
+      },
+      {
+        "id": "E1_stress_minus_nonstress_L20",
+        "endpoint": "stress_minus_nonstress",
+        "block_length": 20,
+        "status": "not_estimable",
+        "reason": "174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": 1
+      },
+      {
+        "id": "E1_stress_minus_nonstress_L60",
+        "endpoint": "stress_minus_nonstress",
+        "block_length": 60,
+        "status": "not_estimable",
+        "reason": "174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",
+        "estimate": null,
+        "p_raw": null,
+        "p_for_correction": 1
+      }
+    ],
+    "alpha": 0.05,
+    "primary_gate": ">=4 evaluation years and floor(n_valid_dates/L)>=20 for each L; invalid slots retained with p_for_correction1",
+    "bootstrap": "Paired circular moving blocks on the complete chronological daily record, joint D and state, fixed L20/L60; entire date cross-sections collapsed only after fixed-list returns.",
+    "B": 100000,
+    "seed": 20261008,
+    "rng": "NumPy default_rng; fresh stream with same seed for each L; identical date draws across endpoints within L",
+    "draw_length": "ceil(T/L) uniformly drawn block starts, wrap at T, concatenate then truncate exactly T dates",
+    "null_p": "For estimable scalar theta: (1 + count(abs(theta_star-theta_hat)>=abs(theta_hat)))/(B+1), two-sided centered bootstrap null.",
+    "pointwise_ci": "2.5% and97.5% percentile bootstrap bounds, labelled unadjusted95%; not treated as simultaneous or dual to Holm tests.",
+    "familywise_ci": "Optional only if frozen here: not selected; report Holm-adjusted p and clearly labelled pointwise intervals.",
+    "claim_gate": "positive effect plus both L20/L60 p_Holm6<.05; concordant economic interpretation; L20/L60 not independent replications",
+    "conditional_scope": "Conditions on these annual fitted models/predictions; no bootstrap refit. Working short-range dependence/stability assumptions, not a guarantee under structural breaks."
+  },
+  "descriptive_only": [
+    "annual D means and counts",
+    "leave-one-year-out mean direction",
+    "fixed-list missing-zero sensitivity",
+    "stress support table; stress/nonstress point estimates only if distinctly labelled descriptive"
+  ],
+  "stop": [
+    "any source hash mismatch, key inconsistency or time-boundary violation",
+    "one frozen14-fit execution; only evidence-backed code/input error repair with logs, no tuning from significance",
+    "if missing handling changes sign or material scale, label missing-mechanism sensitive",
+    "report positive, negative, and imprecise outcomes; old Holm960/Holm540 conclusions unchanged"
+  ],
+  "required_receipts": [
+    "protocol hash/time before fits",
+    "source/filtered-source hashes and cutoff counts",
+    "runtime and complete model.get_params without fitting changes",
+    "each fold training/test key hashes, feature available-time assumptions, training label maturity bounds",
+    "prediction and Top20 seal before evaluation label join",
+    "daily D and missing coverage",
+    "all6 family cells incl not_estimable",
+    "code/errors/exclusions and final claim mapping"
+  ]
+}

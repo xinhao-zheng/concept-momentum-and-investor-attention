@@ -6,11 +6,12 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 # 配套策略的默认窗口与相似度算法
-_DEFAULT_PARAM = (5, 10, 'pearson')
-_SIMILARITIES = {'pearson', 'ccc'}
+_DEFAULT_PARAM = (5, 10, "pearson")
+_SIMILARITIES = {"pearson", "ccc"}
 
 fin_cols = []
 extra_data = {}
@@ -40,32 +41,39 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          F、W 不增加预热行；非空 minutes 报错，分钟择时由 timing 配置。
     选股因子案例：('z_日收益_zh', False, (5, 10, 'pearson'), 1)
     """
-    col_name = kwargs['col_name']
-    if param is None or (isinstance(param, str) and param == ''):
+    col_name = kwargs["col_name"]
+    if param is None or (isinstance(param, str) and param == ""):
         param = _DEFAULT_PARAM
     if not isinstance(param, (list, tuple)) or len(param) != 3:
-        raise ValueError(f'param 须为 (F, W, similarity)，收到 {param!r}')
+        raise ValueError(f"param 须为 (F, W, similarity)，收到 {param!r}")
     raw_f, raw_w, similarity = param
-    if any(isinstance(value, bool) or not isinstance(value, (int, str)) for value in (raw_f, raw_w)):
-        raise ValueError(f'param 的 F、W 须为整数或整数字符串，收到 {param!r}')
+    if any(
+        isinstance(value, bool) or not isinstance(value, (int, str))
+        for value in (raw_f, raw_w)
+    ):
+        raise ValueError(f"param 的 F、W 须为整数或整数字符串，收到 {param!r}")
     try:
         f_window, w_window = int(raw_f), int(raw_w)
     except ValueError as error:
-        raise ValueError(f'param 的 F、W 须为整数或整数字符串，收到 {param!r}') from error
+        raise ValueError(
+            f"param 的 F、W 须为整数或整数字符串，收到 {param!r}"
+        ) from error
     if f_window < 1 or w_window < 2:
-        raise ValueError(f'param 须满足 F >= 1 且 W >= 2，收到 {param!r}')
+        raise ValueError(f"param 须满足 F >= 1 且 W >= 2，收到 {param!r}")
     if not isinstance(similarity, str) or similarity not in _SIMILARITIES:
-        raise ValueError(f"param 的 similarity 仅接受 'pearson' 或 'ccc'，收到 {param!r}")
-    if kwargs.get('minutes'):
-        raise ValueError('本因子要求日频数据；分钟择时由 timing 配置')
-    if '收盘价_复权' not in df:
-        raise ValueError('缺少收盘价_复权，不能以未复权价格替代')
+        raise ValueError(
+            f"param 的 similarity 仅接受 'pearson' 或 'ccc'，收到 {param!r}"
+        )
+    if kwargs.get("minutes"):
+        raise ValueError("本因子要求日频数据；分钟择时由 timing 配置")
+    if "收盘价_复权" not in df:
+        raise ValueError("缺少收盘价_复权，不能以未复权价格替代")
 
-    price = pd.to_numeric(df['收盘价_复权'], errors='coerce')
-    price = price.where(price.gt(0) & price.lt(float('inf')))
+    price = pd.to_numeric(df["收盘价_复权"], errors="coerce")
+    price = price.where(price.gt(0) & price.lt(float("inf")))
     daily_return = price.pct_change(fill_method=None)
-    daily_return = daily_return.where(daily_return.abs().lt(float('inf')))
-    if '是否交易' in df:
-        daily_return = daily_return.where(df['是否交易'].eq(1))
+    daily_return = daily_return.where(daily_return.abs().lt(float("inf")))
+    if "是否交易" in df:
+        daily_return = daily_return.where(df["是否交易"].eq(1))
 
     return pd.DataFrame({col_name: daily_return}, index=df.index)

@@ -1,0 +1,9 @@
+design,date,stocks,cards,max_identity_residual,max_reconstructed_minus_frozen_FW,note
+beta,2017-01-03,1809,3693,2.3830763751231387e-16,2.220446049250313e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+beta,2020-06-30,3216,11307,3.0184188481996443e-16,1.6653345369377348e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+beta,2023-01-03,4621,25957,4.354155924701786e-16,3.3306690738754696e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+beta,2026-08-31,5188,59680,4.614364446098307e-16,3.3306690738754696e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+gamma,2017-01-03,1809,3693,2.7647155398380363e-16,2.220446049250313e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+gamma,2020-06-30,3215,11287,2.649790109554573e-16,2.220446049250313e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+gamma,2023-01-03,4620,25942,3.400058012914542e-16,2.220446049250313e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference
+gamma,2026-08-31,5188,59718,6.210310043996969e-16,3.3306690738754696e-16,F/W rolling statistics reconstructed on 10-day slice; identity independently checked; no mechanism inference

@@ -6,10 +6,11 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 fin_cols = []
-extra_data = {'z_概念数据': ['z_概念归属']}
+extra_data = {"z_概念数据": ["z_概念归属"]}
 
 
 def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
@@ -38,8 +39,8 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          publication times; record dates alone cannot establish strict point-in-time availability.
     Selection Case: ('z_ConceptMembership_en', False, '概念', 0)
     """
-    col_name = kwargs['col_name']
-    if not isinstance(param, str) or param != '概念':
+    col_name = kwargs["col_name"]
+    if not isinstance(param, str) or param != "概念":
         raise ValueError(f"param must be '概念', got {param!r}")
 
-    return pd.DataFrame({col_name: df['z_概念归属']}, index=df.index)
+    return pd.DataFrame({col_name: df["z_概念归属"]}, index=df.index)

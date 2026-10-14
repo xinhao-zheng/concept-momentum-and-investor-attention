@@ -1,0 +1,1063 @@
+{
+  "cutoff": "2026-08-31",
+  "scope": "Aggregate daily paths from newly executed baseline and single-gate account runs",
+  "commission_rate": 0.00012,
+  "configurations": [
+    {
+      "configuration_id": "3D_F10_W20_CCC_N10_BREADTH2",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N10_BREADTH2.csv",
+          "sha256": "d50ae3ac33f1c23b64c26e17d520e03004fc2deed5a349ec07d81b7c8323cd43",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N10_BREADTH2.csv",
+          "sha256": "75d67749502c1cd8b3e1f30bd56cbc32c5fa2d0cf4b1e1709a6bb2bde2943e9d",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_CCC_N10_BREADTH",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N10_BREADTH.csv",
+          "sha256": "5487765c144c0aa737b9f54243a4021671202b7dd27f2b7e6da43907b8c214d0",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N10_BREADTH.csv",
+          "sha256": "522d6e980eed0ba018cd855ed5dafea24e9c7cd7a4186001a00f473cefde6730",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_CCC_N10_NONE",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N10_NONE.csv",
+          "sha256": "a8ae8f9ca3ddc65ab64b0a8988e9100dd3faa3f74a5a1ec435315b9a893e03a1",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N10_NONE.csv",
+          "sha256": "33023cf4b2a1084534eb156ca101e70228aa0fdb79595e487ada3aac81f37ed1",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_CCC_N5_BREADTH2",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N5_BREADTH2.csv",
+          "sha256": "a242bea66265612c6e60d79308b5393487cc2b4307122e3637c66fb4a73aea09",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N5_BREADTH2.csv",
+          "sha256": "a17d2b94e0e301127bb94452c50ded3250d4e09e9e917a67e6f7a14635078954",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_CCC_N5_BREADTH",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N5_BREADTH.csv",
+          "sha256": "9fff3897c1358b2568632e1a64167f87da6d78db056892d4265e45e3ac80ecf9",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N5_BREADTH.csv",
+          "sha256": "d9e4a15823c58d98e3d6de33234148ecce84a64f9161d8c88ab6fd4f1edd1318",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_CCC_N5_NONE",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_CCC_N5_NONE.csv",
+          "sha256": "d758ef150e60bb506fc21c4be208d77ba0da3ac5179051c43491bec5256de680",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_CCC_N5_NONE.csv",
+          "sha256": "7121d0ea675a531b059564fa7097390ba47aa11e37687a94fce2b4eae04620a8",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N10_BREADTH2",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N10_BREADTH2.csv",
+          "sha256": "57921c0fe6d8e1fb701b78a7bcb9c2164e9153a825a5083f5f7797fbee9a7b70",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N10_BREADTH2.csv",
+          "sha256": "5f450507a7e7627e91a64b839e5c4e466500f54b90edd6e114fb4527507bbf8e",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N10_BREADTH",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N10_BREADTH.csv",
+          "sha256": "c2cdf31b856b3a29b0f0cb5d94cf95ddcab60022a20b81bb172647636529f8ae",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N10_BREADTH.csv",
+          "sha256": "3749097a9e3732cc8c1d21145b0df41a5f178d33e87993f9641b4642bfaa165e",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N10_NONE",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N10_NONE.csv",
+          "sha256": "21ac7eaaa1bf644e39d360d6d47cf583e9ebdb9f5543914f203da00ef559d892",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N10_NONE.csv",
+          "sha256": "29cde59a1a07e0bad8519723d08b9ec8663e929be03498615c333d177d5ee999",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N5_BREADTH2",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N5_BREADTH2.csv",
+          "sha256": "7f83d24e21edd64616e85850437688e2267f39573545198eb2c8644f81018497",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N5_BREADTH2.csv",
+          "sha256": "cee98e2dfb3f04ed400cbeac7cfc72ab6705192323bd2b4dbb110347b6cda64b",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N5_BREADTH",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N5_BREADTH.csv",
+          "sha256": "44696dd2980673732772a4e38d0a65f857ab7eeefc84179911f664b2d5deca16",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N5_BREADTH.csv",
+          "sha256": "6ec05007c1cdb75b3753666e587a8b95b77adba40576a26e0d3b1be13bf98628",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F10_W20_PEARSON_N5_NONE",
+      "holding_period_days": 3,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F10_W20_PEARSON_N5_NONE.csv",
+          "sha256": "b2a827123288436d8ed39536b1c1405f2ae68d9128cfb275232bb4b60e704ed1",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F10_W20_PEARSON_N5_NONE.csv",
+          "sha256": "07a589b4f83435be6fca3f46891da3fc7bf17ada94ef6653744ba7dba30dee0c",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N10_BREADTH2",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N10_BREADTH2.csv",
+          "sha256": "1be28189423b967906d31a04835b0944c3072f4d35bbf7e6ff6808f8289a8474",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N10_BREADTH2.csv",
+          "sha256": "4deb7b8d3b7daf90ac1432a9fa2482a42eff17e3003f812fbd49b10325f70ba4",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N10_BREADTH",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N10_BREADTH.csv",
+          "sha256": "e60d271627c9fd766726d70d8e42fae4200d186fe62887d6afd29923b8b2e9e5",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N10_BREADTH.csv",
+          "sha256": "ce8ff1081d8a22058a6a858ce9cfe65475481aa09c9e56e82668a094218032b6",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N10_NONE",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N10_NONE.csv",
+          "sha256": "5ad751acfeb1d35d2927acf42f1730ab69e669734fbc32dbcebc09d006ca9731",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N10_NONE.csv",
+          "sha256": "862c3b6a53bf22f05cd7b0b3487c32e2a51b94c013258cd43e4d88da1a5ad210",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N5_BREADTH2",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N5_BREADTH2.csv",
+          "sha256": "9828d78304981f396848c06ac7cfc47967f1a14ce199396d7728ab85006a989c",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N5_BREADTH2.csv",
+          "sha256": "9828d78304981f396848c06ac7cfc47967f1a14ce199396d7728ab85006a989c",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N5_BREADTH",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N5_BREADTH.csv",
+          "sha256": "003d765bb211749a4c22427c7100a05992e1e0ae3441cc672dda445286d1a099",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N5_BREADTH.csv",
+          "sha256": "d2aec934faf6378697cec4fa358c7f7ca67d56a13f506e6607f8a1b0690819c0",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_CCC_N5_NONE",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_CCC_N5_NONE.csv",
+          "sha256": "3d2d01f99090c56073f3dc0d2f25e7e0ec4c937cbd795769209efe8d31cb2ab8",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_CCC_N5_NONE.csv",
+          "sha256": "b079c9455249587928ed080fda4db2598e3407ea23346cd2ef962db1d27c1183",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N10_BREADTH2",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N10_BREADTH2.csv",
+          "sha256": "bca7806e438bc73cd17763c3cac41e293b5cc7699ad6a9f1f8cafb16be244528",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N10_BREADTH2.csv",
+          "sha256": "adea3406c1eb339d34f0accec9f36932638806a7c78ae6dbc25ca4cc33b48407",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N10_BREADTH",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N10_BREADTH.csv",
+          "sha256": "f99c9767365e2a95a8490d0ea099ddbf4cf3fad38b0b3112f719b2f595c4594a",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N10_BREADTH.csv",
+          "sha256": "d0e6b7bc078cb6a2523f25e832dced7b367664844fd7758d36472a88951249cc",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N10_NONE",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N10_NONE.csv",
+          "sha256": "2ed1a4ba9f6bb195f4bb46cbcbdb2312714a784a2a8a9bc8361a4c0fa2e33ef7",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N10_NONE.csv",
+          "sha256": "e3cab227bf506e0016d2c8f22e442401be4f261a641d9e65da0ee58ee3e02b24",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N5_BREADTH2",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N5_BREADTH2.csv",
+          "sha256": "8afd4e7e04cbd4675e4cd20d5edcebec128d512c8535edefe35d4b63d8f313d0",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N5_BREADTH2.csv",
+          "sha256": "eb16a38911279d7785fbf72917ce8f67e98588475adbce3f891f0b75c671cf7c",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N5_BREADTH",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N5_BREADTH.csv",
+          "sha256": "6b69b4e76527eb177f9964b5202c1cd681af2e9c2bc6e37b48506a70357a27cf",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N5_BREADTH.csv",
+          "sha256": "6e17a8d40d8b1c9a0f682bbd7466b50f29765bf219a9eb2aaea83ac2687a5549",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "3D_F5_W10_PEARSON_N5_NONE",
+      "holding_period_days": 3,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/3D_F5_W10_PEARSON_N5_NONE.csv",
+          "sha256": "3e9d2b02b96efe68fda483d010237c70499df99e5640aec2e7a73608ecbc2291",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/3D_F5_W10_PEARSON_N5_NONE.csv",
+          "sha256": "be87d51eee17e0dfecb82b151032ea304ab80833bad55334f08a6b6d4663cbf3",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N10_BREADTH2",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N10_BREADTH2.csv",
+          "sha256": "46ef5214b48950320b4dcc00d5d9824ea1251dc1ff28b5cb3d881003a18e16be",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N10_BREADTH2.csv",
+          "sha256": "0960fcd1040f1306326762a64ee2577ff6441b0c94c95203634682423a5967e1",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N10_BREADTH",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N10_BREADTH.csv",
+          "sha256": "543818023b016e0d050d1bb0652313763e082d8d7b77872348bb36db83052cc4",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N10_BREADTH.csv",
+          "sha256": "28d47f0fecc4414b292c741d51cc52b7ae8e290c86388169116e1acb03d6216b",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N10_NONE",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 31,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N10_NONE.csv",
+          "sha256": "c6cce678161bc11fcc81ad482b2cb1651e3f704aeecae23711c8ff7627e84dc8",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N10_NONE.csv",
+          "sha256": "1df321309997307e920bd92eb1660ec225972fe54ab94cde96740a7a48180239",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N5_BREADTH2",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N5_BREADTH2.csv",
+          "sha256": "537681d9b8d0126b58800f9ebe10bd68f2df2173919e2531284becfc043ece7b",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N5_BREADTH2.csv",
+          "sha256": "c3633a4f2176ca99edc6dd20f842b37dc6ecd70662cf259f4b7106aaebf26f5f",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N5_BREADTH",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N5_BREADTH.csv",
+          "sha256": "a58922897c85070ea1e697163eeb90a3b2a374c03bc4923a181e64a0ffa51331",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N5_BREADTH.csv",
+          "sha256": "f0ac090c29eebfdf34af8908eb19ee2e76a306ac872325d54e3471295387d2a3",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_CCC_N5_NONE",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 16,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_CCC_N5_NONE.csv",
+          "sha256": "50b725a993b44d0580408e358ea2b0dfed022f898a31ba87758c128696e2e3f8",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_CCC_N5_NONE.csv",
+          "sha256": "9614f6b17bfa10b147c51a8df8f8725863911a419043d8575ebe3d82e1503f65",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N10_BREADTH2",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N10_BREADTH2.csv",
+          "sha256": "2e22b5eb619bb912b44e5b9c435072413a8317a321310052a3bebfb746082133",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N10_BREADTH2.csv",
+          "sha256": "3245522ceea45771847e817d26ff300a8398e6d87edfe836341723632bbb1d0f",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N10_BREADTH",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N10_BREADTH.csv",
+          "sha256": "0df603f995934457ac4e9ab312c762e037ccd60d423a5f1c1e2228faffe63073",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N10_BREADTH.csv",
+          "sha256": "fed9682e5fafb9447c0727cd8049a87efeed5dac16a87476b40bccce70edc665",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N10_NONE",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 42,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N10_NONE.csv",
+          "sha256": "d218363fa92c1628676469beadca48704ffee44f3ea60d99479b7d78e60ed5ba",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N10_NONE.csv",
+          "sha256": "3ffc030af1ee8d31e8904c48e2dd92e10745ee9e8d69605ad67459616e391bed",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N5_BREADTH2",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N5_BREADTH2.csv",
+          "sha256": "298dc0ad28d8be1ea048fac23507be2c4c5619a2bc675a38913e7e4e966e4f47",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N5_BREADTH2.csv",
+          "sha256": "ec28e3e638c04cf0165e0d00a5834c9111256d86d45b63da0794f715846ddd37",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N5_BREADTH",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N5_BREADTH.csv",
+          "sha256": "379b018eceede319f7816d3bcac610ca883d02f43ed9f3eb75645b505e70f350",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N5_BREADTH.csv",
+          "sha256": "079723251b0bc46d6af6b19024711ddef380330bbc7bc2b784ef94510d24021d",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F10_W20_PEARSON_N5_NONE",
+      "holding_period_days": 5,
+      "F": 10,
+      "W": 20,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 17,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F10_W20_PEARSON_N5_NONE.csv",
+          "sha256": "068662a483cdc9021ec61d92883f580eaea6bab6ed579a22d4bf18c72114ffb3",
+          "rows": 2363
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F10_W20_PEARSON_N5_NONE.csv",
+          "sha256": "bbbe223c0c97f1d4fba16f1260da50d146ff6e798b6b1d7de49ae1877eb7b3aa",
+          "rows": 2363
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N10_BREADTH2",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N10_BREADTH2.csv",
+          "sha256": "2715238c5572e02fe79e67019c5a934e955a2e7c4c4b786130e2952e5b83dffd",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N10_BREADTH2.csv",
+          "sha256": "031bccc8552927c4f5be62bfb4cdb3a65db10b44a566f8c16d4875eafbab99c9",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N10_BREADTH",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N10_BREADTH.csv",
+          "sha256": "68279fc272c880d0bd5edf52d63b3873e1f3199361dc34b79e9ee3a480460ba5",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N10_BREADTH.csv",
+          "sha256": "f4a8e46816590f41080723d47a8a98dc3d0c7d23be9e6f1660793c1ef23728e7",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N10_NONE",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 29,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N10_NONE.csv",
+          "sha256": "0002559f5c139f44e790db57c3094c5307f61f60a4b2801738bc00ca50fc1a9c",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N10_NONE.csv",
+          "sha256": "ece4a324aa6ee65a0f3b4cba1e35e003e6a711700c371ba0bfc54ffe5d5cf05f",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N5_BREADTH2",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N5_BREADTH2.csv",
+          "sha256": "448d52740df5080ace8629e3780fe045dee3c94c70ca591c7717cd74dd217bff",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N5_BREADTH2.csv",
+          "sha256": "4bac49ecbc01160d988e71598f40c2364ffa23bd0557a8a00b1b170402d2f3cd",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N5_BREADTH",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N5_BREADTH.csv",
+          "sha256": "91f2d8ff3155c1beb4b22396a87b6940e0f71f797ad1a1127330c1377b759f1b",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N5_BREADTH.csv",
+          "sha256": "6017432457ba288f87fd60e4c50a27e3d1cf249f8ede053dac9017c4576c7fc0",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_CCC_N5_NONE",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "ccc",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 14,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_CCC_N5_NONE.csv",
+          "sha256": "465b4e69f498bcdbb08aa5a4e22f518d000337c1f67c576975cad087c5a69ada",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_CCC_N5_NONE.csv",
+          "sha256": "e0eb79c5a7f30198983bddf0a2f3925c8a1f0dacb631226e7c12f1036a5453f7",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N10_BREADTH2",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth2",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N10_BREADTH2.csv",
+          "sha256": "8b3c737a36faef0f445b0551f55e51b25482b9909a5bba506e2e9ce49903de41",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N10_BREADTH2.csv",
+          "sha256": "20a8d3627049b0d25c5aaf26e909514e24065f30a76f990dd32582805fb95bae",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N10_BREADTH",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "breadth",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N10_BREADTH.csv",
+          "sha256": "9733e1228deab047932bbdcd31cd43df855fc4e18e852a4a81a045faec347ee0",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N10_BREADTH.csv",
+          "sha256": "f8f8ab4ab76bd87a24ea24eb79893abfb0bcc27a46492660ae73513a788c62ed",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N10_NONE",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 10,
+      "timing": "none",
+      "removed_gate_hits": 40,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N10_NONE.csv",
+          "sha256": "f7d64559f046b4b9b5409fcfb41a8627a9a94ed87f14206e5698956118646302",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N10_NONE.csv",
+          "sha256": "3f4a1a61a66a2fbf4028b7c34e88cbe8ac2981492fa867add6e505a6689403ac",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N5_BREADTH2",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth2",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N5_BREADTH2.csv",
+          "sha256": "cecdd5c9162a748224d58cecbdd842926dc38fc808898928f2c6642d591d0128",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N5_BREADTH2.csv",
+          "sha256": "c4eb213279eb533b9b1e97b228e164f6f6704141d07945e0f3e351c17c48d23d",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N5_BREADTH",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "breadth",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N5_BREADTH.csv",
+          "sha256": "242bd50c6d7bbab99fe65d5e7ffbaf43b9eb4c423b84f724874389c06d355956",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N5_BREADTH.csv",
+          "sha256": "11432ba9807c93e05d611e777f3a7a708beab944b79fbddd35e9618f422101b7",
+          "rows": 2368
+        }
+      }
+    },
+    {
+      "configuration_id": "5D_F5_W10_PEARSON_N5_NONE",
+      "holding_period_days": 5,
+      "F": 5,
+      "W": 10,
+      "similarity": "pearson",
+      "top_n": 5,
+      "timing": "none",
+      "removed_gate_hits": 21,
+      "paths": {
+        "baseline": {
+          "file": "accounts/baseline/5D_F5_W10_PEARSON_N5_NONE.csv",
+          "sha256": "01164405e624cb68fd9060d5a16fe157ad8c6b8d7ba3195f2b04146d3ecd8401",
+          "rows": 2368
+        },
+        "single-gate": {
+          "file": "accounts/single-gate/5D_F5_W10_PEARSON_N5_NONE.csv",
+          "sha256": "ad6ccb26d7c8d329d8560a71f25edd3093ddf3b7a45aa14397d0bdb5d3fd6bbb",
+          "rows": 2368
+        }
+      }
+    }
+  ]
+}

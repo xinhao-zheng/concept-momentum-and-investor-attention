@@ -1,0 +1,89 @@
+{
+  "schema": "raw-covariate-input-contract/1",
+  "daily_price_format": {
+    "filename": "<security_id>.csv",
+    "default_encoding": "gb18030",
+    "default_skipped_metadata_rows": 1,
+    "header_after_skipped_rows": true,
+    "required_columns": [
+      "交易日期",
+      "股票名称",
+      "收盘价",
+      "前收盘价",
+      "最高价",
+      "最低价",
+      "成交额",
+      "流通市值",
+      "总市值",
+      "沪深300成分股",
+      "上证50成分股",
+      "中证500成分股",
+      "创业板指成分股",
+      "中证1000成分股",
+      "中证2000成分股",
+      "新版申万一级行业名称",
+      "新版申万二级行业名称",
+      "新版申万三级行业名称",
+      "机构资金买入额",
+      "机构资金卖出额",
+      "大户资金买入额",
+      "大户资金卖出额",
+      "中户资金买入额",
+      "中户资金卖出额",
+      "散户资金买入额",
+      "散户资金卖出额"
+    ],
+    "security_id": "Lowercase input filename stem; no inferred remapping.",
+    "duplicate_date_rule": "Sort by parsed date and retain last duplicate, as in the retained calculation.",
+    "invalid_date_rule": "Exclude invalid parsed dates.",
+    "post_cutoff_rule": "Exclude before any feature is computed."
+  },
+  "market_index_format": {
+    "encoding": "utf-8",
+    "header": 0,
+    "required_columns": [
+      "candle_end_time",
+      "close"
+    ],
+    "duplicate_date_rule": "Sort by date and retain first duplicate, as in the retained calendar construction.",
+    "return_rule": "close.pct_change(fill_method=None)"
+  },
+  "overlays": {
+    "rule": "If a file with the same name exists in the configured corrections directory, use it instead of the corresponding daily file.",
+    "source_values_modified_by_constructor": false
+  },
+  "output": {
+    "columns": 51,
+    "layout": "by-stock/<security_id>.parquet and manifest.json",
+    "keys": [
+      "signal_date",
+      "stock_code"
+    ],
+    "default_row_policy": "calendar",
+    "optional_row_policy": "observed (nonmissing source close)",
+    "output_start": "Optional emitted-date filter. Earlier raw observations still enter rolling calculations.",
+    "cutoff_default": "2026-08-31",
+    "sample_admission_recovered": false
+  },
+  "units": {
+    "amount_and_market_values": "Use input units without conversion in amount-to-market-value ratios; amihud divides amount by 1e8.",
+    "order_flow": "Input buy/sell values are multiplied by 10000 before dividing by amount.",
+    "returns": "Decimal return ratios.",
+    "index_membership": "Exact Y indicates membership on observed dates; absent or nonobserved becomes zero.",
+    "industry": "Source names are forward-filled; no publication timestamp is inferred."
+  },
+  "historical_availability": "Feature-as-of dates describe the calculation clock. This input schema has no source-publication, receipt, effective-version or correction-history timestamps. Strict historical availability cannot be established from this panel alone.",
+  "preprocessing_contracts": {
+    "full-history": "Retained extension kernel applied to all eligible input history. This baseline is kept for comparison.",
+    "reconstructed-legacy": {
+      "origin": "Inferred from comparison with the retained pre-July panel; the original generator source was not recovered.",
+      "prefix_end": "2026-06-30",
+      "prefix_history_start": "2016-07-13",
+      "prefix_zero_amount_indicator": "observed_close AND amount.fillna(0)<=0; other amount-based features keep the original missing amount.",
+      "extension_start": "2026-07-01",
+      "extension_rule": "Use the retained full-history kernel; missing amount does not satisfy amount<=0.",
+      "cell_specific_overrides": false,
+      "validation_status": "All 8,995,748 retained keys and 51 columns pass numerical/null comparison; five Float32 rounding-boundary cells remain outside the checked model sample/control intersections. Not bitwise equality."
+    }
+  }
+}

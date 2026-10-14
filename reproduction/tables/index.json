@@ -1,0 +1,407 @@
+[
+  {
+    "id": "table-01",
+    "title": "Membership timing and return timing",
+    "path": "tables/table-01-timing-design",
+    "modules": [
+      "Definitions"
+    ],
+    "numerical_sources": []
+  },
+  {
+    "id": "table-bootstrap-settings",
+    "title": "Bootstrap settings",
+    "path": "tables/table-bootstrap-settings-resampling-design",
+    "modules": [
+      "Protocol"
+    ],
+    "numerical_sources": []
+  },
+  {
+    "id": "table-s01",
+    "title": "Sample description by year",
+    "path": "tables/table-s01-annual-sample",
+    "modules": [
+      "Sample"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-sample-descriptives-by-year.csv",
+        "sha256": "68640a65c0be29757f3d53992cb2eeabbb34a06e91ca977b658dbbaef9e05c53"
+      }
+    ]
+  },
+  {
+    "id": "table-s02",
+    "title": "Mature signal dates by horizon",
+    "path": "tables/table-s02-mature-signal-dates",
+    "modules": [
+      "Sample",
+      "S2",
+      "B1",
+      "B2"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/02-portfolio-summary.csv",
+        "sha256": "2fa4c6b29d8859d3ef916441ef5589a2b51bfa6ee00397555a64151091e252d2"
+      },
+      {
+        "file": "data/source/03-comparison-384.csv",
+        "sha256": "f870a431ed3da1c6d5d14bbae57e45b3a1c3055e3af10b3302529f466750d0ad"
+      },
+      {
+        "file": "data/source/04-ic-summary.csv",
+        "sha256": "ec4f65502d885e029b9bb752acb9b9a1df4c0305575703e18a8957efc996fc4c"
+      }
+    ]
+  },
+  {
+    "id": "table-s03",
+    "title": "Multiplicity families and temporal support",
+    "path": "tables/table-s03-multiplicity-and-support",
+    "modules": [
+      "Definitions",
+      "Core",
+      "D1",
+      "D4",
+      "S2",
+      "AGG",
+      "B1",
+      "B3",
+      "V",
+      "T2",
+      "T3",
+      "S9",
+      "B2",
+      "B2D",
+      "E1",
+      "Risk",
+      "M2",
+      "CF1",
+      "CF2",
+      "CF3",
+      "D2",
+      "C2/C1/C1S",
+      "N1",
+      "AccountMetrics",
+      "S6bounds",
+      "R2/R4",
+      "Sample"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-legacy-ic.csv",
+        "sha256": "5ddf6eb4ab2da672550e73a371893321b7be32657a2c449d1a29458f68826e79"
+      },
+      {
+        "file": "data/source/02-legacy-icz.csv",
+        "sha256": "bbab1d58ff92fe06c8c30bdc7a0c38b8c89881e69a836fe9f13ded4abddb1738"
+      },
+      {
+        "file": "data/source/03-comparison-1080.csv",
+        "sha256": "6e96e821629fe0823ff3c6cf3a8d1ca08721dd50bce039fcdde4067245589006"
+      },
+      {
+        "file": "data/source/04-matched-control-summary.csv",
+        "sha256": "efbed0ce0e18b5f3d2a1ae21c0c2e5e34feeb5475151df8b030c6a55cfbe6247"
+      },
+      {
+        "file": "data/source/05-conditional-random-replicates.csv",
+        "sha256": "935008d15d4c350edb4be7f357b520184167a16547d5953f4fb01adc287589c4"
+      },
+      {
+        "file": "data/source/06-paired-competition-results.csv",
+        "sha256": "06a4e3e8524e640488466284afaf05a2d3eb947915d2ec369a1a29ac81d8d0d7"
+      },
+      {
+        "file": "data/source/07-portfolio-summary.csv",
+        "sha256": "2fa4c6b29d8859d3ef916441ef5589a2b51bfa6ee00397555a64151091e252d2"
+      },
+      {
+        "file": "data/source/08-comparison-summary-192.csv",
+        "sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5"
+      },
+      {
+        "file": "data/source/09-overlap-summary.csv",
+        "sha256": "5cfde718cb96ab3759f7470926104f1ca543ddaf28b6d72ee40d5febb8f5aabb"
+      },
+      {
+        "file": "data/source/10-paired-rerank-uncertainty.csv",
+        "sha256": "c6dbc35d3e9b9a42a913499d45a3e48575b6107566ee9ef703e73dd5fad14961"
+      },
+      {
+        "file": "data/source/11-decomposition-summary.csv",
+        "sha256": "ee8235544ea47974b6764527fdf4c370f9a43f7cb45c814489496311242bf3ee"
+      },
+      {
+        "file": "data/source/12-increment-inference.csv",
+        "sha256": "3ec6a83eb8f472cebe91e92501dfea7c3eab58155c25af89aff4d9e77bb7f9ff"
+      },
+      {
+        "file": "data/source/13-ic-summary.csv",
+        "sha256": "ec4f65502d885e029b9bb752acb9b9a1df4c0305575703e18a8957efc996fc4c"
+      },
+      {
+        "file": "data/source/14-portfolio-summary.csv",
+        "sha256": "97d9745a438ad6b5d4f69d96fb4af30bb44ca34eca7c727d6605115c23b6328c"
+      },
+      {
+        "file": "data/source/15-dml-past-calibrated-fixed80-all.csv",
+        "sha256": "714ab88285949a5b017f8aefbbd74d55368ea458bfdc0799c1e6d386aa152e09"
+      },
+      {
+        "file": "data/source/16-aipw-past-calibrated-fixed80-all.csv",
+        "sha256": "e92239244bd76e3076456b455279ef5b2ec453b9152c90cad5c27b77822f5696"
+      },
+      {
+        "file": "data/source/17-dml-s-window-all.csv",
+        "sha256": "d683c5c7288862600002982b8e6fec0c1bfcdc1d0f1c1b2c31022ae90a81e813"
+      },
+      {
+        "file": "data/source/18-aipw-s-window-all.csv",
+        "sha256": "07374c3c7e82b5ee39d750c0f190f0eb38aedde66351a16f15a2fbec79776163"
+      },
+      {
+        "file": "data/source/21-construct-cf1-retained-fraction.csv",
+        "sha256": "8714fab5198c55dc63bd050927b20dfadf85f833cbdff7b011875fb64d17c3f1"
+      },
+      {
+        "file": "data/source/22-cf3-strict-feedback-candidate-registry.csv",
+        "sha256": "ee801da872ed95072a56b874c476d1b78cf0ac0e10de200f5f702811319e9e6c"
+      },
+      {
+        "file": "data/source/23-bridge-results.csv",
+        "sha256": "2905df90a0b8db1144ce3734a93b9e244f5bfc0389a3aa2d39d3666e0322b1b6"
+      },
+      {
+        "file": "data/source/24-context-correlations-summary.csv",
+        "sha256": "b5010a855d27dc74a8ed1a527927dbae1a5199ac94482ee8262e3b6b31cb638a"
+      },
+      {
+        "file": "data/source/25-comparison-384.csv",
+        "sha256": "f870a431ed3da1c6d5d14bbae57e45b3a1c3055e3af10b3302529f466750d0ad"
+      },
+      {
+        "file": "data/source/26-descriptive-cells.csv",
+        "sha256": "8a3c80e4b03d4e74c565a672fffa43cbeb32fd90b320b5a3337072c27ea5aed8"
+      },
+      {
+        "file": "data/source/27-descriptive-contrasts.csv",
+        "sha256": "3f6570241f3a61de57d821bb4c4dd2a65dfff2dda672e5425384a4bda1440047"
+      },
+      {
+        "file": "data/source/28-annual-primary-spreads.csv",
+        "sha256": "e00d5787db91fa19933e6b35b4a6c0ed0c7aed643a862a79ab5a1379c6ed8da2"
+      },
+      {
+        "file": "data/source/29-increment-inference.csv",
+        "sha256": "8c801b54a71fd2fa4036b6d8e8a96c3312125715d76a20ff1417b7a23ee6678b"
+      },
+      {
+        "file": "data/source/30-backtest-summary.csv",
+        "sha256": "0f7dd7e69029e6043e23d79d16f0d7a1aa107e8f87486522b3fe3e5185bda6c9"
+      },
+      {
+        "file": "data/source/31-reference-curves.csv",
+        "sha256": "4ec0e99b4d8302a2f19bf54d3304b40535a8d381df45ecec0a73ea435a3f8161"
+      },
+      {
+        "file": "data/source/32-design-effect-pairs.csv",
+        "sha256": "ae702245f4bd80751bc249819abfa3fdd0c00cda5c4cf0bc191fceee121161a5"
+      },
+      {
+        "file": "data/source/34-coefficients-holm36.csv",
+        "sha256": "a7a702f005681da320bbb2d14682e61cd3849765a8b2e5958b5d931c9183653c"
+      },
+      {
+        "file": "data/source/35-paired-differences-holm27.csv",
+        "sha256": "1ed94ead1beaf728a99f69d67b09849ee7224385bdf3ea596f4d60db9dc4d143"
+      }
+    ]
+  },
+  {
+    "id": "table-s04",
+    "title": "Current F5/W10 H3 Top20 timing cells",
+    "path": "tables/table-s04-timing-cells",
+    "modules": [
+      "T2"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-cell-levels.csv",
+        "sha256": "551781ae632bc8e76af6e12ebc4e41628c00c18798c8ff84a0a05dc85a439155"
+      }
+    ]
+  },
+  {
+    "id": "table-s05",
+    "title": "Paired timing contrasts and their shared Holm20 correction",
+    "path": "tables/table-s05-paired-timing-contrasts",
+    "modules": [
+      "T2"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-paired-inference-holm20.csv",
+        "sha256": "f997887c122cd458d29f024e9a6d9f3f783dfba3e4e0953854d8bb431463456c"
+      }
+    ]
+  },
+  {
+    "id": "table-s06",
+    "title": "Annual H3 Top20 selection spreads",
+    "path": "tables/table-s06-annual-selection-spreads",
+    "modules": [
+      "V"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-annual-primary-spreads.csv",
+        "sha256": "e00d5787db91fa19933e6b35b4a6c0ed0c7aed643a862a79ab5a1379c6ed8da2"
+      }
+    ]
+  },
+  {
+    "id": "table-s07",
+    "title": "Direct contrasts in the main specification",
+    "path": "tables/table-s07-component-contrasts",
+    "modules": [
+      "S2",
+      "AGG",
+      "B1"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-paired-competition-results.csv",
+        "sha256": "06a4e3e8524e640488466284afaf05a2d3eb947915d2ec369a1a29ac81d8d0d7"
+      },
+      {
+        "file": "data/source/02-comparison-summary-192.csv",
+        "sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5"
+      },
+      {
+        "file": "data/source/03-comparison-384.csv",
+        "sha256": "f870a431ed3da1c6d5d14bbae57e45b3a1c3055e3af10b3302529f466750d0ad"
+      }
+    ]
+  },
+  {
+    "id": "table-s08",
+    "title": "Full-training-date H3 paired increments",
+    "path": "tables/table-s08-dense-training-increments",
+    "modules": [
+      "B2D"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-increment-inference.csv",
+        "sha256": "8c801b54a71fd2fa4036b6d8e8a96c3312125715d76a20ff1417b7a23ee6678b"
+      }
+    ]
+  },
+  {
+    "id": "table-s09",
+    "title": "F and FW added jointly to W and ordinary predictors",
+    "path": "tables/table-s09-conditional-strength",
+    "modules": [
+      "E1"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-inference-family.csv",
+        "sha256": "86052d76f762bfa60e980ecbe7cf79aba8955c83fafb1ddb557828ae446523ab"
+      }
+    ]
+  },
+  {
+    "id": "table-s10",
+    "title": "Synchronization increments with and without observed market risk",
+    "path": "tables/table-s10-market-risk-controls",
+    "modules": [
+      "Risk"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-inference-holm6.csv",
+        "sha256": "5ddf34b24ab70bfd3e8b8723f459eae2d45d6dc86cdfef91c67a38a512d89410"
+      }
+    ]
+  },
+  {
+    "id": "table-s11",
+    "title": "Support and correction in the temporal audit",
+    "path": "tables/table-s11-temporal-model-support",
+    "modules": [
+      "C2/C1/C1S"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-dml-past-calibrated-fixed80-all.csv",
+        "sha256": "714ab88285949a5b017f8aefbbd74d55368ea458bfdc0799c1e6d386aa152e09"
+      },
+      {
+        "file": "data/source/02-dml-s-window-all.csv",
+        "sha256": "d683c5c7288862600002982b8e6fec0c1bfcdc1d0f1c1b2c31022ae90a81e813"
+      },
+      {
+        "file": "data/source/03-aipw-past-calibrated-fixed80-all.csv",
+        "sha256": "e92239244bd76e3076456b455279ef5b2ec453b9152c90cad5c27b77822f5696"
+      },
+      {
+        "file": "data/source/04-aipw-s-window-all.csv",
+        "sha256": "07374c3c7e82b5ee39d750c0f190f0eb38aedde66351a16f15a2fbec79776163"
+      }
+    ]
+  },
+  {
+    "id": "table-s12",
+    "title": "Own-popularity residual projections on a common γ/H3 sample",
+    "path": "tables/table-s12-own-popularity-projections",
+    "modules": [
+      "N1"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-coefficients-holm36.csv",
+        "sha256": "a7a702f005681da320bbb2d14682e61cd3849765a8b2e5958b5d931c9183653c"
+      },
+      {
+        "file": "data/source/02-paired-differences-holm27.csv",
+        "sha256": "1ed94ead1beaf728a99f69d67b09849ee7224385bdf3ea596f4d60db9dc4d143"
+      }
+    ]
+  },
+  {
+    "id": "table-s13",
+    "title": "Implementation backtest grid",
+    "path": "tables/table-s13-account-simulation-grid",
+    "modules": [
+      "AccountMetrics"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-backtest-summary.csv",
+        "sha256": "0f7dd7e69029e6043e23d79d16f0d7a1aa107e8f87486522b3fe3e5185bda6c9"
+      }
+    ]
+  },
+  {
+    "id": "table-s14",
+    "title": "Calendar-year returns of the reference configurations",
+    "path": "tables/table-s14-annual-account-returns",
+    "modules": [
+      "AccountMetrics"
+    ],
+    "numerical_sources": [
+      {
+        "file": "data/source/01-annual-returns.csv",
+        "sha256": "0e7c5198ffd1163346fbadf9a12b16a30d4aa2c120381d69be3361052fa07e01"
+      },
+      {
+        "file": "data/source/02-reference-curves.csv",
+        "sha256": "4ec0e99b4d8302a2f19bf54d3304b40535a8d381df45ecec0a73ea435a3f8161"
+      }
+    ]
+  }
+]

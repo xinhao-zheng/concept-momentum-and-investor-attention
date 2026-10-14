@@ -1,0 +1,26 @@
+{
+  "schema": "targeted-daily-correction-events/1",
+  "events": 60,
+  "unique_security_ids": 21,
+  "apply_to": [
+    "stock-trading-data",
+    "stock-trading-data-pro"
+  ],
+  "removed_unique_security_dates": 55,
+  "externally_supplied_close_corrections": 4,
+  "code_continuity_events": 1,
+  "raw_or_corrected_price_values_included": false,
+  "private_source_headers_included": false,
+  "independent_replacement_input": {
+    "columns": [
+      "stock_code",
+      "date",
+      "close"
+    ],
+    "rows": 4,
+    "format": "UTF-8 CSV header, locally supplied; values are not in the public release"
+  },
+  "verification_scope": "Preserved targeted corrections, not full-market certification",
+  "non_price_financial_last_digit_differences": "The legacy overlay CSV serialization introduced 861 exact parsed-float differences in three unused financial columns, all within rtol=atol=1e-12. They are not independent correction events.",
+  "targeted_correction_source_retained": true
+}

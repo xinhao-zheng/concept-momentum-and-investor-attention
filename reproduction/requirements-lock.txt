@@ -1,0 +1,18 @@
+# Python 3.13.9; scientific analysis versions used for this replication.
+numpy==2.3.5
+pandas==2.2.3
+polars==1.41.2
+pyarrow==21.0.0
+scipy==1.16.3
+scikit-learn==1.8.0
+statsmodels==0.14.5
+joblib==1.5.3
+numba==0.62.1
+matplotlib==3.10.6
+Pillow==12.0.0
+pypdf==6.9.2
+PyMuPDF==1.27.2
+tqdm==4.67.1
+psutil==7.0.0
+threadpoolctl==3.6.0
+tabulate==0.9.0

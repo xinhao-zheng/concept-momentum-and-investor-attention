@@ -1,0 +1,17 @@
+{
+  "scope": "Preserved observation keys only. No attention values are copied. Historical sample membership is a declared reconstruction input.",
+  "rows": 8974107,
+  "unique_keys": 8974107,
+  "stocks": 5236,
+  "start": "2016-12-01 00:00:00",
+  "end": "2026-08-31 00:00:00",
+  "sha256": "2d3cdaee9ec0051b536bc5a3ab823455e8ddc7eb89f69306eba0e77123984f6e",
+  "file": "attention-observation-index.parquet",
+  "bytes": 1866811,
+  "fields": [
+    "signal_date",
+    "stock_code"
+  ],
+  "cutoff": "2026-08-31",
+  "construction_use": "code/analysis/attention_inputs.py recomputes values from raw CSVs on these keys"
+}

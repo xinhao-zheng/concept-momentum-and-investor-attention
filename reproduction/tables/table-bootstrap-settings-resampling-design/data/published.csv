@@ -1,0 +1,8 @@
+Analysis,Bootstrap replicates,Main block length,Family and longer-block scope
+"Components, aggregation and daily benchmarks","100,000","max(20,H)",Separate declared families; daily-benchmark longer-block checks cover the four γ/Top20/H3 contrasts
+Conditional prediction,"10,000","max(20,H)",Holm96; the same family repeats with base blocks of 40 and 60 days
+Six-pair parameter sensitivity,"100,000",20 dates,"Separate Holm540 families by missingness; 40- and 60-date checks cover six pairs × five contrasts at H3/Top20, with Holm30 separately at each length"
+Paired membership and return timing,"20,000",20 and 60 dates,One Holm20 covers five contrasts × two missingness conventions × two block lengths
+Industry and size matching,"10,000",20 dates,Holm9 covers three list sizes × three matching schemes
+Fixed-period H3 contrasts,"20,000","20, 40 and 60 dates",A separate Holm4 at each length covers two periods × two benchmarks
+Full-training-date H3 sensitivity,"10,000",20 and 60 dates,One Holm24 covers twelve contrasts × two block lengths

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "S1",
+    "title": "Historical availability",
+    "path": "sections/section-s01-historical-availability",
+    "modules": [
+      "Core"
+    ]
+  },
+  {
+    "id": "S2",
+    "title": "Detailed research protocols",
+    "path": "sections/section-s02-detailed-research-protocols",
+    "modules": [
+      "Core",
+      "D1",
+      "B2",
+      "D4",
+      "R2/R4"
+    ]
+  },
+  {
+    "id": "S3",
+    "title": "Common support and score sensitivity",
+    "path": "sections/section-s03-common-support-and-score-sensitivity",
+    "modules": [
+      "Core",
+      "S2",
+      "AGG",
+      "R2/R4"
+    ]
+  },
+  {
+    "id": "S4",
+    "title": "A paired separation of membership dates and return clocks",
+    "path": "sections/section-s04-a-paired-separation-of-membership-dates-and-return-clocks",
+    "modules": [
+      "T2",
+      "T3"
+    ]
+  },
+  {
+    "id": "S5",
+    "title": "Relation to earlier analyses",
+    "path": "sections/section-s05-relation-to-earlier-analyses",
+    "modules": [
+      "S9",
+      "B1"
+    ]
+  },
+  {
+    "id": "S6",
+    "title": "Reconstruction, annual variation and fixed-period sensitivity",
+    "path": "sections/section-s06-reconstruction-annual-variation-and-fixed-period-sensitivity",
+    "modules": [
+      "Core",
+      "V"
+    ]
+  },
+  {
+    "id": "S7",
+    "title": "Daily and monthly benchmark implementation",
+    "path": "sections/section-s07-daily-and-monthly-benchmark-implementation",
+    "modules": [
+      "B1",
+      "B3"
+    ]
+  },
+  {
+    "id": "S8",
+    "title": "Model support and longer-block sensitivity",
+    "path": "sections/section-s08-model-support-and-longer-block-sensitivity",
+    "modules": [
+      "B2",
+      "S6bounds"
+    ]
+  },
+  {
+    "id": "S9",
+    "title": "Full-training-date H3 results",
+    "path": "sections/section-s09-full-training-date-h3-results",
+    "modules": [
+      "B2D"
+    ]
+  },
+  {
+    "id": "S10",
+    "title": "Strength-related information conditional on synchronization",
+    "path": "sections/section-s10-strength-related-information-conditional-on-synchronization",
+    "modules": [
+      "E1"
+    ]
+  },
+  {
+    "id": "S11",
+    "title": "Synchronization conditional on observed market risk",
+    "path": "sections/section-s11-synchronization-conditional-on-observed-market-risk",
+    "modules": [
+      "Risk"
+    ]
+  },
+  {
+    "id": "S12",
+    "title": "Attention measurement and ranking reference sets",
+    "path": "sections/section-s12-attention-measurement-and-ranking-reference-sets",
+    "modules": [
+      "M2"
+    ]
+  },
+  {
+    "id": "S13",
+    "title": "Temporal preprocessing in causal machine learning",
+    "path": "sections/section-s13-temporal-preprocessing-in-causal-machine-learning",
+    "modules": [
+      "C2/C1/C1S",
+      "N1"
+    ]
+  },
+  {
+    "id": "S14",
+    "title": "Attention measures, list visibility and participation",
+    "path": "sections/section-s14-attention-measures-list-visibility-and-participation",
+    "modules": [
+      "CF1",
+      "CF2",
+      "CF3"
+    ]
+  },
+  {
+    "id": "S15",
+    "title": "Numerical detail for the attention-to-comovement diagnostic",
+    "path": "sections/section-s15-numerical-detail-for-the-attention-to-comovement-diagnostic",
+    "modules": [
+      "D2"
+    ]
+  },
+  {
+    "id": "S16",
+    "title": "Additional source and mechanism diagnostics",
+    "path": "sections/section-s16-additional-source-and-mechanism-diagnostics",
+    "modules": [
+      "M2",
+      "D2"
+    ]
+  },
+  {
+    "id": "S17",
+    "title": "Retrospective account simulations",
+    "path": "sections/section-s17-retrospective-account-simulations",
+    "modules": [
+      "AccountMetrics"
+    ]
+  }
+]

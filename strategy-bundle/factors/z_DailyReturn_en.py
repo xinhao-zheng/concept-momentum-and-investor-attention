@@ -6,11 +6,12 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 # Default windows and similarity for the companion strategy
-_DEFAULT_PARAM = (5, 10, 'pearson')
-_SIMILARITIES = {'pearson', 'ccc'}
+_DEFAULT_PARAM = (5, 10, "pearson")
+_SIMILARITIES = {"pearson", "ccc"}
 
 fin_cols = []
 extra_data = {}
@@ -44,32 +45,41 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          nonempty minutes raises an error, and timing configures intraday timing.
     Selection Case: ('z_DailyReturn_en', False, (5, 10, 'pearson'), 1)
     """
-    col_name = kwargs['col_name']
-    if param is None or (isinstance(param, str) and param == ''):
+    col_name = kwargs["col_name"]
+    if param is None or (isinstance(param, str) and param == ""):
         param = _DEFAULT_PARAM
     if not isinstance(param, (list, tuple)) or len(param) != 3:
-        raise ValueError(f'param must be (F, W, similarity), got {param!r}')
+        raise ValueError(f"param must be (F, W, similarity), got {param!r}")
     raw_f, raw_w, similarity = param
-    if any(isinstance(value, bool) or not isinstance(value, (int, str)) for value in (raw_f, raw_w)):
-        raise ValueError(f'param F and W must be integers or integer strings, got {param!r}')
+    if any(
+        isinstance(value, bool) or not isinstance(value, (int, str))
+        for value in (raw_f, raw_w)
+    ):
+        raise ValueError(
+            f"param F and W must be integers or integer strings, got {param!r}"
+        )
     try:
         f_window, w_window = int(raw_f), int(raw_w)
     except ValueError as error:
-        raise ValueError(f'param F and W must be integers or integer strings, got {param!r}') from error
+        raise ValueError(
+            f"param F and W must be integers or integer strings, got {param!r}"
+        ) from error
     if f_window < 1 or w_window < 2:
-        raise ValueError(f'param must satisfy F >= 1 and W >= 2, got {param!r}')
+        raise ValueError(f"param must satisfy F >= 1 and W >= 2, got {param!r}")
     if not isinstance(similarity, str) or similarity not in _SIMILARITIES:
         raise ValueError(f"param similarity must be 'pearson' or 'ccc', got {param!r}")
-    if kwargs.get('minutes'):
-        raise ValueError('This factor requires daily data; timing configures intraday timing')
-    if '收盘价_复权' not in df:
-        raise ValueError('Missing 收盘价_复权; unadjusted prices cannot replace it')
+    if kwargs.get("minutes"):
+        raise ValueError(
+            "This factor requires daily data; timing configures intraday timing"
+        )
+    if "收盘价_复权" not in df:
+        raise ValueError("Missing 收盘价_复权; unadjusted prices cannot replace it")
 
-    price = pd.to_numeric(df['收盘价_复权'], errors='coerce')
-    price = price.where(price.gt(0) & price.lt(float('inf')))
+    price = pd.to_numeric(df["收盘价_复权"], errors="coerce")
+    price = price.where(price.gt(0) & price.lt(float("inf")))
     daily_return = price.pct_change(fill_method=None)
-    daily_return = daily_return.where(daily_return.abs().lt(float('inf')))
-    if '是否交易' in df:
-        daily_return = daily_return.where(df['是否交易'].eq(1))
+    daily_return = daily_return.where(daily_return.abs().lt(float("inf")))
+    if "是否交易" in df:
+        daily_return = daily_return.where(df["是否交易"].eq(1))
 
     return pd.DataFrame({col_name: daily_return}, index=df.index)

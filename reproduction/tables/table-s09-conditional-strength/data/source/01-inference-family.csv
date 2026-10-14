@@ -1,0 +1,7 @@
+id,endpoint,block_length,status,reason,estimate,p_raw,p_for_correction,lower95,upper95,n_dates,effective_block_screen,unit,ci_type,p_holm6,correction_placeholder_adjusted
+E1_all_dates_L20,all_dates,20,estimated,,-0.022480973556119204,0.6210637893621064,0.6210637893621064,-0.11305848094157031,0.06596080528886525,1611,80.0,percentage_points_per_H3,unadjusted_pointwise95_percentile,1.0,
+E1_all_dates_L60,all_dates,60,estimated,,-0.022480973556119204,0.6357636423635764,0.6357636423635764,-0.11646281948204662,0.07003273219658536,1611,26.0,percentage_points_per_H3,unadjusted_pointwise95_percentile,1.0,
+E1_stress_dates_L20,stress_dates,20,not_estimable,"174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",,,1.0,,,174,,,,,1.0
+E1_stress_dates_L60,stress_dates,60,not_estimable,"174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",,,1.0,,,174,,,,,1.0
+E1_stress_minus_nonstress_L20,stress_minus_nonstress,20,not_estimable,"174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",,,1.0,,,174,,,,,1.0
+E1_stress_minus_nonstress_L60,stress_minus_nonstress,60,not_estimable,"174 stress dates / 5 years, but 17 occupied fixed20 blocks <20; do not relax",,,1.0,,,174,,,,,1.0

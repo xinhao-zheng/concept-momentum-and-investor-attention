@@ -1,0 +1,5 @@
+﻿top_n,missing,B,extreme_count,p_raw,tail_probability_low,tail_probability_high,p_holm96,note
+20,complete,10000,5,0.0005999400059994,0.00016236793419884248,0.0011664442090665891,0.0545945405459454,Monte Carlo tail-probability interval; not a new effect CI or corrected decision
+20,zero,10000,5,0.0005999400059994,0.00016236793419884248,0.0011664442090665891,0.0545945405459454,Monte Carlo tail-probability interval; not a new effect CI or corrected decision
+100,complete,10000,0,9.999000099990002e-05,0.0,0.0003688199146187622,0.0095990400959904,Monte Carlo tail-probability interval; not a new effect CI or corrected decision
+100,zero,10000,0,9.999000099990002e-05,0.0,0.0003688199146187622,0.0095990400959904,Monte Carlo tail-probability interval; not a new effect CI or corrected decision

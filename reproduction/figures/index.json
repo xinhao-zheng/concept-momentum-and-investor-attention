@@ -1,0 +1,1297 @@
+{
+  "figure_count": 21,
+  "numbering_authority": "Accompanying complete manuscript",
+  "scope": "Published figures, aggregate inputs and calculation modules",
+  "figures": [
+    {
+      "id": "fig-01",
+      "directory": "figures/fig-01-research-design",
+      "display_label": "Figure 1",
+      "source_key": "fig_01",
+      "renderer": "fig01",
+      "caption_en": "Concept-based selection, information timing and the attention hypothesis. a, C1–C3 and S1–S5 illustrate overlapping concepts and their member stocks. F compounds daily peer returns over $L_F$ days; W correlates stock and peer daily returns over $L_W$ days. Peer portfolios exclude the focal stock. Normalized ranks across membership records are multiplied within each record and averaged within each stock to obtain FW; the Top N list is then frozen. b, The main γ design uses membership records dated no later than the preceding market day and prices through the signal-day close. Complete H-day returns run from adjusted open t + 1 to adjusted open t + H + 1, with endpoints no later than 31 August 2026. c, Dashed arrows denote the proposed attention mechanism. Recorded total popularity T, watchlist popularity S and attention stickiness K are analysed separately and do not enter the price-based score. Solid arrows in a–b denote computation or chronology.",
+      "caption_zh": "概念选股、信息时序与注意力假说。a，C1–C3与S1–S5示意交叠概念及其成员股票。F复合$L_F$日的同伴日收益；W为$L_W$日内股票与同伴日收益的相关性。同伴组合剔除目标股票。在成员记录间分别计算标准化秩，逐条记录相乘，再在股票内部取均值得到FW，随后固定前N只股票名单。b，主γ设计使用记录日期不晚于前一市场交易日的成员信息，以及截至信号日收盘的价格。完整H日收益从t+1复权开盘至t+H+1复权开盘，端点不晚于2026年8月31日。c，虚线箭头表示待检验的注意力机制。记录的总人气T、自选人气S与注意力黏性K另行分析，不进入价格评分。a–b中的实线箭头表示计算或时间顺序。",
+      "experiment_modules": [
+        "schematic"
+      ],
+      "data": [],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig1.pdf",
+          "sha256": "c42fc359a6d144990c893357a01f3c963cd0039f86ad95089bae0eb204a36aab",
+          "bytes": 66385
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig1.svg",
+          "sha256": "8a84e555b976fc395e3b97a164ee92ce66c38467f2a74aabe14c9cd701c4f4e6",
+          "bytes": 30991
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig1.png",
+          "sha256": "d0c403d1ab1bae086465f6f63104a9e0f5d3c9f51c2cc2a053eb46f5ef29dab1",
+          "bytes": 354072
+        }
+      ],
+      "reference_plot_data": [],
+      "output_basename": "Fig1"
+    },
+    {
+      "id": "fig-02",
+      "directory": "figures/fig-02-parameter-breadth",
+      "display_label": "Figure 2",
+      "source_key": "fig_02",
+      "renderer": "fig02",
+      "caption_en": "Short-horizon parameter breadth under lagged membership. Six F/W pairs (3/5, 3/20, 5/10, 10/20, 20/10 and 20/50) are evaluated at H=3,5,10 and N=5,10,20,30,50,100. a, Complete-H Top20 FW-minus-pool gross spreads in percentage points, on a white-to-deep-blue sequential scale fixed from 0 to 0.8 pp; shading encodes magnitude. b, Each number identifies the direct H3/Top20 comparison for its F/W row; stars denote Holm540 P<0.05. c,d, F5/W10 is the solid blue reference line; grey envelopes are the minimum–maximum over all six settings, not confidence intervals. Category colours in the line panels identify series, not numerical sign. Each F/W setting has its own historically eligible pool; envelopes include eligibility changes. All 108 pool-relative means are positive and 65 pass Holm540 correction. Inference uses 100,000 paired circular 20-date-block replicates. Observations end on 31 August 2026. Values are complete-H gross differences, not daily returns or net portfolio performance.",
+      "caption_zh": "滞后成员关系下的短持有期参数覆盖。六组 F/W 参数对（3/5、3/20、5/10、10/20、20/10 和 20/50）在 H=3,5,10 和 N=5,10,20,30,50,100 下评估。a，完整 H 期的 Top20 FW 减样本池毛收益差，以百分点表示；白色至深蓝色的顺序色阶固定为 0 至 0.8 个百分点，深浅表示大小。b，每个数值表示对应 F/W 行在 H3/Top20 下的直接比较；星号表示 Holm540 P<0.05。c、d，F5/W10 为深钢蓝色实线参照；灰色包络为全部六种设置的最小值至最大值范围，并非置信区间。曲线面板的类别颜色标识序列，不表示数值正负。每种 F/W 设置有各自的历史合格样本池；包络也包含入池资格变化。全部 108 项相对样本池的均值均为正，其中 65 项通过 Holm540 校正。观测截至 2026 年 8 月 31 日。推断使用 100,000 次配对循环重抽样，每个区块含 20 个日期。数值为完整 H 期毛收益差，并非日收益或净组合绩效。",
+      "experiment_modules": [
+        "D1"
+      ],
+      "data": [
+        {
+          "key": "parameter",
+          "file": "data/parameter.csv",
+          "sha256": "6e96e821629fe0823ff3c6cf3a8d1ca08721dd50bce039fcdde4067245589006",
+          "bytes": 170682,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "6e96e821629fe0823ff3c6cf3a8d1ca08721dd50bce039fcdde4067245589006"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig2.pdf",
+          "sha256": "e7ae11d0861b828182e44599c563f19a00eec3368dd4146a88052edfe50c5f79",
+          "bytes": 64379
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig2.svg",
+          "sha256": "f5407055f645b6ad3f945e7351e055d017b70260e2914aea34bbd59c041195c1",
+          "bytes": 96126
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig2.png",
+          "sha256": "31061de62e1302925b84e43ef3dbad6cb9633b6cbf7e661513c30cf66efe89d6",
+          "bytes": 489441
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_02_panel_b.csv",
+          "sha256": "b6da0f459e6e7c84fe6bc48948371cdb21c868ebf9e83cb2edff443c7f47c204",
+          "bytes": 1171
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_02_plot_data.csv",
+          "sha256": "739d3408f90364413a863e1488002a629b0d3c71b506c97052e057152840aaac",
+          "bytes": 88259
+        }
+      ],
+      "output_basename": "Fig2"
+    },
+    {
+      "id": "fig-03",
+      "directory": "figures/fig-03-matched-controls",
+      "display_label": "Figure 3",
+      "source_key": "fig_03",
+      "renderer": "fig03",
+      "caption_en": "Gross spreads against industry- and size-matched controls. a, Mean paired H3 gross-return differences for Top5, Top10 and Top20; whiskers are pointwise 95% time-series confidence intervals from a circular 20-day moving-block bootstrap with 10,000 replicates. The nine comparisons form one Holm family. b, Kernel-density violins show the full-history actual-minus-random mean gap across all 1,000 saved industry-by-size-matched conditional portfolio draws per selection size, using Scott bandwidth. Diamonds mark medians and inner whiskers mark empirical 5th–95th percentiles. Violin widths are normalized within each selection size and do not encode sample size. These are conditional reference distributions, not time confidence intervals. Joint-matched samples contain 2,348/2,346/2,346 paired dates for Top5/10/20. Actual lists were frozen before outcomes; random controls preserve each list’s group counts and may include selected stocks. Differences are gross returns, not risk-adjusted alpha.",
+      "caption_zh": "相对行业与市值匹配对照的毛收益差。a，Top5、Top10 和 Top20 的平均配对 H3 毛收益差；误差线为基于 10,000 次循环 20 日移动区块自助抽样的逐点 95% 时间序列置信区间。九项比较构成一个 Holm 检验族。b，核密度小提琴图展示每种选股规模下，全部 1,000 次已保存的行业—市值匹配条件组合抽样中，全历史实际组合减随机组合的平均差，使用 Scott 带宽。菱形表示中位数，内部误差线表示经验第 5–95 百分位。小提琴宽度在每种选股规模内归一化，不表示样本量。这些是条件参照分布，并非时间置信区间。Top5/10/20 的联合匹配样本分别包含 2,348/2,346/2,346 个配对日期。实际名单在连接结果前冻结；随机对照保持各名单的分组数量，并可能包含实际入选股票。差值为毛收益，并非风险调整后的阿尔法。",
+      "experiment_modules": [
+        "D4"
+      ],
+      "data": [
+        {
+          "key": "draws",
+          "file": "data/draws.csv",
+          "sha256": "1d6632349fc9e9eb5c44a4ebed90fce2cd60dd6bce2a1f6d86cf4c25dfa95a70",
+          "bytes": 776455,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "1d6632349fc9e9eb5c44a4ebed90fce2cd60dd6bce2a1f6d86cf4c25dfa95a70"
+        },
+        {
+          "key": "matched",
+          "file": "data/matched.csv",
+          "sha256": "f8ad2911004ccb98f36d78bd31e9c7bd5f6982628e98b3778aba8c5e7a4da0ac",
+          "bytes": 5310,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "f8ad2911004ccb98f36d78bd31e9c7bd5f6982628e98b3778aba8c5e7a4da0ac"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig3.pdf",
+          "sha256": "2a68d8ec75f9c74bc5952737ed5f4aaaeff19838d295a748e05c851431bca1c2",
+          "bytes": 58532
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig3.svg",
+          "sha256": "86e3340930d0d1ea510122c61ffc84f36d056fd341e8d5142f0b0dd6f897e776",
+          "bytes": 61595
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig3.png",
+          "sha256": "2fda7c26951338acb1cb7d362998d5308816e84d546622376a18c9cb852562a4",
+          "bytes": 248576
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_03_conditional_quantiles.csv",
+          "sha256": "a82a31ad855fdda3fa84b46c6960340fddb5e7ba34316e2a8730b85af0b5fd55",
+          "bytes": 266
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_03_plot_data.csv",
+          "sha256": "350c23033482f74bcc02a30e5e0f69fc23d94033cf55250ea16719f06dfa6da4",
+          "bytes": 5368
+        }
+      ],
+      "output_basename": "Fig3"
+    },
+    {
+      "id": "fig-04",
+      "directory": "figures/fig-04-component-and-aggregation-contrasts",
+      "display_label": "Figure 4",
+      "source_key": "fig_04",
+      "renderer": "fig04",
+      "caption_en": "Direct contrasts and the limits of the aggregation formula. a, FW minus either individual component. b, FW minus the arithmetic mean A and product of means P, displayed on a separately labelled tighter x scale. Points are paired H3 mean gross-return differences; whiskers are pointwise 95% intervals from 100,000 circular 20-date-block resamples. The component and same-information comparisons belong to separate 960- and 192-test families, and the intervals are not simultaneous. a/b use 2,349 mature signal dates under the market-day γ, F5/W10, H3, Top20 reference, with every endpoint on or before 31 August 2026. c, Mean Top20 selection overlap across all 2,353 frozen-list dates. d, Descriptive pool-relative gross means for FW, F-only and W-only over 2,349 mature dates; no uncertainty intervals are shown.",
+      "caption_zh": "直接比较与聚合公式的边界。a，FW 减去各单独分量。b，FW 减算术平均 A 和均值乘积 P，使用单独标明的更窄横轴尺度。点表示配对 H3 平均毛收益差；误差线为 100,000 次循环 20 日期区块重抽样得到的逐点 95% 区间。分量比较与同信息比较分别属于 960 项和 192 项检验族，区间并非同时区间。a/b 在市场交易日 γ、F5/W10、H3、Top20 参照下使用 2,349 个成熟信号日期，全部端点不晚于 2026 年 8 月 31 日。c，全部 2,353 个冻结名单日期上的 Top20 平均选股重合率。d，FW、F-only 和 W-only 在 2,349 个成熟日期上相对样本池的描述性毛收益均值，不显示不确定性区间。",
+      "experiment_modules": [
+        "S2",
+        "AGG"
+      ],
+      "data": [
+        {
+          "key": "aggregation",
+          "file": "data/aggregation.csv",
+          "sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5",
+          "bytes": 38818,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5"
+        },
+        {
+          "key": "component",
+          "file": "data/component.csv",
+          "sha256": "e07a424cf92d8f3cf3ca2029dfd91ef68760df17f78599e2408389a6014df4c6",
+          "bytes": 623745,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "e07a424cf92d8f3cf3ca2029dfd91ef68760df17f78599e2408389a6014df4c6"
+        },
+        {
+          "key": "component_levels",
+          "file": "data/component_levels.csv",
+          "sha256": "bb3a77a6099413a7498aefec8592df4382875652be9e0cda6727157680216fe3",
+          "bytes": 262264,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "bb3a77a6099413a7498aefec8592df4382875652be9e0cda6727157680216fe3"
+        },
+        {
+          "key": "overlap",
+          "file": "data/overlap.csv",
+          "sha256": "5cfde718cb96ab3759f7470926104f1ca543ddaf28b6d72ee40d5febb8f5aabb",
+          "bytes": 1055,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "5cfde718cb96ab3759f7470926104f1ca543ddaf28b6d72ee40d5febb8f5aabb"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig4.pdf",
+          "sha256": "6109314efca466954be32141c80a684fa8d3332d5925e0fa60f84980cb462ac7",
+          "bytes": 50587
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig4.svg",
+          "sha256": "15a3dea9f0773ec75fe60979112b5ea6125e4a01f0e34060b5048cc348f045d3",
+          "bytes": 28728
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig4.png",
+          "sha256": "f14f59fa570ab8e22758fece529f69c0a19c6b53d048d22fa3dae573840d3936",
+          "bytes": 262781
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_04_levels.csv",
+          "sha256": "0aea85fc6000c3865758368851dfe07cd0331cd4df23b0ab827659bfde784528",
+          "bytes": 1054
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_04_plot_data.csv",
+          "sha256": "b90c1df83ade6220f7abd8bd5dffdad66c7d14da3c85667541a9db6b05c264f6",
+          "bytes": 322
+        }
+      ],
+      "output_basename": "Fig4"
+    },
+    {
+      "id": "fig-05",
+      "directory": "figures/fig-05-conditional-prediction-gains",
+      "display_label": "Figure 5",
+      "source_key": "fig_05",
+      "renderer": "fig05",
+      "caption_en": "Conditional gains depend on the prediction task. Enhanced minus conventional versions of the same fixed model: a, full-pool rank correlation; b, within-industry rank correlation; c, Top20 complete-H gross return; d, Top100 complete-H gross return. Circles and squares identify ridge regression and boosted trees. Pointwise 95% intervals are drawn as vertical whiskers at supported horizons using the saved 10,000 circular block-bootstrap results with block length max(20,H); intervals are not simultaneous and do not encode the decisions from the 96-test Holm family. Small horizontal offsets separate models at each categorical horizon. Open H120/H250 points and dashed continuations retain results with fewer than 20 nominal blocks for descriptive presentation. Return units are percentage points; IC panels are correlation units. Under this original 10,000-replicate analysis, no primary Top20 or raw full-pool IC increment passes the family correction. Supplementary Section S8 reports the subsequent simulation-precision sensitivity.",
+      "caption_zh": "条件增益取决于预测任务。同一固定模型的增强版减常规版：a，全样本池秩相关；b，行业内秩相关；c，Top20 完整 H 期毛收益；d，Top100 完整 H 期毛收益。圆点和方点分别标识岭回归与提升树。在满足样本支持的持有期，竖向误差线展示保存的 10,000 次循环区块自助抽样结果所给出的逐点 95% 区间，区块长度为 max(20,H)；区间并非同时区间，也不表示 96 项 Holm 检验族的判断。每个类别持有期内，两个模型在水平方向轻微错开。H120/H250 的空心点与虚线延伸保留少于 20 个名义区块的结果，作描述性展示。收益单位为百分点；IC 面板单位为相关系数。在这一原始10,000次抽样分析中，主要Top20及原始全样本池IC增量均未通过检验族校正。补充第S8节报告后续模拟精度敏感性。",
+      "experiment_modules": [
+        "B2"
+      ],
+      "data": [
+        {
+          "key": "increment",
+          "file": "data/increment.csv",
+          "sha256": "bb7441e7ca6dc568900443b5b7f0babb569ba2ceee11a72d1bd9177ff725e172",
+          "bytes": 15602,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "bb7441e7ca6dc568900443b5b7f0babb569ba2ceee11a72d1bd9177ff725e172"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig5.pdf",
+          "sha256": "4b417349880289cf5952d8da429d72b69131aca52a770008d9437289d64796e7",
+          "bytes": 52993
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig5.svg",
+          "sha256": "cede0f15e516f0c96532133f1442b74b6f0b010b278447f65fc9cee52d48c315",
+          "bytes": 56222
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig5.png",
+          "sha256": "286e60c5e7dec1d1abe75cdb376b85cf53b8eed16057cef700b46eceb3dc6538",
+          "bytes": 358297
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_05_plot_data.csv",
+          "sha256": "f114645c268d58b2c0c48e2e8401edbe7749f2b718dc1e1fafa961eb6a8d327d",
+          "bytes": 10516
+        }
+      ],
+      "output_basename": "Fig5"
+    },
+    {
+      "id": "fig-06",
+      "directory": "figures/fig-06-attention-and-trading",
+      "display_label": "Figure 6",
+      "source_key": "fig_06",
+      "renderer": "fig06",
+      "caption_en": "Attention-state persistence and trading participation. a–c show future-endpoint/current-response coefficient ratios for T, S and K on the same horizon-specific support. They are coefficient ratios, not user-retention rates or tests that the ratio equals one. Filled markers identify supported horizons; open H250 points are descriptive under the specified reporting rule. Negative T endpoint coefficients at H1/H3 do not pass Holm24; the positive H120 endpoint does. Primary endpoint inference uses 1,000 circular 120-date-block bootstrap draws and Holm correction across 24 declared cells. d–f show standardized one-way attention-to-future coefficients, with holding horizons in rows and returns, trading value and turnover in columns. Numbers and the colour bar use units of $10^{-3}$, with an extra decimal for small values. Outlines identify 8 of 72 combinations meeting the joint bidirectional, temporal-asymmetry and negative-control requirements; they do not denote significance of the displayed coefficient alone. 0 of 24 return combinations meets the joint criterion, while 3 one-way return paths pass the complete-family max-|t| test. All source observations and prescribed endpoints are no later than 31 August 2026; the endpoint analysis uses t+H+1 attention levels, while the participation analysis uses its t+H trading endpoints. Reverse-direction coefficients remain in the source tables. Blue denotes negative values, white zero and muted bronze positive values; slate lines identify attention quantities.",
+      "caption_zh": "注意力状态的持续性与交易参与。a–c，在各持有期相同样本上，显示T、S、K的未来端点系数与当期响应系数之比。这些是回归系数比值，不是用户留存率，也不构成比值等于1的检验。实心点标识具有样本支持的持有期；按照既定报告规则，H250空心点作描述性展示。T在H1/H3的负端点系数未通过Holm24校正，H120的正端点系数通过校正。端点主推断采用1,000次循环区块自助重抽样，每个区块含120个日期，并在24个声明单元中进行Holm校正。d–f，显示注意力到未来收益、成交额和换手率的单向标准化系数。各面板以持有期H为行，以未来收益、成交额和换手率为列。数值与色条以$10^{-3}$为单位，较小数值多保留一位小数。边框标识72种组合中满足双向关联、时间不对称和负对照联合要求的8种组合，并非仅表示格内单向系数显著。24种收益组合均未满足联合判据；其中3条单向收益路径通过完整家族的max-|t|检验。全部源观察及规定端点均不晚于2026年8月31日；端点分析使用t+H+1的注意力水平，交易参与分析使用t+H的交易端点。反向系数保留在源表中。蓝色表示负值、白色表示零、低彩度青铜色表示正值；石板灰蓝曲线标识注意力量。",
+      "experiment_modules": [
+        "M3_CF1",
+        "M3_CF3"
+      ],
+      "data": [
+        {
+          "key": "attention_endpoint",
+          "file": "data/attention_endpoint.csv",
+          "sha256": "bc225e07bedf4834f51176f40a41ba99db336323fc2e7f183e1d7e30a1ea8e4d",
+          "bytes": 12568,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "bc225e07bedf4834f51176f40a41ba99db336323fc2e7f183e1d7e30a1ea8e4d"
+        },
+        {
+          "key": "attention_feedback",
+          "file": "data/attention_feedback.csv",
+          "sha256": "7309e3b96301d2239dee2272bf47205b6216f2e498b104b5e556209b462715b9",
+          "bytes": 11741,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "7309e3b96301d2239dee2272bf47205b6216f2e498b104b5e556209b462715b9"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig6.pdf",
+          "sha256": "9f0676b4f446f1ef14ea2ed7c858caae341cffa17a81f7702f4f14b6c8ed0fed",
+          "bytes": 80265
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig6.svg",
+          "sha256": "114915e742e3d3836e314312c27f9088a6c1ad25d1facd0842a2f45d84bf7753",
+          "bytes": 189995
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig6.png",
+          "sha256": "88b00783c8b11ed26b24c53f7605c47b4e6e4d878a22681efb3cb1587ad57edd",
+          "bytes": 399829
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_06_endpoint_source.csv",
+          "sha256": "3209b37f17aeff815f5a1f91f88528a66c03a9caf030eb21346be59d190bce5d",
+          "bytes": 12736
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_06_plot_data.csv",
+          "sha256": "66307de91c92a06134d41ba4223f6c355bf5da9a6c3b5116637b6fa68f125d76",
+          "bytes": 5266
+        }
+      ],
+      "output_basename": "Fig6"
+    },
+    {
+      "id": "fig-07",
+      "directory": "figures/fig-07-comovement-and-popularity",
+      "display_label": "Figure 7",
+      "source_key": "fig_07",
+      "renderer": "fig07",
+      "caption_en": "Concept comovement before and after popularity changes. a shows equal-date mean correlations of a focal stock with its real concept-peer portfolio and the average of 50 stratified pseudo networks over the 20 trading days before attention observation and after the signal. Both periods use the same 123,530 stock-days across 202 signal dates. Membership precedes attention observation and focal stocks are excluded; disjoint reference stocks supply industry benchmarks. b–d show slopes per ten-percentage-point increase in the cross-sectional percentile rank of T innovations, five-calendar-day S changes or weekday-standardized K (Supplementary Section S12) for past real-minus-pseudo comovement, future real-minus-pseudo comovement, and their paired difference. Size, degree and liquidity matching fails on all 202 dates, so formal inference is withheld and markers remain open. Whiskers are pointwise diagnostic 95% intervals from 2,000 shared circular block-bootstrap draws of eight sampled dates (40–45 market days). One past-window K comparison has diagnostic Holm9 P=0.0270; it does not pass the separate matching requirement. The future-window and future-minus-past comparisons do not pass diagnostic Holm9. All nine hypotheses remain in the correction family. The last sampled signal is 30 July 2026 and its full 20-day outcome ends on 27 August, within the 31 August observation cutoff.",
+      "caption_zh": "热度变化前后的概念共动。a，在注意力观察之前及信号之后各20个交易日内，计算目标股票与真实概念同伴组合、以及50个分层伪网络平均组合的相关系数，再按日期等权平均。两个时期使用相同的123,530个股票—日观察，覆盖202个信号日期。成员时点早于注意力观察，概念收益剔除目标股票；行业基准由互不重叠的参考股票提供。b–d，显示T创新、S五个自然日变化或K同星期标准化指标（补充第S12节）的横截面百分位秩提高10个百分点时，过去真实减伪网络共动、未来真实减伪网络共动及二者配对差的斜率。全部202个日期的规模、连接度与流动性匹配均不合格，因此不作正式推断，点均保持空心。误差线是逐点诊断性95%区间，来自2,000次共享循环区块自助重抽样，每个区块含8个抽样日期（约40–45个市场交易日）。K的过去窗口对照有一项诊断性Holm9 P=0.0270，但未通过独立的匹配要求。未来窗口及未来减过去的对照均未通过诊断性Holm9。全部9项假设保留在校正家族中。最后一个抽样信号日为2026年7月30日，其完整20日结果截至8月27日，未超过8月31日的观察上限。",
+      "experiment_modules": [
+        "D2"
+      ],
+      "data": [
+        {
+          "key": "bridge",
+          "file": "data/bridge.csv",
+          "sha256": "fbd16eb1e223b9e2ab38935a98745e76a26ed7d1f4af14e9a5c8c8eab440725b",
+          "bytes": 2573,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "fbd16eb1e223b9e2ab38935a98745e76a26ed7d1f4af14e9a5c8c8eab440725b"
+        },
+        {
+          "key": "context",
+          "file": "data/context.csv",
+          "sha256": "41069545aee59ba8a4f249508653943af801dee9a5fb10039f7f42e1763e5859",
+          "bytes": 522,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "41069545aee59ba8a4f249508653943af801dee9a5fb10039f7f42e1763e5859"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig7.pdf",
+          "sha256": "6b2158a1ad55b9d87cd0109722d0e8477459ad5f3e50df298e9c384af9b6333e",
+          "bytes": 52066
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig7.svg",
+          "sha256": "500f4e91b9cd2768d81f03d6f1c18a54b4674c6795616a0eab62319b9e1e3ca2",
+          "bytes": 40336
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig7.png",
+          "sha256": "8e3a4f49720db9eb5cec8060c5fdeef0fe670007a20016b9a3b8faf9929d828f",
+          "bytes": 220164
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_07_context.csv",
+          "sha256": "696329de385bffe97e7dc3a1dd383c3494652480747a0ae23616cbf68f0c887a",
+          "bytes": 114
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_07_plot_data.csv",
+          "sha256": "cfb1c23c748ba444663b069426789ad6f6a3c15fe0e63a618a456076f3349fc5",
+          "bytes": 2577
+        }
+      ],
+      "output_basename": "Fig7"
+    },
+    {
+      "id": "fig-08",
+      "directory": "figures/fig-08-account-simulations",
+      "display_label": "Figure 8",
+      "source_key": "fig_08",
+      "renderer": "fig08",
+      "caption_en": "Retrospective account simulations and market-breadth timing. a, Net asset values (log scale) for the fixed Top10, three-day, F5/W10, Pearson configuration. No timing, one-level breadth timing and two-level breadth timing yield annual compound returns of 15.0%, 21.9% and 29.8%, respectively. The single underwater panel shows the two-level account; all daily observations are retained. The complete three-account drawdown comparison is in Supplementary Fig. S13; panel b retains maximum drawdowns for all account simulations. Wealth and CSI 300/CSI 1000 price-index curves begin at one on 1 December 2016 and end on 31 August 2026. b, Compound annual return and maximum drawdown for all 48 account simulations. Circles, squares and triangles denote no timing, one-level breadth timing and two-level breadth timing; filled markers denote Pearson and open markers concordance correlation. Timing colors and symbols follow panel a. c, Annual-return differences between configurations differing in one design element; each dot is a matched pair and each vertical bar is the median across pairs. Accounts start with CNY 30 million and simulate execution at 09:55, using rankings through the preceding close and breadth overlays evaluated at 09:45. Returns include a 1.2-basis-point commission and 0.1% stamp duty on sales; slippage and market impact are not modeled. Index returns exclude dividends (Methods and Supplementary Section S17).",
+      "caption_zh": "回溯账户模拟与市场宽度择时。a，固定Top10配置（三日持有、F5/W10和Pearson同步性）的净值（上部，对数刻度）分别展示无择时、一级宽度择时和两级宽度择时；三个配置的年化复合收益率依次为15.0%、21.9%和29.8%。下方单条回撤展示同一两级择时账户，保留全部日度观测；三个账户的完整回撤比较见补充图S13，b保留全部账户模拟的最大回撤。上部同时展示沪深300与中证1000价格指数。上部净值与指数曲线均以2016年12月1日的1为起点，结束于2026年8月31日。b，全部48组账户模拟的年化复合收益率与最大回撤。圆形、方形和三角形依次表示无择时、一级择时和两级择时；实心表示Pearson，空心表示一致性相关；择时颜色与形状沿用a。c，仅有一个设计要素不同的配置之间的年化复合收益率差；每个圆点表示一个配对，竖线表示各组配对的中位数。账户初始资金为3,000万元，在09:55模拟执行，排名使用截至前一交易日收盘的信息，宽度择时在09:45计算。收益已计入1.2个基点佣金和0.1%卖出印花税，未建模滑点和市场冲击；指数收益不含分红。（方法及补充材料第S17节）。",
+      "experiment_modules": [
+        "AccountMetrics"
+      ],
+      "data": [
+        {
+          "key": "bt_curves",
+          "file": "data/bt_curves.csv",
+          "sha256": "009aac3d5b69ee31b41cf5000fbea12b69c7b0ebd84b57f14345cd098bc5a58e",
+          "bytes": 1321521,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "009aac3d5b69ee31b41cf5000fbea12b69c7b0ebd84b57f14345cd098bc5a58e"
+        },
+        {
+          "key": "bt_indices",
+          "file": "data/bt_indices.csv",
+          "sha256": "cea4ce50a160370e801f04a1509411df04fabd8b7fdce7f03c04f3d4d009ae9c",
+          "bytes": 478,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "cea4ce50a160370e801f04a1509411df04fabd8b7fdce7f03c04f3d4d009ae9c"
+        },
+        {
+          "key": "bt_pairs",
+          "file": "data/bt_pairs.csv",
+          "sha256": "87509736864310cf9e7cd0683ad65b8aa927246b517d25a4790a7c681305988a",
+          "bytes": 34443,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "87509736864310cf9e7cd0683ad65b8aa927246b517d25a4790a7c681305988a"
+        },
+        {
+          "key": "bt_summary",
+          "file": "data/bt_summary.csv",
+          "sha256": "8ba96e5eac8736d7f4ce418646fcb9a58a0290b2c2fb21df838383184bbbf70e",
+          "bytes": 23666,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "8ba96e5eac8736d7f4ce418646fcb9a58a0290b2c2fb21df838383184bbbf70e"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/Fig8.pdf",
+          "sha256": "90fea09a42ed2845a57ac760a655a8dce8f9916b0d30f4a7ed5fa8458ea07281",
+          "bytes": 196951
+        },
+        {
+          "format": "svg",
+          "file": "figures/Fig8.svg",
+          "sha256": "0923c004f18a575000e34e161da7d43e6b72206c935f21c91435f4f5730da9c0",
+          "bytes": 441508
+        },
+        {
+          "format": "png",
+          "file": "figures/Fig8.png",
+          "sha256": "2f70e9b2dc594c739d2417cd28d86b9d83ec21110a604b5be43ef10434afe030",
+          "bytes": 801145
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_08_curves.csv",
+          "sha256": "4dedcdf823fd52e72f248d920128cd3765b3f40ec762fc7b460df98d5dc36487",
+          "bytes": 1342511
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_08_displayed_configurations.csv",
+          "sha256": "8ab174f3bf8f041e83a218d45b0aaf6d4112639513e469aeec39c350822a82e4",
+          "bytes": 1976
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_08_displayed_curves.csv",
+          "sha256": "5dfdda162f68be22d17675474dfae5fc3dd9b25811f009ff726548bba86ff6c0",
+          "bytes": 746892
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_08_paired_differences.csv",
+          "sha256": "0ebbf9c4a398978e4810771c53081bd5f730f666e04dbbd0e67afe25f19f75e9",
+          "bytes": 15647
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_08_plot_data.csv",
+          "sha256": "1022d45c2d5eb07a86664223017463042d4e863630cf053ad9286b8c1e61ed6c",
+          "bytes": 24049
+        }
+      ],
+      "output_basename": "Fig8"
+    },
+    {
+      "id": "fig-s01",
+      "directory": "figures/fig-s01-return-association-horizons",
+      "display_label": "Supplementary Figure S1",
+      "source_key": "fig_s01",
+      "renderer": "s09",
+      "caption_en": "Concept-level return associations across formation and holding horizons. Columns show α, β and γ. Formation returns extend through t in all three designs. At each formation day u, γ uses membership dated no later than the preceding market day u−1 and stock returns observed on u. In α, the outcome compounds daily concept returns over t+1 to t+H, with memberships updated each day. In β and γ, the outcome averages individual-stock open(t+1)-to-open(t+H+1) returns in baskets fixed using membership dated no later than t and t−1, respectively. Thus α versus β changes portfolio construction as well as the return clock. Each design uses its own valid concepts and mature dates, with at least 20 concepts per daily correlation. All observations and endpoints are no later than 31 August 2026. Rows display equal-date means of daily Spearman IC and descriptively scaled IC-z. Symmetric scales are shared across columns: blue denotes negative values, white zero and muted bronze positive values. A short minus mark identifies every strictly negative cell independently of colour. Supplementary Section S5 defines the scaling; Supplementary Data S9 supplies all 486 signed values, date support and common-support and outcome-construction sensitivities.",
+      "caption_zh": "不同形成期与持有期下的概念收益关联。三列依次为α、β和γ。三种设计的形成收益均使用至t。在形成期内的每个交易日u，γ使用记录日期不晚于前一市场交易日u−1的成员关系，以及u日观测的股票收益。α的结果将t+1至t+H的每日概念收益复合，各日成员关系随快照更新。β和γ分别使用不晚于t与t−1的成员关系固定篮子，对篮子内个股open(t+1)至open(t+H+1)的收益取均值。因此，α与β的比较同时改变组合构造和收益时钟。各设计使用自身有效概念与成熟日期，每日相关至少含20个概念。全部观察和端点均不晚于2026年8月31日。两行分别显示每日Spearman IC及描述性缩放IC-z的日期等权均值。各列共用对称色阶：蓝色表示负值、白色表示零、低彩度青铜色表示正值。严格负值单元格以短横线辅助标识，使灰度打印也能区分数值方向。补充材料S5节定义缩放方法；补充数据S9提供全部486个带正负号数值、日期支持、共同样本及结果构造敏感性。",
+      "experiment_modules": [
+        "S9"
+      ],
+      "data": [
+        {
+          "key": "legacy_ic",
+          "file": "data/legacy_ic.csv",
+          "sha256": "c411c97f7dc617c31ed10d148795137423014377dab399efbe6be980914da2e9",
+          "bytes": 71238,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "c411c97f7dc617c31ed10d148795137423014377dab399efbe6be980914da2e9"
+        },
+        {
+          "key": "legacy_icz",
+          "file": "data/legacy_icz.csv",
+          "sha256": "962b482c661c75fa66aeb0ac69717ce0988fbb494dd75c69ecbdb871aa604de9",
+          "bytes": 75969,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "962b482c661c75fa66aeb0ac69717ce0988fbb494dd75c69ecbdb871aa604de9"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S1_Fig.pdf",
+          "sha256": "f6a56d86c97dc5db9a749155a580b107ed1234fcf0f1101ee92bfa568f417759",
+          "bytes": 115156
+        },
+        {
+          "format": "svg",
+          "file": "figures/S1_Fig.svg",
+          "sha256": "72ea72a6f1382b5b76a2820b6b8446df5a54e38e1f3e48dda77492828121878d",
+          "bytes": 412283
+        },
+        {
+          "format": "png",
+          "file": "figures/S1_Fig.png",
+          "sha256": "7075dd501f52e1d886402d6c574b584f5eb1cb8be8ef665a97a3952d85746483",
+          "bytes": 320398
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s01_nominal_icz.csv",
+          "sha256": "7148baa0e7ae7e8070616b4ea8b65b74f5b909e074d009da9d87e609bde19f0d",
+          "bytes": 76854
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_s01_raw_ic.csv",
+          "sha256": "63a4b83cbb974d1a0271682342d1a8e7085b4d4e71c252820686571045d42b12",
+          "bytes": 72127
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_s01_signed_value_check.csv",
+          "sha256": "aab72ebae0e19f064b5e65d880d63acd176aadf3cbfc1afda7f4dc23d65ab8b7",
+          "bytes": 38287
+        }
+      ],
+      "output_basename": "S1_Fig"
+    },
+    {
+      "id": "fig-s02",
+      "directory": "figures/fig-s02-annual-sensitivity",
+      "display_label": "Supplementary Figure S2",
+      "source_key": "fig_s02",
+      "renderer": "s11",
+      "caption_en": "Year-by-year historical sensitivity of the reference rule. a, F5/W10, Top20, H3 complete-case gross spreads over the historically eligible research pool. b, Spreads over industry-by-size-matched group means. Each point is an equal-date annual mean in percentage points, using each comparator’s paired support. The nine complete years 2017–2025 have 242–244 pool dates and 242–244 joint-matched dates per year. Pool means are positive in seven of nine complete years and joint-matched means in eight; both are negative in 2024. The 2026 open symbols represent 156 signal dates through 25 August, with outcomes mature by the 31 August 2026 observation cutoff, and are not full-year estimates. The seven-date 2016 fragment is omitted. No uncertainty or significance is assigned to the yearly means. These partitions reuse the historical research sample and measure temporal sensitivity, not independent validation.",
+      "caption_zh": "参考规则的逐年历史敏感性。a，F5/W10、Top20、H3 在完整观测下，相对历史合格研究样本池的毛收益差。b，相对行业—市值匹配组均值的收益差。各点为使用相应对照的配对样本支持、按日期等权计算的年度均值，单位为百分点。2017–2025 九个完整年度中，每年有 242–244 个样本池日期和 242–244 个联合匹配日期。相对样本池的均值在九个完整年度中有七年为正，相对联合匹配的均值有八年为正；两者在 2024 年均为负。2026 年空心符号表示截至 8 月 25 日的 156 个信号日期，结果在 2026 年 8 月 31 日观察截止日前成熟，并非全年估计。省略了仅含七个日期的 2016 年片段。年度均值不附不确定性或显著性判断。这些分段复用历史研究样本，度量时间敏感性，并非独立验证。",
+      "experiment_modules": [
+        "V_annual"
+      ],
+      "data": [
+        {
+          "key": "annual_stability",
+          "file": "data/annual_stability.csv",
+          "sha256": "4eacb1d04c453f5ed538321877066e726d573d4438375ae651e73728079402e6",
+          "bytes": 2424,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "4eacb1d04c453f5ed538321877066e726d573d4438375ae651e73728079402e6"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S2_Fig.pdf",
+          "sha256": "9165390b00e2205735b98633c68293b5bed82b690eaa57a39120c67205aaee28",
+          "bytes": 45529
+        },
+        {
+          "format": "svg",
+          "file": "figures/S2_Fig.svg",
+          "sha256": "ba66aed8ede33a86047e87d17c1c799dbb0e7c7361e67a01f021bb5df0a0eeb4",
+          "bytes": 24870
+        },
+        {
+          "format": "png",
+          "file": "figures/S2_Fig.png",
+          "sha256": "28d816a1b86783eb327de71a0b7ed2fc396117053ad9bb41f09398345d73a01d",
+          "bytes": 194249
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s02_plot_data.csv",
+          "sha256": "3250d05ba77ee34a13a27297de93637ebf94e08eb6c9fbf0ca3f0caa5031bf4d",
+          "bytes": 2254
+        }
+      ],
+      "output_basename": "S2_Fig"
+    },
+    {
+      "id": "fig-s03",
+      "directory": "figures/fig-s03-aggregation-horizon-grid",
+      "display_label": "Supplementary Figure S3",
+      "source_key": "fig_s03",
+      "renderer": "s01",
+      "caption_en": "Same-information aggregation across the horizon grid. a,b, Same-day membership β; c,d, lagged membership γ. Left and right panels compare FW with arithmetic mean A and product of means P, respectively; within each panel, rows are holding horizons and columns are Top5/20/100. All eight horizons and 96 complete-endpoint means are retained. Numbers are signed percentage-point differences, generally shown to three decimal places; near-zero nonzero values use an additional decimal place. All panels share one zero-centred scale with blue negative and muted bronze positive. One dotted outline per panel flags insufficient time support at H120/H250. These are means, not significance scores. Observed-endpoint and missing-as-zero variants together form the 192-test family; 144 tests meet temporal support and none passes Holm correction. Endpoints end on 31 August 2026. Saved pointwise intervals for every test remain in source data.",
+      "caption_zh": "持有期网格上的同信息聚合。a、b，当日成员关系 β；c、d，滞后成员关系 γ。左列与右列面板分别比较 FW 与算术平均 A、均值乘积 P；各面板内的行为持有期，列为 Top5/20/100。全部八个持有期和 96 个完整端点均值均予保留。数字为带符号的百分点差值，通常保留三位小数；接近零的非零均值增加一位小数，以保留其方向；全部面板共用以零为中心的色阶，蓝色表示负值，低彩度青铜色表示正值。每个面板的单一虚线轮廓标记 H120/H250 的时间样本支持不足。这些是均值，不是显著性评分。已观测端点和缺失填零变体共同组成 192 项检验族；144 项检验满足时间样本支持，没有检验通过 Holm 校正。端点截至 2026 年 8 月 31 日。每项检验保存的逐点区间均保留于源数据。",
+      "experiment_modules": [
+        "AGG"
+      ],
+      "data": [
+        {
+          "key": "aggregation",
+          "file": "data/aggregation.csv",
+          "sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5",
+          "bytes": 38818,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "fe3ad9ccef1a1a657ad44200bf15206a20ee21f608a77d4d7ff4c22f057cbef5"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S3_Fig.pdf",
+          "sha256": "e88a350212f185d253dcd01915bc8b276c44c1236aeb783cffb1a5aaf04760fc",
+          "bytes": 68568
+        },
+        {
+          "format": "svg",
+          "file": "figures/S3_Fig.svg",
+          "sha256": "2a50e14867ba0d0e538489c9f29180b386205f1050e0996abaf4488aa68b2e94",
+          "bytes": 176895
+        },
+        {
+          "format": "png",
+          "file": "figures/S3_Fig.png",
+          "sha256": "841ea91294b45c1a72b7710f5664e5b24d20275bcb91772184b189c1889d333e",
+          "bytes": 558101
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s03_plot_data.csv",
+          "sha256": "052e907339813e5007030d888b4f3b4f86a79de6ed68a46662ef55accbebe353",
+          "bytes": 19768
+        }
+      ],
+      "output_basename": "S3_Fig"
+    },
+    {
+      "id": "fig-s04",
+      "directory": "figures/fig-s04-daily-comparators",
+      "display_label": "Supplementary Figure S4",
+      "source_key": "fig_s04",
+      "renderer": "s06",
+      "caption_en": "Daily adapted comparators test a different claim from same-information aggregation. a, FW minus CM5, CM20, BC10 and BC60 under γ, Top20 and H3; n=2,329 paired dates with endpoints on or before 31 August 2026. Points and whiskers are mean gross-return differences and pointwise 95% intervals. Holm384 P values are 0.01620, 0.04056, 0.00384 and 0.00384, respectively. b, The same comparisons across all eight horizons, in complete-H percentage points. Marker shapes and supported-segment line patterns identify comparators. Filled markers denote time support, not corrected significance; open H120/H250 points and dashed continuations retain descriptive values. Each comparison uses its common eligible pool. These are literature-inspired daily adaptations, not exact reproductions of the published portfolios.",
+      "caption_zh": "日频改编对照检验的主张不同于同信息聚合。a，γ、Top20 和 H3 下，FW 减 CM5、CM20、BC10 和 BC60；n=2,329 个端点不晚于 2026 年 8 月 31 日的配对日期。点与误差线分别表示平均毛收益差和逐点 95% 区间。Holm384 P 值依次为 0.01620、0.04056、0.00384 和 0.00384。b，相同比较在全部八个持有期上的结果，以完整 H 期百分点表示。标记形状与有样本支持区段的线型标识对照。实心标记表示时间样本支持，并非校正后显著性；H120/H250 的空心点与虚线延伸保留描述性数值。每项比较使用各自的共同合格样本池。这些是受文献启发的日频改编，并非对已发表组合的精确复现。",
+      "experiment_modules": [
+        "B1"
+      ],
+      "data": [
+        {
+          "key": "daily_comparators",
+          "file": "data/daily_comparators.csv",
+          "sha256": "f870a431ed3da1c6d5d14bbae57e45b3a1c3055e3af10b3302529f466750d0ad",
+          "bytes": 55735,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "f870a431ed3da1c6d5d14bbae57e45b3a1c3055e3af10b3302529f466750d0ad"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S4_Fig.pdf",
+          "sha256": "3ee1e315cf293784be8a096a880b651cb673554ca3379077e29a19f5660b59a3",
+          "bytes": 47566
+        },
+        {
+          "format": "svg",
+          "file": "figures/S4_Fig.svg",
+          "sha256": "a3110a05e44224c8f2224842bcd6948fdb1dfe0cbd9d6d46652b0310136aface",
+          "bytes": 36550
+        },
+        {
+          "format": "png",
+          "file": "figures/S4_Fig.png",
+          "sha256": "15c2c536c14c9c59c7de7bbed7058aa1cfbfb67f0404c644a790dec17d9e29c6",
+          "bytes": 269527
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s04_plot_data.csv",
+          "sha256": "753aeec6ec23b3d8977cedc98698019c6403313c2bf7b6b2af5c266e4b2c3aa5",
+          "bytes": 4926
+        }
+      ],
+      "output_basename": "S4_Fig"
+    },
+    {
+      "id": "fig-s05",
+      "directory": "figures/fig-s05-monthly-momentum-comovement",
+      "display_label": "Supplementary Figure S5",
+      "source_key": "fig_s05",
+      "renderer": "s07",
+      "caption_en": "Monthly momentum and concept comovement. a, Mean six-month cumulative gross returns across ten past-momentum deciles, from losers to winners, within low-, middle- and high-comovement groups. All 30 observed cells are shown in their economic order, without interpolation, using a common sequential scale from 0 to 7%. b, The high-minus-low-comovement difference in winner-minus-loser spreads and FW-minus-comparator means for Top20 and Top100. The summaries use 103 mature formation months from May 2017, one skipped month and six-month holding, with all exits on or before 31 August 2026. This gives at most 17 nominal six-month blocks; the displayed means carry no inference. Units are percentages in a and percentage points in b. Beta denotes the OLS comovement slope; the monthly experiment uses lagged concept membership (design gamma). The long-short summaries describe return contrasts rather than implemented account paths.",
+      "caption_zh": "月频动量与概念联动。a，在低、中、高联动组内，按过去动量从低到高排列十个十分位，展示六个月累计毛收益的均值。30个实际观测单元按其经济含义排序，不作插值，共用0至7%的顺序色阶。b，高、低联动组之间赢家减输家收益差的差，以及Top20和Top100的FW相对比较基准均值差。结果采用自2017年5月起的103个成熟形成月份，跳过一个月后持有六个月，全部退出端点不晚于2026年8月31日，至多对应17个名义六个月区间；图中均值不作统计推断。a的单位为百分比，b为百分点。Beta表示OLS联动斜率；月频实验采用滞后概念成员信息（gamma设计）。多空汇总描述收益对比，不代表已实施的账户路径。",
+      "experiment_modules": [
+        "B3"
+      ],
+      "data": [
+        {
+          "key": "monthly_cells",
+          "file": "data/monthly_cells.csv",
+          "sha256": "8a3c80e4b03d4e74c565a672fffa43cbeb32fd90b320b5a3337072c27ea5aed8",
+          "bytes": 2609,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "8a3c80e4b03d4e74c565a672fffa43cbeb32fd90b320b5a3337072c27ea5aed8"
+        },
+        {
+          "key": "monthly_contrasts",
+          "file": "data/monthly_contrasts.csv",
+          "sha256": "3f6570241f3a61de57d821bb4c4dd2a65dfff2dda672e5425384a4bda1440047",
+          "bytes": 3853,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "3f6570241f3a61de57d821bb4c4dd2a65dfff2dda672e5425384a4bda1440047"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S5_Fig.pdf",
+          "sha256": "c778c8823a81ee38d5a8cae1f159110f830a90223bd02dcbc4c412172f4c56e8",
+          "bytes": 62099
+        },
+        {
+          "format": "svg",
+          "file": "figures/S5_Fig.svg",
+          "sha256": "ebdd1eb8332c55e56c58e7e88e94cf9afa69f5104874b9d6a721e37be383ee52",
+          "bytes": 84019
+        },
+        {
+          "format": "png",
+          "file": "figures/S5_Fig.png",
+          "sha256": "2c4970a66605315796d1d93c849d3cc7b73442d808292049e9efb44bc17d7122",
+          "bytes": 283420
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s05_cells.csv",
+          "sha256": "ee65a216b6921867c50483d9ea3ee0c8dbc6c37fb3c348c390defede402594bb",
+          "bytes": 2782
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_s05_contrasts.csv",
+          "sha256": "8e22093589e4408635362ddffe790dd491253f231476ca723bb43a88e6614f91",
+          "bytes": 3940
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_s05_heatmap_display.csv",
+          "sha256": "c5704d47b81dd80f22f9b67aa4757b1ad05b74576707447cb31cbcd020b66518",
+          "bytes": 1642
+        }
+      ],
+      "output_basename": "S5_Fig"
+    },
+    {
+      "id": "fig-s06",
+      "directory": "figures/fig-s06-ranking-and-selection",
+      "display_label": "Supplementary Figure S6",
+      "source_key": "fig_s06",
+      "renderer": "s03",
+      "caption_en": "Whole-pool ranking and concentrated selection are different tasks. a, Mean full-pool rank correlations for original FW, conventional ridge and boosted-tree models and their concept-enhanced counterparts, using 2020–2026 rolling predictions evaluated through 31 August 2026. H120/H250 are retained as open points with descriptive continuations. b, H3 Top20 gross spreads over the same research pool, n=1,611 mature dates, in percentage points. The plotted model levels are descriptive and have no between-model uncertainty intervals; formal enhanced-minus-conventional tests are reported separately. FW in b is evaluated on the 1,611-date model sample, not the 2,349-date historical rule sample. Similar rounded values do not imply identical samples.",
+      "caption_zh": "全样本池排序与集中选股是不同任务。a，原始 FW、常规岭回归和提升树模型，以及相应概念增强模型的平均全样本池秩相关，使用 2020–2026 年滚动预测，评估截至 2026 年 8 月 31 日。H120/H250 以空心点及描述性延伸线保留。b，相对同一研究样本池的 H3 Top20 毛收益差，n=1,611 个成熟日期，单位为百分点。图中的模型水平为描述性结果，未给出模型间不确定性区间；正式增强版减常规版检验另行报告。b 中的 FW 在 1,611 日期模型样本上评估，不是 2,349 日期的历史规则样本。四舍五入数值接近不代表样本相同。",
+      "experiment_modules": [
+        "B2",
+        "S2"
+      ],
+      "data": [
+        {
+          "key": "component_levels",
+          "file": "data/component_levels.csv",
+          "sha256": "bb3a77a6099413a7498aefec8592df4382875652be9e0cda6727157680216fe3",
+          "bytes": 262264,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "bb3a77a6099413a7498aefec8592df4382875652be9e0cda6727157680216fe3"
+        },
+        {
+          "key": "model_ic",
+          "file": "data/model_ic.csv",
+          "sha256": "e2827a77d5779d284c40b29f54e56dd376adb003591277e747eaad9cd140bef9",
+          "bytes": 2027,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "e2827a77d5779d284c40b29f54e56dd376adb003591277e747eaad9cd140bef9"
+        },
+        {
+          "key": "model_returns",
+          "file": "data/model_returns.csv",
+          "sha256": "582c837ed97f3784bfa437b0a392687ee8b757344d713dc43d0849ff194a97ee",
+          "bytes": 9131,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "582c837ed97f3784bfa437b0a392687ee8b757344d713dc43d0849ff194a97ee"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S6_Fig.pdf",
+          "sha256": "6b6a73570b16cbb0728071b8ae82ae5e2e1c06f68c103d0b43507bff3d3798ba",
+          "bytes": 47989
+        },
+        {
+          "format": "svg",
+          "file": "figures/S6_Fig.svg",
+          "sha256": "d76bacfa75b57d7186c05536aeb5d5add1e8248bf5d961e989984bd06bc3caf6",
+          "bytes": 38214
+        },
+        {
+          "format": "png",
+          "file": "figures/S6_Fig.png",
+          "sha256": "98f97846b764d8091101f1441e0bdf4c9e40f54243de882ade0deb8f2f4b1c1f",
+          "bytes": 366117
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s06_ic.csv",
+          "sha256": "d9f397cc82418cdbc9f229dad0ec7bf0e9d4257644be6435ea96de01f892781a",
+          "bytes": 2337
+        },
+        {
+          "file": "analysis/reference_plot_data/fig_s06_returns.csv",
+          "sha256": "09af68cc4f20632fdc75c190b2034735c5c549d7850537479c214e69feb1468c",
+          "bytes": 10894
+        }
+      ],
+      "output_basename": "S6_Fig"
+    },
+    {
+      "id": "fig-s07",
+      "directory": "figures/fig-s07-dense-training-sensitivity",
+      "display_label": "Supplementary Figure S7",
+      "source_key": "fig_s07",
+      "renderer": "s12",
+      "caption_en": "Dense-training H3 model sensitivity. The same conventional and concept-enhanced model specifications are refitted on all eligible training dates, with 722–727 dates in each fit, 28 rolling fits, and 1,611 common evaluation dates from 2 January 2020 to 25 August 2026. Panels show enhanced-minus-conventional differences for a, full-pool IC; b, within-industry IC; c, complete-case Top20 gross return; and d, complete-case Top100 gross return. Each circle or square represents one model estimate. The two horizontally aligned interval rows are pointwise 95% paired circular moving-block bootstrap intervals with L=20 and L=60 dates and 10,000 replicates; their repeated point estimate is connected, not counted as independent evidence. A single Holm24 family covers both block lengths, both models and all six metrics, including two missing-as-zero return variants reported in the accompanying table. Boosted-tree within-industry IC passes that family (estimate +0.005414, adjusted P=0.0024 and 0.0230 under the two related block-length checks). Raw IC and all return increments remain unconfirmed. This is a historical training-density and inference sensitivity on the same data, not independent validation.",
+      "caption_zh": "密集训练的 H3 模型敏感性。相同的常规模型与概念增强模型设置，在全部合格训练日期上重新拟合，每次拟合使用 722–727 个日期，共进行 28 次滚动拟合；共同评估样本含 2020 年 1 月 2 日至 2026 年 8 月 25 日的 1,611 个日期。各面板展示增强版减常规版的差：a，全样本池 IC；b，行业内 IC；c，完整观测 Top20 毛收益；d，完整观测 Top100 毛收益。每个圆点或方点代表一个模型估计。两行水平对齐的区间为配对循环移动区块自助法逐点 95% 区间，L=20 和 L=60 个日期，重抽样 10,000 次；重复的点估计以线连接，不计作独立证据。一个 Holm24 检验族覆盖两种区块长度、两个模型及全部六项指标，包括配套表中报告的两种缺失填零收益变体。通过该检验族的是提升树的行业内 IC（估计 +0.005414，两种相关区块长度核对下校正后 P 分别为 0.0024 和 0.0230）。原始 IC 和全部收益增量仍未获确认。这是在相同数据上的历史训练密度与推断敏感性分析，并非独立验证。",
+      "experiment_modules": [
+        "B2D"
+      ],
+      "data": [
+        {
+          "key": "dense_increment",
+          "file": "data/dense_increment.csv",
+          "sha256": "6842771748d45669bd9a365647e79e39149194e079ab6710dab01980a60da840",
+          "bytes": 4233,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "6842771748d45669bd9a365647e79e39149194e079ab6710dab01980a60da840"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S7_Fig.pdf",
+          "sha256": "d5283f34efd4b2d768cc59d62f5215b0755dd7fc74926ee3b0181b559f6bcddf",
+          "bytes": 51317
+        },
+        {
+          "format": "svg",
+          "file": "figures/S7_Fig.svg",
+          "sha256": "8b98e78098b754032513bb1b6c3d29a2da29f742674845b5a3db0528f124dae0",
+          "bytes": 38674
+        },
+        {
+          "format": "png",
+          "file": "figures/S7_Fig.png",
+          "sha256": "3cfe8c86e65ebe0d1d1f94e83f3e6f39a40109626ede1fc391f9e1e0076250ed",
+          "bytes": 258762
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s07_plot_data.csv",
+          "sha256": "bc10ad824d4629171cbf351dbd718ec9c6c5b9042f4d118a897da49959bf9a03",
+          "bytes": 2914
+        }
+      ],
+      "output_basename": "S7_Fig"
+    },
+    {
+      "id": "fig-s08",
+      "directory": "figures/fig-s08-attention-reference-sets",
+      "display_label": "Supplementary Figure S8",
+      "source_key": "fig_s08",
+      "renderer": "s02",
+      "caption_en": "A fixed reference set changes an attention-rank association. a, Mean H3 watchlist-change rank correlations under original date-specific universes, the fixed common set, and their paired difference, using 1,067 paired dates whose future ranks fall on or before 31 August 2026. Circles and squares show 20- and 40-day block estimates with pointwise 95% intervals. b, Mean correlations across all eight horizons under the two reference definitions; open H60/H120/H250 points indicate insufficient temporal support and are shown descriptively. The target future rank is unchanged, and the underlying watchlist-change measure spans five days. These are correlations and correlation differences, not returns; the intervals are not simultaneous.",
+      "caption_zh": "固定参照集合改变注意力排名关联。a，原始逐日股票集合、固定共同集合，以及二者配对差下，自选关注变化排名与 H3 目标的平均相关系数，使用 1,067 个未来排名不晚于 2026 年 8 月 31 日的配对日期。圆点与方点展示 20 日和 40 日区块估计及逐点 95% 区间。b，两种参照定义在全部八个持有期上的平均相关系数；H60/H120/H250 的空心点表示时间样本支持不足，作描述性展示。目标未来排名保持不变，底层自选关注变化指标跨越五日。这些是相关系数及相关系数之差，并非收益；区间并非同时区间。",
+      "experiment_modules": [
+        "M2_reference"
+      ],
+      "data": [
+        {
+          "key": "rank_reference",
+          "file": "data/rank_reference.csv",
+          "sha256": "2d3aa6816fcedf0dfcd09cda521a59c8bf59c14c56fb5b021ccf2eb4cb61424e",
+          "bytes": 19843,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "2d3aa6816fcedf0dfcd09cda521a59c8bf59c14c56fb5b021ccf2eb4cb61424e"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S8_Fig.pdf",
+          "sha256": "33f28eaa57d54fbb40ae82777c87bf8e8c21cb4f660ab444843fe77fede8ad50",
+          "bytes": 48904
+        },
+        {
+          "format": "svg",
+          "file": "figures/S8_Fig.svg",
+          "sha256": "d6db34a11de467cec624a25bca372dda3d8ac142ad394507f9d6ec63c377ea88",
+          "bytes": 30754
+        },
+        {
+          "format": "png",
+          "file": "figures/S8_Fig.png",
+          "sha256": "66ec100e285ee965bb34074e146e2eb88ccbcc718cbc8f909dbbe6f339c13e9f",
+          "bytes": 250971
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s08_plot_data.csv",
+          "sha256": "7155a05ac85545009564a05cb410f52758574ac56b33a33ba7fa5635a264f13f",
+          "bytes": 20127
+        }
+      ],
+      "output_basename": "S8_Fig"
+    },
+    {
+      "id": "fig-s09",
+      "directory": "figures/fig-s09-reference-decomposition",
+      "display_label": "Supplementary Figure S9",
+      "source_key": "fig_s09",
+      "renderer": "s08",
+      "caption_en": "Small reference effects coexist with stable extreme lists. a, Mean daily cross-sectional standard deviations of full attention-rank changes, common-set changes and reference remainders, with a logarithmic y-axis. b, The fraction of all common stocks whose non-zero changes have opposite signs under the two definitions; zero changes are not counted as flips. c, Top20/Top100 overlaps for the two change definitions, with a clearly truncated y-axis beginning at 99.15%. All panels are descriptive date-weighted summaries for 1,071 dates ending on 31 August 2026. T/S/K denote total popularity, watchlist popularity and stickiness. The reference remainder follows from an algebraic identity rather than a causal adjustment or variance-explained decomposition. These lists are ranked by popularity changes and differ from the FW lists used for return evaluation; their overlap does not measure returns.",
+      "caption_zh": "较小的参照效应与稳定的极端名单并存。a，完整注意力排名变化、共同集合变化和参照残差的平均每日横截面标准差，纵轴为对数尺度。b，全部共同股票中，在两种定义下非零变化符号相反的比例；零变化不计作反转。c，两种变化定义的 Top20/Top100 重合率，纵轴明确截断并从 99.15% 起始。全部面板均为截至 2026 年 8 月 31 日的 1,071 个日期上按日期加权的描述性汇总。T/S/K 分别表示总热度、自选关注热度和关注黏性。参照残差来自代数恒等式，而非因果调整或解释方差分解；这些名单按热度变化排序，与用于收益评价的 FW 名单不同，其重合率也不衡量收益。",
+      "experiment_modules": [
+        "M2_decomposition"
+      ],
+      "data": [
+        {
+          "key": "decomposition",
+          "file": "data/decomposition.csv",
+          "sha256": "ff0a9acf53274de5137fcc6a62fc4d839b0ebbb8df060ba5bdf1816cef3b8d36",
+          "bytes": 6641,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "ff0a9acf53274de5137fcc6a62fc4d839b0ebbb8df060ba5bdf1816cef3b8d36"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S9_Fig.pdf",
+          "sha256": "8b244d5cf106e32765a15a1ded78830593f60adc71c4368a54cba5c026f1dd8e",
+          "bytes": 47890
+        },
+        {
+          "format": "svg",
+          "file": "figures/S9_Fig.svg",
+          "sha256": "2b7bb76ea83e512739958021c30ebeab8f760973b7a943f92c74984a6d6d7f80",
+          "bytes": 32503
+        },
+        {
+          "format": "png",
+          "file": "figures/S9_Fig.png",
+          "sha256": "8eefd13d1d01dae61e2da9a52d5a2581e188dd68de4d2818bd51f8ab8d8e801d",
+          "bytes": 235033
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s09_plot_data.csv",
+          "sha256": "3f86505b981893098f761f784b52c1aa001204b0d722728545d1118cdd402c2e",
+          "bytes": 4041
+        }
+      ],
+      "output_basename": "S9_Fig"
+    },
+    {
+      "id": "fig-s10",
+      "directory": "figures/fig-s10-residual-association-diagnostics",
+      "display_label": "Supplementary Figure S10",
+      "source_key": "fig_s10",
+      "renderer": "s04",
+      "caption_en": "Residual-association diagnostics under lagged membership γ. a–c show own total popularity, watchlist popularity and stickiness; d–f show leave-one-out concept-peer shares. Filled circles use the full-history window, with calibration before 22 October 2020 and six expanding test folds; 28 of 48 displayed cells are estimable. In the sampled panel, the watchlist field S first appears on 30 March 2022, after that calibration period. Open squares use the S-covered window, with calibration from 30 March 2022 through the day before 30 September 2022 and four test folds from that date to 27 August 2026. The S-covered window first intersects finite raw own and peer exposures; exposure-specific trimming then yields role-specific nuisance and evaluation supports. In this window, 42 of 48 displayed cells are estimable, including 14 own/peer S cells. Horizons without sufficient mature training or test labels are left unplotted, including H250, which does not reach the final test fold before the cutoff. All outcomes must mature by 31 August 2026. Points and whiskers are residual-projection coefficients and pointwise 95% date-HAC diagnostic intervals, in complete-H return percentage points per fixed past exposure standard deviation. No coefficient in either window passes its diagnostic 24-test Holm family. Source data retain all 288 design-exposure-horizon cells across both windows. Role-specific nuisance supports do not establish the usual orthogonal-score inference guarantee. Section S13.1 examines aligned support and control timing on a separate γ/H3 own-exposure sample. Deferred estimates are not zero effects.",
+      "caption_zh": "滞后成员关系γ下的残差关联诊断。a—c为自身总人气、自选关注度与关注粘性，d—f为剔除目标股票后的概念同伴份额。实心圆使用全历史窗口，在2020年10月22日前标定，并采用六个扩展测试折；展示的48项中28项可估计。在抽样面板中，自选关注字段S首次出现于2022年3月30日，晚于该标定期。空心方形使用S覆盖窗口，在2022年3月30日至9月30日前一天标定，采用自该日起至2026年8月27日的四个测试折。S覆盖窗口先取原始自身与同伴暴露均为有限值的交集，逐暴露修剪后辅助及评价支持仍按角色区分；该窗口48项中42项可估计，含14项自身或同伴S单元。缺少足够成熟训练或测试标签的持有期未绘制，包括在截止前未覆盖最后测试折的H250。所有结果须在2026年8月31日及之前成熟。点及误差线为残差投影系数和逐点95%日期HAC诊断区间，单位为每个固定过去暴露标准差的完整H收益百分点。两个窗口均无系数通过其诊断性24项Holm族。源数据保留两个窗口全部288个设计—暴露—持有期单元。按角色区分的辅助支持未确立通常的正交评分推断保证。第S13.1节在单独的γ/H3自身暴露样本上考察支持对齐与控制时点。暂缓估计不表示零效应。",
+      "experiment_modules": [
+        "C1",
+        "C1S"
+      ],
+      "data": [
+        {
+          "key": "causal_protocol",
+          "file": "data/causal_protocol.json",
+          "sha256": "b3fd2a2f991400142f7110975f36aadbb37d86e9607346100aa388b1cc6547c4",
+          "bytes": 4453,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "78018cf64a47e2f746d157d0f76741aed71a87fafcb70bdc0aee926e13442d53",
+          "public_transform": "Historical inputs dictionary keys changed from local absolute paths to historical-inputs/<basename>; hashes and all scientific fields retained. Release text normalized to UTF-8 without BOM and LF; parsed JSON unchanged."
+        },
+        {
+          "key": "causal_s_protocol",
+          "file": "data/causal_s_protocol.json",
+          "sha256": "20abffc7940c27eb75ab687484334ed61f27684e1f7419c133624fac1c3bdb01",
+          "bytes": 2920,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "556063a1098d9cafe292c48b535fbd78ab31e6cd9c7deb836942ad437fcd7cc8",
+          "public_transform": "Historical inputs dictionary keys changed from local absolute paths to historical-inputs/<basename>; hashes and all scientific fields retained. Release text normalized to UTF-8 without BOM and LF; parsed JSON unchanged."
+        },
+        {
+          "key": "dml",
+          "file": "data/dml.csv",
+          "sha256": "d420d742622e667f6c3377f3507f6f82b8d42cadaeaf239ade7f699362bb4af6",
+          "bytes": 62881,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "d420d742622e667f6c3377f3507f6f82b8d42cadaeaf239ade7f699362bb4af6"
+        },
+        {
+          "key": "dml_s_window",
+          "file": "data/dml_s_window.csv",
+          "sha256": "f4e778e39e3585180e9521e8e6c980dd6802abdd19ce6e562c00debd32a547c4",
+          "bytes": 60822,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "f4e778e39e3585180e9521e8e6c980dd6802abdd19ce6e562c00debd32a547c4"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S10_Fig.pdf",
+          "sha256": "a9682a3faafd3b2f230e1ab70c7382fb1666ac12df1f23f09b875d2ef8f3c9b3",
+          "bytes": 53757
+        },
+        {
+          "format": "svg",
+          "file": "figures/S10_Fig.svg",
+          "sha256": "422c8fdb1e8efc0c3bc4a1d2ffce6fdf6bfef17f202b7be2af67e8b993c41f62",
+          "bytes": 79313
+        },
+        {
+          "format": "png",
+          "file": "figures/S10_Fig.png",
+          "sha256": "067b6eb32c495feb2fb37acc85645caa7f9df878c377004d81776b79feca61a8",
+          "bytes": 448720
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s10_plot_data.csv",
+          "sha256": "6832e0fbb1f40f81755d5618369ef481736ff4bf1f1d9c2e1db5c323a6d69330",
+          "bytes": 43318
+        }
+      ],
+      "output_basename": "S10_Fig"
+    },
+    {
+      "id": "fig-s11",
+      "directory": "figures/fig-s11-adjusted-state-associations",
+      "display_label": "Supplementary Figure S11",
+      "source_key": "fig_s11",
+      "renderer": "s05",
+      "caption_en": "Adjusted high–low associations and states without a formal estimate. Circles, squares and triangles identify α, β and γ with distinct line patterns and horizontal offsets. a,b show estimable high-minus-low return differences for total popularity T and stickiness K in the full-history window. Units are complete-H percentage points; whiskers are pointwise 95% date-HAC intervals. 42 of 96 design-state-horizon cells are estimable. H250 lacks mature observations in the final test fold under the 31 August 2026 cutoff. Symbols identify designs and do not encode corrected significance. No state contrast in either window passes its 32-test Holm family. c reports the pooled share of clipped propensities at H1–H60 for watchlist S and the joint T/S/K state. These contrasts fail overlap in both windows; early full-history training folds also lack S. The S-covered window calibrates from 30 March 2022 through the day before 30 September 2022 and tests four folds from that date to 27 August 2026; 36 of 96 cells are estimable. Supplementary Table S11 reports support across all horizons. Both windows use fixed 80-iteration training and fit-fold industry encoding. These are related observational estimates, not identified causal effects.",
+      "caption_zh": "调整后的高低状态关联及无法正式估计的状态。圆点、方点和三角形以不同线型和水平偏移区分α、β与γ。a、b显示全历史窗口中总热度T及关注黏性K可估计的高减低收益差，单位为完整H期百分点；误差线为逐点95%日期HAC区间。96个设计—状态—持有期单元中42个可估计。在2026年8月31日截止规则下，H250在最后检验折缺少成熟观察。符号用于区分设计，不表示校正后的显著性。两个窗口均无状态对照通过各自的32项Holm家族。c报告自选关注S及联合T/S/K状态在H1–H60上的测试倾向得分裁剪比例。两种窗口中的这些对照均未通过重叠要求，全历史窗口的早期训练折也缺少S。S覆盖窗口在2022年3月30日至9月29日校准，2022年9月30日至2026年8月27日分四折检验，96格中36格可估计。补充表S11报告全部持有期的样本支持。两个窗口均固定训练80轮，并仅使用拟合折确定行业编码。这些是相互关联的观察性估计，并非已识别的因果效应。",
+      "experiment_modules": [
+        "C1",
+        "C1S"
+      ],
+      "data": [
+        {
+          "key": "aipw",
+          "file": "data/aipw.csv",
+          "sha256": "97f565ab5b4576c7470550a140c8a5799e84815419d42a90eed4941eb0443c8e",
+          "bytes": 44574,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "97f565ab5b4576c7470550a140c8a5799e84815419d42a90eed4941eb0443c8e"
+        },
+        {
+          "key": "aipw_s_window",
+          "file": "data/aipw_s_window.csv",
+          "sha256": "1551835787ed1883bb57b081797fd10801b4434831d7b79c9c99630a78d08b4f",
+          "bytes": 39034,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "1551835787ed1883bb57b081797fd10801b4434831d7b79c9c99630a78d08b4f"
+        },
+        {
+          "key": "causal_protocol",
+          "file": "data/causal_protocol.json",
+          "sha256": "b3fd2a2f991400142f7110975f36aadbb37d86e9607346100aa388b1cc6547c4",
+          "bytes": 4453,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "78018cf64a47e2f746d157d0f76741aed71a87fafcb70bdc0aee926e13442d53",
+          "public_transform": "Historical inputs dictionary keys changed from local absolute paths to historical-inputs/<basename>; hashes and all scientific fields retained. Release text normalized to UTF-8 without BOM and LF; parsed JSON unchanged."
+        },
+        {
+          "key": "causal_s_protocol",
+          "file": "data/causal_s_protocol.json",
+          "sha256": "20abffc7940c27eb75ab687484334ed61f27684e1f7419c133624fac1c3bdb01",
+          "bytes": 2920,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "556063a1098d9cafe292c48b535fbd78ab31e6cd9c7deb836942ad437fcd7cc8",
+          "public_transform": "Historical inputs dictionary keys changed from local absolute paths to historical-inputs/<basename>; hashes and all scientific fields retained. Release text normalized to UTF-8 without BOM and LF; parsed JSON unchanged."
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S11_Fig.pdf",
+          "sha256": "abad963a3a945fc98bbfb0966669fe275c5b1d594d65b29a09a148b90489194e",
+          "bytes": 54703
+        },
+        {
+          "format": "svg",
+          "file": "figures/S11_Fig.svg",
+          "sha256": "c0868dda8d11b76c514e96caad0bed6e87d1f220e308427c7f0a1554d77b30e3",
+          "bytes": 40559
+        },
+        {
+          "format": "png",
+          "file": "figures/S11_Fig.png",
+          "sha256": "62b7fd3aea4be8d13ed0134278687b7d80e014074743e2061d0f6cb61f7d03ea",
+          "bytes": 411714
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s11_plot_data.csv",
+          "sha256": "c60679713f15e06c0450d6f4b06714eb90063b005928bcd260ebecc1f508e041",
+          "bytes": 86824
+        }
+      ],
+      "output_basename": "S11_Fig"
+    },
+    {
+      "id": "fig-s12",
+      "directory": "figures/fig-s12-conditional-specification-contrasts",
+      "display_label": "Supplementary Figure S12",
+      "source_key": "fig_s12",
+      "renderer": "fig_s12",
+      "caption_en": "Specification contrasts in conditional attention diagnostics. Panels a–c report own T, S and K separately; each compares M1−M0 (aligned auxiliary support and outcome-label purging), M2−M1 (removal of four concept controls) and M3−M2 (the same 22 conventional characteristics and industry moved before the recorded attention observation). Points and whiskers are paired coefficient differences and pointwise 95% score-based date-HAC diagnostic intervals at lag 8 sampled dates, using the same 217,831 γ/H3 stock-days and 185 dates. Units are complete-H3 return percentage points per the corresponding fixed historical exposure standard deviation. The fields have distinct definitions and scales; magnitudes across panels are not relative attention effects. The zero line denotes no change in a residual projection. The Holm27 family includes all nine contrasts at lags 1, 8 and 12; none passes. Intervals condition on the fitted nuisance predictions and do not establish standard orthogonal-score coverage. M1−M0 changes support and purging together. These contrasts measure specification sensitivity, not causal pathways or equivalence. Table S12 gives the underlying coefficients; the accompanying source data contain all 27 contrasts and 36 coefficient tests. Outcomes mature by 31 August 2026.",
+      "caption_zh": "条件注意力诊断中的设定差异。a—c面板分别报告自身T、S和K，每个面板比较M1−M0（辅助支持及结果标签成熟约束对齐）、M2−M1（移除四项概念控制）和M3−M2（将相同22项常规特征及行业移至记录注意力观测之前）。点与误差线为相同217,831个γ/H3股票日、185个日期上的配对系数差异，以及8个抽样日期滞后下基于评分的逐点95%日期HAC诊断区间。单位为每个对应固定历史暴露标准差的完整H3收益百分点。各字段定义与尺度不同，不能将面板间大小解释为相对注意力效应。零线表示残差投影没有变化。Holm27族纳入全部九项差异在1、8、12阶下的检验，均无通过项。区间以拟合后的辅助预测为条件，未确立标准正交评分覆盖保证。M1−M0同时改变支持和标签成熟约束。这些对照衡量设定敏感性，并非因果路径或等效性检验。表S12给出基础系数；随附源数据含全部27项差异及36项系数检验。收益端点截至2026年8月31日。",
+      "experiment_modules": [
+        "N1"
+      ],
+      "data": [
+        {
+          "key": "conditional_specifications",
+          "file": "data/conditional_specifications.csv",
+          "sha256": "85c4dd0b5bd7807956523dc430ac3e10092d946977f33557a50d0184e9ef6a92",
+          "bytes": 1178,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "85c4dd0b5bd7807956523dc430ac3e10092d946977f33557a50d0184e9ef6a92"
+        },
+        {
+          "key": "paired_differences_holm27",
+          "file": "data/paired_differences_holm27.csv",
+          "sha256": "564e876be2a2ced3357a16a85e00aaa898406b25cbec5f284d7ecf8112367b07",
+          "bytes": 3599,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "564e876be2a2ced3357a16a85e00aaa898406b25cbec5f284d7ecf8112367b07"
+        },
+        {
+          "key": "coefficients_holm36",
+          "file": "data/coefficients_holm36.csv",
+          "sha256": "54ffbe31a5129070928713446924eda8a5a5d2c1116e9733363aae4a8c188489",
+          "bytes": 5056,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "54ffbe31a5129070928713446924eda8a5a5d2c1116e9733363aae4a8c188489"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S12_Fig.pdf",
+          "sha256": "312a60d7cc6ab586fd0e20979db5fe0e30a8159d4892246c9e1ce710456cca97",
+          "bytes": 48768
+        },
+        {
+          "format": "svg",
+          "file": "figures/S12_Fig.svg",
+          "sha256": "6ea2a4e645c6b4993a4c6580540e9db6acfae006214380f44f08e63b4e4a55f3",
+          "bytes": 20210
+        },
+        {
+          "format": "png",
+          "file": "figures/S12_Fig.png",
+          "sha256": "cbb90d9d9c3b7cf068e4c355af9aa5cd6fcd7b92fb19a9550ba07fb6e5a3e639",
+          "bytes": 199328
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/conditional_specifications.csv",
+          "sha256": "85c4dd0b5bd7807956523dc430ac3e10092d946977f33557a50d0184e9ef6a92",
+          "bytes": 1178
+        }
+      ],
+      "output_basename": "S12_Fig"
+    },
+    {
+      "id": "fig-s13",
+      "directory": "figures/fig-s13-complete-drawdown-histories",
+      "display_label": "Supplementary Figure S13",
+      "source_key": "fig_s13",
+      "renderer": "fig_s13",
+      "caption_en": "Complete drawdown histories for the fixed configuration in Fig. 8a. a–c, No timing, one-level breadth timing and two-level breadth timing, respectively, for Top10, three-day holding, F5/W10 and Pearson synchronization. All three panels retain every daily account observation and share dates and a −50% to 2% scale. Drawdown is net asset value divided by its running maximum minus one. Accounts run from 1 December 2016 to 31 August 2026, including commissions and stamp duty under the implementation settings in Supplementary Section S17. Slippage and market impact are not modeled. The main figure shows the two-level underwater path at a larger scale; all three maximum drawdowns remain in the complete 48-account comparison in Fig. 8b. The paths describe retrospective accounts whose target filter uses intraday information that must be obtained during actual trading (Supplementary Section S17).",
+      "caption_zh": "图8a固定配置的完整回撤路径。a–c依次为无择时、一级宽度择时与两级宽度择时，均采用Top10、三日持有、F5/W10及Pearson同步性。三幅图保留全部日度账户观测，使用共同日期范围和−50%至2%的相同刻度。回撤为净值除以其历史运行最大值后减一。账户从2016年12月1日运行至2026年8月31日，按照补充材料第S17节的交易设置计入佣金与印花税，未建模滑点及市场冲击。主图以更大的比例展示两级择时的回撤路径；三个账户的最大回撤均保留在图8b的全部48组账户模拟比较中。这些曲线描述的回溯账户在目标过滤中使用需在实际交易中获取的盘中信息（补充材料第S17节）。",
+      "experiment_modules": [
+        "AccountMetrics"
+      ],
+      "data": [
+        {
+          "key": "bt_curves",
+          "file": "data/bt_curves.csv",
+          "sha256": "009aac3d5b69ee31b41cf5000fbea12b69c7b0ebd84b57f14345cd098bc5a58e",
+          "bytes": 1321521,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "009aac3d5b69ee31b41cf5000fbea12b69c7b0ebd84b57f14345cd098bc5a58e"
+        },
+        {
+          "key": "bt_summary",
+          "file": "data/bt_summary.csv",
+          "sha256": "8ba96e5eac8736d7f4ce418646fcb9a58a0290b2c2fb21df838383184bbbf70e",
+          "bytes": 23666,
+          "source_scope": "frozen aggregate figure input",
+          "source_sha256": "8ba96e5eac8736d7f4ce418646fcb9a58a0290b2c2fb21df838383184bbbf70e"
+        }
+      ],
+      "figures": [
+        {
+          "format": "pdf",
+          "file": "figures/S13_Fig.pdf",
+          "sha256": "9b6068ca3c378fa8bb5cd4eeb57e7d138985b263fa95f83185c6ac0946ad6710",
+          "bytes": 197355
+        },
+        {
+          "format": "svg",
+          "file": "figures/S13_Fig.svg",
+          "sha256": "c85c5cb65de27d5149c8875c87bd42eba3a69e411a6c07fde57bd01f1a4b7c53",
+          "bytes": 512609
+        },
+        {
+          "format": "png",
+          "file": "figures/S13_Fig.png",
+          "sha256": "fceefc48b9a6e270cc1d9b70113c2602267ffe04a614a2c6565b386a5bfcb9c0",
+          "bytes": 476482
+        }
+      ],
+      "reference_plot_data": [
+        {
+          "file": "analysis/reference_plot_data/fig_s13_plot_data.csv",
+          "sha256": "a4b2ac12eb2cfa624b5c34d1c52964275869500b8701defcd8c96c60245805ef",
+          "bytes": 459026
+        }
+      ],
+      "output_basename": "S13_Fig"
+    }
+  ]
+}

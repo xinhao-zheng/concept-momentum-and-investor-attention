@@ -6,13 +6,14 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 # param → Shenwan industry column in pro quotes
 _INDUSTRY_COLUMNS = {
-    '一级行业': '新版申万一级行业名称',
-    '二级行业': '新版申万二级行业名称',
-    '三级行业': '新版申万三级行业名称',
+    "一级行业": "新版申万一级行业名称",
+    "二级行业": "新版申万二级行业名称",
+    "三级行业": "新版申万三级行业名称",
 }
 
 fin_cols = []
@@ -45,8 +46,10 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          established from these fields.
     Selection Case: ('z_IndustryClassification_en', False, '一级行业', 0)
     """
-    col_name = kwargs['col_name']
+    col_name = kwargs["col_name"]
     if not isinstance(param, str) or param not in _INDUSTRY_COLUMNS:
-        raise ValueError(f"param must be '一级行业', '二级行业' or '三级行业', got {param!r}")
+        raise ValueError(
+            f"param must be '一级行业', '二级行业' or '三级行业', got {param!r}"
+        )
 
     return pd.DataFrame({col_name: df[_INDUSTRY_COLUMNS[param]]}, index=df.index)

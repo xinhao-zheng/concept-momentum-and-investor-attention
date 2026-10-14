@@ -1,0 +1,385 @@
+contrast,metric,base,difference
+Timing: breadth − none,cagr,"('3D', 10, 20, 'ccc', 10)",0.04252356689060943
+Timing: breadth − none,cagr,"('3D', 10, 20, 'ccc', 5)",0.07236045165034954
+Timing: breadth − none,cagr,"('3D', 10, 20, 'pearson', 10)",0.0694515255731416
+Timing: breadth − none,cagr,"('3D', 10, 20, 'pearson', 5)",0.09362840250007531
+Timing: breadth − none,cagr,"('3D', 5, 10, 'ccc', 10)",0.032140291987842406
+Timing: breadth − none,cagr,"('3D', 5, 10, 'ccc', 5)",0.02551157070010701
+Timing: breadth − none,cagr,"('3D', 5, 10, 'pearson', 10)",0.06903233549511656
+Timing: breadth − none,cagr,"('3D', 5, 10, 'pearson', 5)",0.08576809884606029
+Timing: breadth − none,cagr,"('5D', 10, 20, 'ccc', 10)",0.026506654073425118
+Timing: breadth − none,cagr,"('5D', 10, 20, 'ccc', 5)",0.05575124321950242
+Timing: breadth − none,cagr,"('5D', 10, 20, 'pearson', 10)",0.033870868019013844
+Timing: breadth − none,cagr,"('5D', 10, 20, 'pearson', 5)",0.0404359607449285
+Timing: breadth − none,cagr,"('5D', 5, 10, 'ccc', 10)",0.00879862578355306
+Timing: breadth − none,cagr,"('5D', 5, 10, 'ccc', 5)",0.012896549799604529
+Timing: breadth − none,cagr,"('5D', 5, 10, 'pearson', 10)",0.03753047425775069
+Timing: breadth − none,cagr,"('5D', 5, 10, 'pearson', 5)",0.05922995423921251
+Timing: breadth − none,max_drawdown,"('3D', 10, 20, 'ccc', 10)",0.20449382919469228
+Timing: breadth − none,max_drawdown,"('3D', 10, 20, 'ccc', 5)",0.17941610648717965
+Timing: breadth − none,max_drawdown,"('3D', 10, 20, 'pearson', 10)",0.1868453824037516
+Timing: breadth − none,max_drawdown,"('3D', 10, 20, 'pearson', 5)",0.2301094692773229
+Timing: breadth − none,max_drawdown,"('3D', 5, 10, 'ccc', 10)",0.23483364309201693
+Timing: breadth − none,max_drawdown,"('3D', 5, 10, 'ccc', 5)",0.2572318290088008
+Timing: breadth − none,max_drawdown,"('3D', 5, 10, 'pearson', 10)",0.2246067923515056
+Timing: breadth − none,max_drawdown,"('3D', 5, 10, 'pearson', 5)",0.23765081915552744
+Timing: breadth − none,max_drawdown,"('5D', 10, 20, 'ccc', 10)",0.19931286057974495
+Timing: breadth − none,max_drawdown,"('5D', 10, 20, 'ccc', 5)",0.20721985826770972
+Timing: breadth − none,max_drawdown,"('5D', 10, 20, 'pearson', 10)",0.1873967652107975
+Timing: breadth − none,max_drawdown,"('5D', 10, 20, 'pearson', 5)",0.1774539283393739
+Timing: breadth − none,max_drawdown,"('5D', 5, 10, 'ccc', 10)",0.2332700263488534
+Timing: breadth − none,max_drawdown,"('5D', 5, 10, 'ccc', 5)",0.24807564909754942
+Timing: breadth − none,max_drawdown,"('5D', 5, 10, 'pearson', 10)",0.21858974918871021
+Timing: breadth − none,max_drawdown,"('5D', 5, 10, 'pearson', 5)",0.2321158530254569
+Timing: breadth − none,sharpe_rf0,"('3D', 10, 20, 'ccc', 10)",0.5146549246352252
+Timing: breadth − none,sharpe_rf0,"('3D', 10, 20, 'ccc', 5)",0.5427965210549218
+Timing: breadth − none,sharpe_rf0,"('3D', 10, 20, 'pearson', 10)",0.5453376291406639
+Timing: breadth − none,sharpe_rf0,"('3D', 10, 20, 'pearson', 5)",0.5015095285125658
+Timing: breadth − none,sharpe_rf0,"('3D', 5, 10, 'ccc', 10)",0.5011327887577489
+Timing: breadth − none,sharpe_rf0,"('3D', 5, 10, 'ccc', 5)",0.4596657204202512
+Timing: breadth − none,sharpe_rf0,"('3D', 5, 10, 'pearson', 10)",0.5158341003043533
+Timing: breadth − none,sharpe_rf0,"('3D', 5, 10, 'pearson', 5)",0.5320870647675755
+Timing: breadth − none,sharpe_rf0,"('5D', 10, 20, 'ccc', 10)",0.5075344913344452
+Timing: breadth − none,sharpe_rf0,"('5D', 10, 20, 'ccc', 5)",0.5130414264051032
+Timing: breadth − none,sharpe_rf0,"('5D', 10, 20, 'pearson', 10)",0.4672271323747694
+Timing: breadth − none,sharpe_rf0,"('5D', 10, 20, 'pearson', 5)",0.3932725331713147
+Timing: breadth − none,sharpe_rf0,"('5D', 5, 10, 'ccc', 10)",0.44793070088874365
+Timing: breadth − none,sharpe_rf0,"('5D', 5, 10, 'ccc', 5)",0.45334118875744034
+Timing: breadth − none,sharpe_rf0,"('5D', 5, 10, 'pearson', 10)",0.4480044576491451
+Timing: breadth − none,sharpe_rf0,"('5D', 5, 10, 'pearson', 5)",0.4803225718484512
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'ccc', 10)",0.09846816087798027
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'ccc', 5)",0.10142097400316463
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'pearson', 10)",0.138618649243605
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'pearson', 5)",0.1634348688149787
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'ccc', 10)",0.08104195550191329
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'ccc', 5)",0.07098177114046877
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'pearson', 10)",0.14763674290119577
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'pearson', 5)",0.1533587692222318
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'ccc', 10)",0.032245233211390945
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'ccc', 5)",0.05366878301651434
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'pearson', 10)",0.05490846206107047
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'pearson', 5)",0.054765398745652005
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'ccc', 10)",0.028099318809813978
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'ccc', 5)",0.02316935597734404
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'pearson', 10)",0.06733664497888858
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'pearson', 5)",0.07490986929742482
+Timing: two-level breadth − none,max_drawdown,"('3D', 10, 20, 'ccc', 10)",0.2467189942500171
+Timing: two-level breadth − none,max_drawdown,"('3D', 10, 20, 'ccc', 5)",0.24121682979146464
+Timing: two-level breadth − none,max_drawdown,"('3D', 10, 20, 'pearson', 10)",0.23047712837308731
+Timing: two-level breadth − none,max_drawdown,"('3D', 10, 20, 'pearson', 5)",0.3346426819703734
+Timing: two-level breadth − none,max_drawdown,"('3D', 5, 10, 'ccc', 10)",0.2570316461930796
+Timing: two-level breadth − none,max_drawdown,"('3D', 5, 10, 'ccc', 5)",0.29352326948886376
+Timing: two-level breadth − none,max_drawdown,"('3D', 5, 10, 'pearson', 10)",0.23606429182079658
+Timing: two-level breadth − none,max_drawdown,"('3D', 5, 10, 'pearson', 5)",0.2789498670674859
+Timing: two-level breadth − none,max_drawdown,"('5D', 10, 20, 'ccc', 10)",0.220668353620051
+Timing: two-level breadth − none,max_drawdown,"('5D', 10, 20, 'ccc', 5)",0.24010344262565186
+Timing: two-level breadth − none,max_drawdown,"('5D', 10, 20, 'pearson', 10)",0.22014421935901063
+Timing: two-level breadth − none,max_drawdown,"('5D', 10, 20, 'pearson', 5)",0.25828300721926134
+Timing: two-level breadth − none,max_drawdown,"('5D', 5, 10, 'ccc', 10)",0.27816395049711207
+Timing: two-level breadth − none,max_drawdown,"('5D', 5, 10, 'ccc', 5)",0.2799735973726507
+Timing: two-level breadth − none,max_drawdown,"('5D', 5, 10, 'pearson', 10)",0.20874050250286502
+Timing: two-level breadth − none,max_drawdown,"('5D', 5, 10, 'pearson', 5)",0.20150950059996497
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 10, 20, 'ccc', 10)",0.6953426468495081
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 10, 20, 'ccc', 5)",0.6010126849573946
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 10, 20, 'pearson', 10)",0.777179725712036
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 10, 20, 'pearson', 5)",0.7188768330975265
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 5, 10, 'ccc', 10)",0.6767598147183403
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 5, 10, 'ccc', 5)",0.6006084622162016
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 5, 10, 'pearson', 10)",0.8109552455376275
+Timing: two-level breadth − none,sharpe_rf0,"('3D', 5, 10, 'pearson', 5)",0.7552673173181299
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 10, 20, 'ccc', 10)",0.46762185843659554
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 10, 20, 'ccc', 5)",0.4453643884924191
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 10, 20, 'pearson', 10)",0.5119750401654704
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 10, 20, 'pearson', 5)",0.40931552587796416
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 5, 10, 'ccc', 10)",0.4881055497511313
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 5, 10, 'ccc', 5)",0.4426877553287296
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 5, 10, 'pearson', 10)",0.5431769093504477
+Timing: two-level breadth − none,sharpe_rf0,"('5D', 5, 10, 'pearson', 5)",0.5036784191824901
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'breadth2')",0.018864770692406108
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'breadth')",0.005642241009313542
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'none')",-0.02128571767321863
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'breadth2')",-0.0013432033172764424
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'breadth')",-0.04208914727936475
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'none')",-0.06335709812909052
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'breadth2')",-0.000279193887588125
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'breadth')",-0.029981937779596457
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'none')",-0.06687398128687061
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'breadth2')",-0.009544916947878956
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'breadth')",-0.031665386883688695
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'none')",-0.09192191502964198
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'breadth2')",0.010917606343894493
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'breadth')",-0.004381408560196309
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'none')",-0.011745622505785036
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'breadth2')",-0.0006572281565675464
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'breadth')",-0.01706912636027913
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'none')",-0.0017538438857052085
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'breadth2')",-0.013897495230065005
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'breadth')",-0.02440297292494198
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'none')",-0.05313482139913961
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'breadth2')",-0.0315149309540681
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'breadth')",-0.0369220398345409
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'none')",-0.08325544427414888
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 10, 'breadth2')",-0.019230701904499048
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 10, 'breadth')",-0.02063728281850996
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 10, 'none')",-0.002988836027569275
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 5, 'breadth2')",-0.0629292108625471
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 5, 'breadth')",-0.1056617002513126
+Similarity: Pearson − CCC,max_drawdown,"('3D', 10, 20, 5, 'none')",-0.15635506304145586
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 10, 'breadth2')",-0.0187668766590825
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 10, 'breadth')",-0.008026373027310796
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 10, 'none')",0.0022004777132005326
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 5, 'breadth2')",-0.03756254928234859
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 5, 'breadth')",-0.042570156714244134
+Similarity: Pearson − CCC,max_drawdown,"('3D', 5, 10, 5, 'none')",-0.022989146860970755
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 10, 'breadth2')",-0.025068173821761963
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 10, 'breadth')",-0.03646013492966904
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 10, 'none')",-0.024544039560721598
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 5, 'breadth2')",-0.10640860925122797
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 5, 'breadth')",-0.15435410377317327
+Similarity: Pearson − CCC,max_drawdown,"('5D', 10, 20, 5, 'none')",-0.12458817384483745
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 10, 'breadth2')",-0.02301998408797612
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 10, 'breadth')",0.03172318674612773
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 10, 'none')",0.046403463906270925
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 5, 'breadth2')",-0.08534476691560577
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 5, 'breadth')",-0.022840466215012567
+Similarity: Pearson − CCC,max_drawdown,"('5D', 5, 10, 5, 'none')",-0.006880670142920042
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 10, 'breadth2')",-0.011790525568035504
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 10, 'breadth')",-0.06294489992512475
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 10, 'none')",-0.0936276044305634
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 5, 'breadth2')",-0.0719728439162326
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 5, 'breadth')",-0.23112398459872052
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 10, 20, 5, 'none')",-0.1898369920563645
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 10, 'breadth2')",-0.1027747403479613
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 10, 'breadth')",-0.22226885962064413
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 10, 'none')",-0.2369701711672485
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 5, 'breadth2')",-0.13383737340729307
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 5, 'breadth')",-0.21607488416189713
+Similarity: Pearson − CCC,sharpe_rf0,"('3D', 5, 10, 5, 'none')",-0.2884962285092214
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 10, 'breadth2')",-0.024337623668876374
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 10, 'breadth')",-0.10899816435742693
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 10, 'none')",-0.06869080539775119
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 5, 'breadth2')",-0.06672372728823417
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 5, 'breadth')",-0.1504437579075677
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 10, 20, 5, 'none')",-0.030674864673779223
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 10, 'breadth2')",-0.14152686339052312
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 10, 'breadth')",-0.1965244662294381
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 10, 'none')",-0.19659822298983953
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 5, 'breadth2')",-0.21044092052712204
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 5, 'breadth')",-0.24445020128987172
+Similarity: Pearson − CCC,sharpe_rf0,"('5D', 5, 10, 5, 'none')",-0.27143158438088255
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'breadth2')",-0.02411153923087639
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'breadth')",0.002772532403679362
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'none')",-0.02706435235606075
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'breadth2')",-0.04431951324055894
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'breadth')",-0.04495885588499893
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'none')",-0.06913573281193264
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'breadth2')",0.010973325100641862
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'breadth')",0.01440478817435098
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'none')",0.021033509462086375
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'breadth2')",0.0017076020403510306
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'breadth')",0.012721339070258741
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'none')",-0.004014424280684992
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'breadth2')",-0.02494166054512137
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'breadth')",-0.017120621204167463
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'none')",-0.04636521035024477
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'breadth2')",-0.03651649504558341
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'breadth')",-0.029808339004250284
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'none')",-0.03637343173016494
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'breadth2')",0.008084122276618366
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'breadth')",0.01711200912513977
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'none')",0.013014085109088303
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'breadth2')",-0.009533313447384728
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'breadth')",0.004592942215540852
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'none')",-0.01710653776592097
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'ccc', 'breadth2')",-0.02508752269827541
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'ccc', 'breadth')",-0.04466308094723559
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'ccc', 'none')",-0.01958535823972296
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'pearson', 'breadth2')",-0.06878603165632347
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'pearson', 'breadth')",-0.12968749838003824
+Selection: Top5 − Top10,max_drawdown,"('3D', 10, 20, 'pearson', 'none')",-0.17295158525360954
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'ccc', 'breadth2')",-0.005337232223884381
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'ccc', 'breadth')",-0.019430669602884643
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'ccc', 'none')",-0.04182885551966853
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'pearson', 'breadth2')",-0.02413290484715047
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'pearson', 'breadth')",-0.05397445328981798
+Selection: Top5 − Top10,max_drawdown,"('3D', 5, 10, 'pearson', 'none')",-0.06701848009383982
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'ccc', 'breadth2')",-0.024496234000693562
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'ccc', 'breadth')",-0.036024325318329664
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'ccc', 'none')",-0.04393132300629443
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'pearson', 'breadth2')",-0.10583666943015957
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'pearson', 'breadth')",-0.1539182941618339
+Selection: Top5 − Top10,max_drawdown,"('5D', 10, 20, 'pearson', 'none')",-0.14397545729041028
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'ccc', 'breadth2')",-0.0046583734788739894
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'ccc', 'breadth')",0.008337602394283383
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'ccc', 'none')",-0.006468020354412629
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'pearson', 'breadth2')",-0.06698315630650364
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'pearson', 'breadth')",-0.04622605056685691
+Selection: Top5 − Top10,max_drawdown,"('5D', 5, 10, 'pearson', 'none')",-0.0597521544036036
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'ccc', 'breadth2')",-0.20597615419645288
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'ccc', 'breadth')",-0.08350459588464276
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'ccc', 'none')",-0.11164619230433936
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'pearson', 'breadth2')",-0.26615847254464997
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'pearson', 'breadth')",-0.25168368055823853
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 10, 20, 'pearson', 'none')",-0.20785557993014048
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'ccc', 'breadth2')",-0.057197105179795926
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'ccc', 'breadth')",-0.022512821015154838
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'ccc', 'none')",0.018954247322342854
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'pearson', 'breadth2')",-0.0882597382391277
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'pearson', 'breadth')",-0.016318845556407835
+Selection: Top5 − Top10,sharpe_rf0,"('3D', 5, 10, 'pearson', 'none')",-0.032571810019630054
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'ccc', 'breadth2')",-0.18622363433356992
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'ccc', 'breadth')",-0.15845922931873546
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'ccc', 'none')",-0.1639661643893935
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'pearson', 'breadth2')",-0.22860973795292772
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'pearson', 'breadth')",-0.19990482286887623
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 10, 20, 'pearson', 'none')",-0.12595022366542152
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'ccc', 'breadth2')",-0.04163956624559684
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'ccc', 'breadth')",0.009188716045501533
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'ccc', 'none')",0.003778228176804843
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'pearson', 'breadth2')",-0.11055362338219576
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'pearson', 'breadth')",-0.038737019014932095
+Selection: Top5 − Top10,sharpe_rf0,"('5D', 5, 10, 'pearson', 'none')",-0.07105513321423818
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'breadth2')",0.06924241092450178
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'breadth')",0.019036396075096773
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'none')",0.0030194832579124586
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'breadth2')",0.07007253223874677
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'breadth')",0.0389295496829436
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'none')",0.022320341252096476
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'breadth2')",0.0771895752730134
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'breadth')",0.029060045644606625
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'none')",-0.0065206119095211346
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'breadth2')",0.06938655707803787
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'breadth')",0.013909528763857981
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'none')",-0.03928291299128883
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'breadth2')",0.05573083075718466
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'breadth')",0.026129860269374694
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'none')",0.0027881940650853476
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'breadth2')",0.05862003358120815
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'breadth')",0.023422639318585903
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'none')",0.01080761841808342
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'breadth2')",0.06934913209966154
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'breadth')",0.020550895414720216
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'none')",-0.010950965822645653
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'breadth2')",0.0805900475873973
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'breadth')",0.028679292269438106
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'none')",0.002141147662590326
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 10, 'breadth2')",-0.021621003049713705
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 10, 'breadth')",-0.042490675064732475
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 10, 'none')",-0.0476716436796798
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 5, 'breadth2')",-0.022212291747295554
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 5, 'breadth')",-0.0511294306936384
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'ccc', 5, 'none')",-0.023325678913108328
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 10, 'breadth2')",-0.01578353113245079
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 10, 'breadth')",-0.026667822953573395
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 10, 'none')",-0.026116440146527475
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 5, 'breadth2')",0.021267106641385314
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 5, 'breadth')",-0.002437027171777739
+Holding: 3D − 5D,max_drawdown,"(10, 20, 'pearson', 5, 'none')",-0.055092568109726736
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 10, 'breadth2')",-0.020060156798830442
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 10, 'breadth')",0.0026357642483655352
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 10, 'none')",0.0010721475052020146
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 5, 'breadth2')",-0.020739015543840833
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 5, 'breadth')",-0.02513250774880249
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'ccc', 5, 'none')",-0.034288687660053885
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 10, 'breadth2')",-0.01580704936993682
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 10, 'breadth')",-0.03711379552507299
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 10, 'none')",-0.04313083868786838
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 5, 'breadth2')",0.02704320208941635
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 5, 'breadth')",-0.04486219824803406
+Holding: 3D − 5D,max_drawdown,"(5, 10, 'pearson', 5, 'none')",-0.0503971643781046
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 10, 'breadth2')",0.224576193171246
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 10, 'breadth')",0.003975838059113501
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 10, 'none')",-0.003144595241666548
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 5, 'breadth2')",0.20482367330836304
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 5, 'breadth')",0.0789304714932062
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'ccc', 5, 'none')",0.049175376843387575
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 10, 'breadth2')",0.23712329127208687
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 10, 'breadth')",0.05002910249141568
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 10, 'none')",-0.028081394274478755
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 5, 'breadth2')",0.1995745566803646
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 5, 'breadth')",-0.001749755197946623
+Holding: 3D − 5D,sharpe_rf0,"(10, 20, 'pearson', 5, 'none')",-0.10998675053919771
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 10, 'breadth2')",0.1847785167785747
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 10, 'breadth')",0.04932633968037092
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 10, 'none')",-0.0038757481886343426
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 5, 'breadth2')",0.16922097784437562
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 5, 'breadth')",0.017624802619714552
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'ccc', 5, 'none')",0.011300270956903669
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 10, 'breadth2')",0.22353063982113652
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 10, 'breadth')",0.02358194628916488
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 10, 'none')",-0.04424769636604331
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 5, 'breadth2')",0.2458245249642046
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 5, 'breadth')",0.04600011974768914
+Holding: 3D − 5D,sharpe_rf0,"(5, 10, 'pearson', 5, 'none')",-0.005764373171435189
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'breadth2')",-0.017689610677918965
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'breadth')",-0.010646680204619008
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'none')",-0.0002634053018519822
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'breadth2')",0.017395253653599285
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'breadth')",0.00098557556605261
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'none')",0.04783445651629514
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'breadth2')",-0.0368335752579132
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'breadth')",-0.04627085899352901
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'none')",-0.04585166891550396
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'breadth2')",0.009193540022996771
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'breadth')",0.011409335961728662
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'none')",0.019269639615743683
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'breadth2')",-0.004178030510601838
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'breadth')",-0.01774014439889693
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'none')",-3.2116109024871164e-05
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'breadth2')",0.028847752311137898
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'breadth')",0.016492485930410306
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'none')",0.0593471793503082
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'breadth2')",-0.028993132084561335
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'breadth')",-0.0377617087636426
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'none')",-0.041421315002379444
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'breadth2')",-0.002009950486362655
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'breadth')",-0.003360427543851463
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'none')",-0.022154421038135474
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 10, 'breadth2')",0.007311399238512872
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 10, 'breadth')",0.027338561192775
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 10, 'none')",-0.0030012527045496507
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 5, 'breadth2')",0.027061689712903902
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 5, 'breadth')",0.05257097253712595
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'ccc', 5, 'none')",-0.02524474998449522
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 10, 'breadth2')",0.0077752244839294216
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 10, 'breadth')",0.03994947098397417
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 10, 'none')",0.002188061036220157
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 5, 'breadth2')",0.052428351293102415
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 5, 'breadth')",0.11566251607419442
+Windows: F5/W10 − F10/W20,max_drawdown,"('3D', 'pearson', 5, 'none')",0.10812116619598988
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 10, 'breadth2')",0.005750552987629609
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 10, 'breadth')",-0.01778787812032301
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 10, 'none')",-0.051745043889431463
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 5, 'breadth2')",0.02558841350944918
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 5, 'breadth')",0.02657404959229004
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'ccc', 5, 'none')",-0.014281741237549661
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 10, 'breadth2')",0.0077987427214154526
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 10, 'breadth')",0.05039544355547376
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 10, 'none')",0.01920245957756106
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 5, 'breadth2')",0.04665225584507138
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 5, 'breadth')",0.15808768715045074
+Windows: F5/W10 − F10/W20,max_drawdown,"('5D', 'pearson', 5, 'none')",0.10342576246436774
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 10, 'breadth2')",0.016812949676938027
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 10, 'breadth')",0.02187364593062946
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 10, 'none')",0.035395781808105764
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 5, 'breadth2')",0.16559199869359498
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 5, 'breadth')",0.08286542080011738
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'ccc', 5, 'none')",0.16599622143478798
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 10, 'breadth2')",-0.07417126510298777
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 10, 'breadth')",-0.13745031376488992
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 10, 'none')",-0.10794678492857934
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 5, 'breadth2')",0.1037274692025345
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 5, 'breadth')",0.09791452123694078
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('3D', 'pearson', 5, 'none')",0.06733698498193108
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 10, 'breadth2')",0.056610626069609316
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 10, 'breadth')",-0.023476855690627962
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 10, 'none')",0.03612693475507356
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 5, 'breadth2')",0.2011946941575824
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 5, 'breadth')",0.14417108967360903
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'ccc', 5, 'none')",0.2038713273212719
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 10, 'breadth2')",-0.06057861365203743
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 10, 'breadth')",-0.11100315756263912
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 10, 'none')",-0.09178048283701479
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 5, 'breadth2')",0.057477500918694524
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 5, 'breadth')",0.050164646291305015
+Windows: F5/W10 − F10/W20,sharpe_rf0,"('5D', 'pearson', 5, 'none')",-0.03688539238583144

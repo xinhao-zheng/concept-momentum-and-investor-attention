@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    {
+      "path": "attention_daily.parquet",
+      "sha256": "8367e6b0c24b48021bca03cc614124424162c275470d5232f6ff17a68693fc20"
+    },
+    {
+      "path": "stock_pit_covariates_daily.universe.parquet",
+      "sha256": "2d13190c6274c78180d463b11a2cf09e295bc800ee7de58aafaaf10c2ceaa4e9"
+    },
+    {
+      "path": "sh000300.csv",
+      "sha256": "ccd11fd5e65d6167730af7efb247cd07ad3c81d5fcc63425e5712a29c6876be4"
+    },
+    {
+      "path": "\u6caa\u6df1_1h.csv",
+      "sha256": "771174c41c9d299018cf4762ba4169fabf80ae4321a5683b07ae70278ded1ea2"
+    },
+    {
+      "path": "\u6caa\u6df1_24h.csv",
+      "sha256": "321e87f29b827444034ce4c86b939f8984b2c2ce05622a45789debe2efabefca"
+    },
+    {
+      "path": "mechanism_sample_keys_before_outcomes.parquet",
+      "sha256": "6dc4d81dcf8dfabe358b69ccf142c709cfaf403f3c7f0edcad7fc484fa3ddb2a"
+    },
+    {
+      "path": "protocol_membership_cards_beta_sample_dates.parquet",
+      "sha256": "701661997db1d2ae538a9c533b80c1d4864127ef05b664bf044b38f6568ca33a"
+    }
+  ]
+}

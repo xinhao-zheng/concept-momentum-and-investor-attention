@@ -1,0 +1,7 @@
+﻿metric,equal_date_mean,n_dates,n_common_stock_dates,inference
+future_real_corr,0.19795772303310913,202,123530,descriptive_context_only
+past_real_corr,0.1986073881732798,202,123530,descriptive_context_only
+future_pseudo_corr,0.04983255327223076,202,123530,descriptive_context_only
+past_pseudo_corr,0.04782389891336765,202,123530,descriptive_context_only
+future_real_minus_pseudo,0.1481251697608784,202,123530,descriptive_context_only
+past_real_minus_pseudo,0.15078348925991217,202,123530,descriptive_context_only

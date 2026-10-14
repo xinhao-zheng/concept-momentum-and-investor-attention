@@ -1,0 +1,29 @@
+Family,Composition,Total,Supported
+Historical rules,2 labels × 2 formation-window conventions × 3 N × 8 H × 2 missingness × 5 controls,960,720
+Same-information aggregation,2 labels × 3 N × 8 H × 2 missingness × 2 controls,192,144
+Daily adaptations,2 labels × 3 N × 8 H × 2 missingness × 4 controls,384,288
+Model increment,80 primary comparisons + 16 industry-conditioned IC,96,72
+Six-pair parameter sensitivity (complete),6 F/W × 3 H × 6 N × 5 controls,540,540
+Six-pair parameter sensitivity (missing = 0),Same grid; separately corrected sensitivity,540,540
+Industry and size controls,3 N × 3 group benchmarks at H3,9,9
+Full-training-date H3 sensitivity,2 models × 6 metrics × 2 block lengths,24,24
+Strength block given W (E1),3 endpoints × 2 block lengths; four stress cells not estimable,6,2
+W conditional on market risk (S11),3 paired contrasts × 2 block lengths,6,6
+Paired membership and return timing,5 contrasts × 2 missingness conventions × 2 block lengths,20,20
+Fixed-period H3 sensitivity,2 periods × 2 benchmarks; separately per block length,4,4 at L20/L40; 2 at L60
+Paired H5 ridge list-width diagnostic,2 missingness conventions × 3 block lengths,6,6
+Comovement bridge,3 attention fields × 3 temporal contrasts,9,0 formal
+Attention endpoints,3 measures × 8 H; block bootstrap,24,21
+List visibility (headline),2 list windows × 4 tasks,8,8
+Attention–trading maximum-t,3 measures × 3 trading outcomes × 8 H × 2 directions,144,144
+Reference-set reranking,"3 fields × 8 H, per block specification",24,15
+Attention rank-change differences,4 transformations × 8 H × 3 field pairs,96,60
+Tree-DML temporal audit,"6 families (own/peer × α/β/γ), each 3 exposures × 8 H",144,84
+AIPW temporal audit,"3 families (one per design), each 4 states × 8 H",96,42
+S-coverage window: Tree-DML,"Same structure, separate families",144,126
+S-coverage window: AIPW,"Same structure, separate families",96,36
+N1 paired specification differences (S13.1),3 adjacent contrasts × 3 own fields × 3 HAC lengths,27,27 diagnostic
+N1 residual-projection coefficients (S13.1),4 specifications × 3 own fields × 3 HAC lengths,36,36 diagnostic
+Longer-block parameter checks,"6 F/W × 5 controls at H3/Top20, per block length",30,30
+Observation-row timing (S4.1),"5 contrasts × 8 H × 2 N, per missingness convention",80,80
+Order-size composition,3 measures × 2 outcomes × 2 estimands × 8 H,96,0: turnover reconciliation not satisfied

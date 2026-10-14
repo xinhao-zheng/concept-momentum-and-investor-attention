@@ -1,0 +1,8 @@
+| Workflow and method | Planned | Estimable | Deferred | Holm | Secondary BH |
+| --- | --- | --- | --- | --- | --- |
+| Global preprocessing diagnostic: Tree-DML | 144 | 84 | 60 | 0 | 6 |
+| Past calibration, fixed 80 rounds: Tree-DML | 144 | 84 | 60 | 0 | 0 |
+| Global preprocessing diagnostic: AIPW | 96 | 42 | 54 | 1 | 2 |
+| Training-fold encoding, fixed 80 rounds: AIPW | 96 | 42 | 54 | 0 | 0 |
+| S-coverage window: Tree-DML | 144 | 126 | 18 | 0 | 0 |
+| S-coverage window: AIPW | 96 | 36 | 60 | 0 | 0 |

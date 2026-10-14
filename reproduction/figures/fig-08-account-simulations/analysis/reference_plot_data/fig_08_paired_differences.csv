@@ -1,0 +1,129 @@
+contrast,metric,base,difference,display,median_pp
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'ccc', 5)",0.023169355977344042,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'ccc', 10)",0.028099318809813978,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'ccc', 10)",0.032245233211390945,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'ccc', 5)",0.053668783016514343,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'pearson', 5)",0.054765398745652005,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 10, 20, 'pearson', 10)",0.054908462061070473,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'pearson', 10)",0.067336644978888582,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'ccc', 5)",0.070981771140468775,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('5D', 5, 10, 'pearson', 5)",0.074909869297424825,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'ccc', 10)",0.081041955501913288,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'ccc', 10)",0.098468160877980271,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'ccc', 5)",0.10142097400316463,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'pearson', 10)",0.13861864924360501,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'pearson', 10)",0.14763674290119577,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 5, 10, 'pearson', 5)",0.15335876922223179,Two-level − none,7.29458202189468
+Timing: two-level breadth − none,cagr,"('3D', 10, 20, 'pearson', 5)",0.16343486881497871,Two-level − none,7.29458202189468
+Timing: breadth − none,cagr,"('5D', 5, 10, 'ccc', 10)",0.0087986257835530601,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 5, 10, 'ccc', 5)",0.012896549799604529,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 5, 10, 'ccc', 5)",0.025511570700107011,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 10, 20, 'ccc', 10)",0.026506654073425118,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 5, 10, 'ccc', 10)",0.032140291987842406,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 10, 20, 'pearson', 10)",0.033870868019013844,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 5, 10, 'pearson', 10)",0.03753047425775069,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 10, 20, 'pearson', 5)",0.040435960744928501,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 10, 20, 'ccc', 10)",0.042523566890609432,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 10, 20, 'ccc', 5)",0.055751243219502422,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('5D', 5, 10, 'pearson', 5)",0.059229954239212512,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 5, 10, 'pearson', 10)",0.069032335495116559,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 10, 20, 'pearson', 10)",0.069451525573141604,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 10, 20, 'ccc', 5)",0.072360451650349544,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 5, 10, 'pearson', 5)",0.085768098846060292,Breadth − none,4.1479763817768962
+Timing: breadth − none,cagr,"('3D', 10, 20, 'pearson', 5)",0.093628402500075314,Breadth − none,4.1479763817768962
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'none')",-0.039282912991288832,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'none')",-0.010950965822645653,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'none')",-0.0065206119095211346,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'none')",0.0021411476625903259,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'none')",0.0027881940650853476,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'none')",0.0030194832579124586,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'none')",0.01080761841808342,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'breadth')",0.013909528763857981,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'breadth')",0.019036396075096773,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'breadth')",0.020550895414720216,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'none')",0.022320341252096476,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'breadth')",0.023422639318585903,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'breadth')",0.026129860269374694,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'breadth')",0.028679292269438106,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'breadth')",0.029060045644606625,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'breadth')",0.038929549682943598,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 10, 'breadth2')",0.055730830757184657,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'ccc', 5, 'breadth2')",0.058620033581208153,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 10, 'breadth2')",0.069242410924501785,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 10, 'breadth2')",0.069349132099661537,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 5, 'breadth2')",0.069386557078037869,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'ccc', 5, 'breadth2')",0.070072532238746765,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(10, 20, 'pearson', 10, 'breadth2')",0.0771895752730134,3-day − 5-day,2.4776249793980298
+Holding: 3D − 5D,cagr,"(5, 10, 'pearson', 5, 'breadth2')",0.080590047587397295,3-day − 5-day,2.4776249793980298
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'none')",-0.091921915029641976,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'none')",-0.083255444274148882,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'none')",-0.06687398128687061,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'none')",-0.063357098129090517,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'none')",-0.053134821399139609,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'breadth')",-0.042089147279364747,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'breadth')",-0.036922039834540898,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'breadth')",-0.031665386883688695,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 5, 'breadth2')",-0.031514930954068099,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'breadth')",-0.029981937779596457,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'breadth')",-0.024402972924941979,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'none')",-0.021285717673218629,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'breadth')",-0.01706912636027913,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 5, 10, 10, 'breadth2')",-0.013897495230065005,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'none')",-0.011745622505785036,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 5, 'breadth2')",-0.0095449169478789564,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'breadth')",-0.0043814085601963093,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'none')",-0.0017538438857052085,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 5, 'breadth2')",-0.0013432033172764424,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 5, 'breadth2')",-0.00065722815656754641,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 5, 10, 10, 'breadth2')",-0.00027919388758812502,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'breadth')",0.0056422410093135422,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('5D', 10, 20, 10, 'breadth2')",0.010917606343894493,Pearson − CCC,-1.917742201674888
+Similarity: Pearson − CCC,cagr,"('3D', 10, 20, 10, 'breadth2')",0.018864770692406108,Pearson − CCC,-1.917742201674888
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'none')",-0.069135732811932638,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'none')",-0.046365210350244768,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'breadth')",-0.044958855884998927,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'pearson', 'breadth2')",-0.044319513240558939,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'breadth2')",-0.036516495045583408,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'none')",-0.03637343173016494,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'pearson', 'breadth')",-0.029808339004250284,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'none')",-0.02706435235606075,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'breadth2')",-0.024941660545121369,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'breadth2')",-0.024111539230876389,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 10, 20, 'ccc', 'breadth')",-0.017120621204167463,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'none')",-0.017106537765920971,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'breadth2')",-0.0095333134473847281,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'none')",-0.0040144242806849917,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'breadth2')",0.0017076020403510306,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 10, 20, 'ccc', 'breadth')",0.0027725324036793619,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'pearson', 'breadth')",0.0045929422155408517,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'breadth2')",0.0080841222766183662,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'breadth2')",0.010973325100641862,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'pearson', 'breadth')",0.012721339070258741,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'none')",0.013014085109088303,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'breadth')",0.01440478817435098,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('5D', 5, 10, 'ccc', 'breadth')",0.017112009125139771,Top5 − Top10,-1.3319925606652849
+Selection: Top5 − Top10,cagr,"('3D', 5, 10, 'ccc', 'none')",0.021033509462086375,Top5 − Top10,-1.3319925606652849
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'breadth')",-0.046270858993529007,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'none')",-0.045851668915503963,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'none')",-0.041421315002379444,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'breadth')",-0.037761708763642599,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 10, 'breadth2')",-0.036833575257913198,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 10, 'breadth2')",-0.028993132084561335,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'none')",-0.022154421038135474,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'breadth')",-0.017740144398896929,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'breadth2')",-0.017689610677918965,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'breadth')",-0.010646680204619008,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'breadth2')",-0.0041780305106018378,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'breadth')",-0.003360427543851463,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'pearson', 5, 'breadth2')",-0.0020099504863626549,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 10, 'none')",-0.00026340530185198219,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 10, 'none')",-3.2116109024871164e-05,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'breadth')",0.00098557556605260999,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'breadth2')",0.0091935400229967712,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'breadth')",0.011409335961728662,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'breadth')",0.016492485930410306,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'breadth2')",0.017395253653599285,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'pearson', 5, 'none')",0.019269639615743683,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'breadth2')",0.028847752311137898,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('3D', 'ccc', 5, 'none')",0.047834456516295143,F5/W10 − F10/W20,-0.2685189015107059
+Windows: F5/W10 − F10/W20,cagr,"('5D', 'ccc', 5, 'none')",0.059347179350308199,F5/W10 − F10/W20,-0.2685189015107059

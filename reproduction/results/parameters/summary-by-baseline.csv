@@ -1,0 +1,11 @@
+missing,baseline,tests,positive,pass_Holm540,supported
+complete,A,108,75,0,108
+complete,F_only,108,108,81,108
+complete,P,108,55,0,108
+complete,W_only,108,108,0,108
+complete,pool,108,108,65,108
+zero,A,108,74,0,108
+zero,F_only,108,108,80,108
+zero,P,108,55,0,108
+zero,W_only,108,108,0,108
+zero,pool,108,108,64,108

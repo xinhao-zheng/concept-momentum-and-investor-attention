@@ -6,13 +6,14 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 # param → 全息行情的申万行业列
 _INDUSTRY_COLUMNS = {
-    '一级行业': '新版申万一级行业名称',
-    '二级行业': '新版申万二级行业名称',
-    '三级行业': '新版申万三级行业名称',
+    "一级行业": "新版申万一级行业名称",
+    "二级行业": "新版申万二级行业名称",
+    "三级行业": "新版申万三级行业名称",
 }
 
 fin_cols = []
@@ -40,8 +41,10 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          不填充缺口或用最新标签回填历史；原始字段不含发布时间或入库版本，无法据此核验严格时点可得性。
     选股因子案例：('z_行业分类_zh', False, '一级行业', 0)
     """
-    col_name = kwargs['col_name']
+    col_name = kwargs["col_name"]
     if not isinstance(param, str) or param not in _INDUSTRY_COLUMNS:
-        raise ValueError(f"param 仅接受 '一级行业'、'二级行业' 或 '三级行业'，收到 {param!r}")
+        raise ValueError(
+            f"param 仅接受 '一级行业'、'二级行业' 或 '三级行业'，收到 {param!r}"
+        )
 
     return pd.DataFrame({col_name: df[_INDUSTRY_COLUMNS[param]]}, index=df.index)

@@ -1,7 +1,7 @@
 # concept-momentum-and-investor-attention
 
-Concept-membership records for China's A-shares, the modules that turn those records into a selection score, and reproduction data and analysis tools for *Concept momentum and investor attention: Evidence from China's A-share market*. Records stop on 2026-08-31.
-中国 A 股的概念成员记录、把这些记录变成选股评分的模块，以及《概念动量与投资者注意力：中国 A 股市场的证据》的复现数据与分析工具。记录止于 2026-08-31。
+Research data, selection modules and analysis code for *Concept momentum and investor attention: Evidence from China's A-share market*. Observations end on 31 August 2026.
+《概念动量与投资者注意力：中国 A 股市场的证据》的研究数据、选股模块与分析代码。观察截止于 2026 年 8 月 31 日。
 
 ---
 
@@ -9,21 +9,40 @@ Concept-membership records for China's A-shares, the modules that turn those rec
 
 ```text
 .
-├── README.md
-├── LICENSE
-├── concept-data/          # concept-data.zip, one CSV per stock · 每只股票一个 CSV
-├── strategy-bundle/
-│   ├── factors/           # one measurement per module · 一个模块一项度量
-│   ├── strategies/        # measurements composed into a score · 度量合成评分
-│   └── external-data/     # membership reader · 成员读取
-└── reproduction/          # reproduction data and analysis tools · 复现数据与分析工具
+├── paper/                 # article, appendix and complete manuscript · 正文、附录与全文
+├── concept-data/          # recorded concept memberships · 概念成员记录
+├── strategy-bundle/       # factors, strategy and data reader · 因子、策略与数据读取
+└── reproduction/
+    ├── results/           # experimental result index · 实验结果索引
+    ├── figures/           # Fig 1–8 and S1–S13 · 主图与补充图
+    ├── tables/            # design tables and S1–S14 · 设计表与补充表
+    ├── sections/          # S1–S17 · 补充章节
+    ├── code/              # shared analysis and plotting · 共用分析与绘图
+    ├── config/            # input paths and environments · 输入路径与运行环境
+    └── run.py             # prepare, analyse, render, verify · 准备、计算、绘图、核验
 ```
 
-`concept-data/` supplies membership records. `strategy-bundle/` provides the account-simulation implementation variant. `reproduction/` contains reproduction data and analysis tools.
-`concept-data/` 提供概念成员记录。`strategy-bundle/` 提供账户模拟所用的实现变体。`reproduction/` 收录复现数据与分析工具。
+Read the [complete manuscript](paper/complete-manuscript.pdf), browse the [experimental results](reproduction/results/index.csv), or select a figure, table or section through the [reproduction guide](reproduction/README.md). Shared calculations are stored once and mapped to the objects that use them.
+阅读[完整手稿](paper/complete-manuscript.pdf)、查看[实验结果](reproduction/results/index.csv)，或从[复现说明](reproduction/README.md)按图、表、章节进入。共用计算保留一份，再对应到各个图表。
 
-Factors and strategies each ship in two editions of the same logic — English `z_EnglishName_en.py` and Chinese `z_中文名_zh.py`. The host loads a module by the directory it sits in and by its filename: `factors/` into `因子库/`, `strategies/` into `策略库/`, `external-data/` into `外部数据/`. Membership files sit in `stock-popular-concept-detail/` under the host data directory. The host supplies `config` and `core.model.strategy_config`. Separate price inputs are required; Wind popularity measures and licensed price and industry inputs are not included.
-因子与策略各有逻辑相同的两版——英文版 `z_EnglishName_en.py` 与中文版 `z_中文名_zh.py`。宿主按目录和文件名加载：`factors/` 放入 `因子库/`，`strategies/` 放入 `策略库/`，`external-data/` 放入 `外部数据/`。成员文件放在宿主数据目录下的 `stock-popular-concept-detail/`。宿主提供 `config` 与 `core.model.strategy_config`。价格数据须另备；本库不包含 Wind 人气指标及受许可约束的价格与行业数据。
+---
+
+## Use | 使用
+
+Install Git LFS before cloning, then retrieve the data files:
+克隆前安装 Git LFS，再获取数据文件：
+
+```text
+git lfs pull
+python reproduction/run.py --list
+python reproduction/verify_archive.py
+```
+
+The release contains experiment results, plotting and research code, nine strategy modules, and 96 daily account paths with metric calculations. The trading simulator and timing implementations are not included.
+公开内容包含实验结果、绘图与研究代码、九个策略相关模块，以及 96 条逐日账户路径和指标计算程序。交易模拟器与择时实现不随包提供。
+
+The author-collected membership archive is included. Prices, attention measurements and other external observations are obtained separately; see [data access](DATA_ACCESS.md). Configure local paths in a separate file. [Input preparation](reproduction/RAW_REBUILD.md) and [numerical checks](reproduction/REPRODUCIBILITY.md) define the calculation scope.
+包内提供作者采集整理的概念成员档案。行情、人气测量及其他外部观测需独立取得，见[数据说明](DATA_ACCESS.md)。本地路径在独立配置文件中设置；[输入准备](reproduction/RAW_REBUILD.md)与[数值核验](reproduction/REPRODUCIBILITY.md)说明计算范围。
 
 ---
 
@@ -35,4 +54,5 @@ UTF-8, no BOM, LF line endings. · UTF-8，无 BOM，LF 换行。
 
 ## License | 许可
 
-MIT (see `LICENSE`). · MIT（见 `LICENSE`）。
+MIT (see [LICENSE](LICENSE)). External inputs are outside the published data package.
+MIT（见 [LICENSE](LICENSE)）。外部输入不属于本项目公开数据包。

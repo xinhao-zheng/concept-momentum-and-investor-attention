@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+local.json
+local.*.json
+!reproduction/config/local.example.json
+reproduction/work/
+reproduction/figures/*/analysis/rebuilt/

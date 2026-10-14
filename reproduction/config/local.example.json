@@ -1,0 +1,8 @@
+{
+  "data_root": "../data",
+  "snapshot_root": "research-snapshot",
+  "output_root": null,
+  "cutoff": "2026-08-31",
+  "threads": 2,
+  "input_mode": "raw-rebuilt"
+}

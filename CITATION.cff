@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and this repository when using the study's analyses or data."
+title: "Concept momentum and investor attention: Evidence from China's A-share market"
+type: software
+authors:
+  - family-names: Zheng
+    given-names: Xinhao
+    affiliation: "Independent Researcher, Beijing, China"
+    orcid: "https://orcid.org/0009-0007-7021-322X"
+repository-code: "https://github.com/xinhao-zheng/concept-momentum-and-investor-attention"
+version: "V15"
+license: MIT

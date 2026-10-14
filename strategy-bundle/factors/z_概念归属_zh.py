@@ -6,10 +6,11 @@ Contact:   Veritas428 (WeChat)
 Copyright: (c) 2026 Xinhao Zheng. Licensed under the MIT License.
 ---------------------------------------------------
 """
+
 import pandas as pd
 
 fin_cols = []
-extra_data = {'z_概念数据': ['z_概念归属']}
+extra_data = {"z_概念数据": ["z_概念归属"]}
 
 
 def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
@@ -34,8 +35,8 @@ def add_factor(df: pd.DataFrame, param=None, **kwargs) -> pd.DataFrame:
          原始 CSV 不含快照发布时间，无法仅据记录日期核验严格时点可得性。
     选股因子案例：('z_概念归属_zh', False, '概念', 0)
     """
-    col_name = kwargs['col_name']
-    if not isinstance(param, str) or param != '概念':
+    col_name = kwargs["col_name"]
+    if not isinstance(param, str) or param != "概念":
         raise ValueError(f"param 仅接受 '概念'，收到 {param!r}")
 
-    return pd.DataFrame({col_name: df['z_概念归属']}, index=df.index)
+    return pd.DataFrame({col_name: df["z_概念归属"]}, index=df.index)

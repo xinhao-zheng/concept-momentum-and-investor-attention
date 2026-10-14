@@ -1,0 +1,7 @@
+Endpoint,Block,Mean difference,Pointwise 95% interval,Raw P,Holm6 P
+All dates,20,−0.0225,"[−0.1131, 0.0660]",0.6211,1.0000
+All dates,60,−0.0225,"[−0.1165, 0.0700]",0.6358,1.0000
+Stress,20,NE,—,—,—
+Stress,60,NE,—,—,—
+Stress − nonstress,20,NE,—,—,—
+Stress − nonstress,60,NE,—,—,—

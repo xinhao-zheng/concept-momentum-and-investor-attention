@@ -1,0 +1,87 @@
+{
+  "design_specification": "Steel, slate and bronze on white; color, line style and shape identify series.",
+  "colors": {
+    "paper": "#FFFFFF",
+    "text": "#1D2328",
+    "primary": "#334C5C",
+    "attention": "#4A626C",
+    "secondary_series": "#6D7C85",
+    "reference": "#90979B",
+    "secondary_text": "#586269",
+    "grid": "#E3E7EA",
+    "range_fill": "#ECF0F2",
+    "sequential_end": "#435A69",
+    "negative": "#4D6C7F",
+    "positive": "#766551",
+    "zero": "#FFFFFF",
+    "timing_none": "#7A858D",
+    "timing_breadth": "#54898B",
+    "timing_two_level": "#264F70"
+  },
+  "lch_targets": {
+    "text": [
+      13.5,
+      4.5,
+      250
+    ],
+    "primary": [
+      31,
+      13.5,
+      250
+    ],
+    "attention": [
+      40,
+      10.5,
+      234
+    ],
+    "secondary_series": [
+      51,
+      7.5,
+      246
+    ],
+    "reference": [
+      62,
+      3.5,
+      240
+    ],
+    "secondary_text": [
+      41,
+      5.5,
+      246
+    ],
+    "grid": [
+      91.5,
+      2.0,
+      240
+    ],
+    "range_fill": [
+      94.5,
+      1.8,
+      240
+    ],
+    "sequential_end": [
+      37,
+      12.5,
+      248
+    ],
+    "negative": [
+      44,
+      15.5,
+      248
+    ],
+    "positive": [
+      44,
+      14.5,
+      76
+    ]
+  },
+  "interpolation": "Linear in CIELab; gamut and lightness monotonicity checked in figure_style.py",
+  "semantics": {
+    "categorical": "A cold lightness ladder identifies series: deep steel blue (L*31) for the research signal, slate (L*40) for measured attention, mid steel grey (L*51) for secondary series and light cool grey (L*62) for references, always with marker and line-style redundancy. Series colours do not encode numerical sign.",
+    "sequential": "White to deep steel blue encodes nonnegative magnitude (L* 100 to 37). Figure 2a retains 0 to 0.8 percentage points.",
+    "diverging": "Steel blue is negative, white is zero, and muted bronze is positive; both ends have L* 44 and C* about 15, so neither direction is emphasised; comparable panels share the stated zero-centred limits.",
+    "missing": "Unsupported and unestimated cells retain their explicit markers, status labels or compact status tables and are not treated as zero.",
+    "grayscale": "Shape and line-style distinctions are retained. Diverging lightness is symmetric, so grayscale lightness alone cannot identify sign (notably S9); consult the signed-value source table.",
+    "timing": "The three timing variants use a single cold family, with repeated dashed/dash-dot/solid lines and circle/square/triangle markers. The full fixed configuration and complete 48-run grid remain visible."
+  }
+}

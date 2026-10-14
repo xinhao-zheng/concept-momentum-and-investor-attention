@@ -1,0 +1,15 @@
+{
+  "file": "pit-observation-index.parquet",
+  "sha256": "5cf2ea73d052d4ba2d33acd2bf0a31ef2d0020720830752a96ca0ba5f4cd95e3",
+  "bytes": 34606136,
+  "rows": 8995748,
+  "stocks": 5236,
+  "fields": [
+    "signal_date",
+    "stock_code"
+  ],
+  "scope": "Preserved research observation keys; contains no prices or attention measurements.",
+  "cutoff": "2026-08-31",
+  "construction_use": "Select rebuilt covariates by these keys using code/analysis/apply_observation_index.py.",
+  "provenance": "The historical row-selection program is unavailable; this is the preserved support index, not a reconstructed publication-date rule."
+}

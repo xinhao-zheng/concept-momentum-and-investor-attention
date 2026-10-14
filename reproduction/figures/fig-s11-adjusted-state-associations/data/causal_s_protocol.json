@@ -1,0 +1,71 @@
+{
+  "frozen_at_utc": "2026-10-07T10:58:01.380341+00:00",
+  "protocol_branch": "S_coverage_window",
+  "status": "new-window historical analysis set by actual field coverage; not preregistered",
+  "known_history": "Prior shorter-window results had been inspected. The expanded S-window calendar is derived from coverage and regenerated folds before expanded-window estimation.",
+  "window_rule": "Start at the first sampled signal date with finite S; past calibration ends at the first regenerated test-fold start preceded by >=1,000 finite S rows and >=20 S dates for both S exposures in every lens; test only the regenerated folds starting on or after that date. Derived from coverage and the fold calendar only.",
+  "window_start": "2022-03-30",
+  "calibration_end_exclusive": "2022-09-30",
+  "test_folds": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "test_period": "2022-09-30..2026-08-27",
+  "calibration_support_own_S_by_lens": {
+    "alpha": {
+      "rows": 26936,
+      "dates": 25
+    },
+    "beta": {
+      "rows": 26936,
+      "dates": 25
+    },
+    "gamma": {
+      "rows": 26936,
+      "dates": 25
+    }
+  },
+  "sample": "Signal dates >= window_start and the strict intersection of finite own_T/own_S/own_K and CategoryShare_T/S/K_loo, so T, S and K use identical stock-days and endpoints.",
+  "mode": "past_calibrated_fixed80",
+  "lenses": [
+    "alpha",
+    "beta",
+    "gamma"
+  ],
+  "H": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    60,
+    120,
+    250
+  ],
+  "DML_exposures": [
+    "own_T",
+    "own_S",
+    "own_K",
+    "CategoryShare_T_loo",
+    "CategoryShare_S_loo",
+    "CategoryShare_K_loo"
+  ],
+  "AIPW_states": [
+    "T_high_vs_low",
+    "S_high_vs_low",
+    "K_high_vs_low",
+    "TSK_all_high_vs_all_low"
+  ],
+  "calibration": "Per lens/exposure over window signal dates strictly before calibration_end_exclusive: p01/p99 exclusion, date-centering, fixed past SD; >=1,000 finite rows and >=20 dates.",
+  "models": "As original past_calibrated_fixed80: fixed hyperparameters, early_stopping=False, max_iter=80, fit-only industry vocabulary, same seeds and training-row caps.",
+  "gates": "DML >=10,000 rows, >=100 test dates, every branch fold estimated; AIPW >=1,000 per train/test group per fold, pooled clip fraction <=0.20, every branch fold estimated.",
+  "families": "S_window|DML24 per lens and exposure group; S_window|AIPW32 per lens. Deferred cells enter with p=1 and blank formal inference. Separate from the original-protocol families.",
+  "inputs": {
+    "historical-inputs/mechanism_analysis_panel.parquet": "eeca90b3e97c0f45ea53fe3993d7437f0d3e56740f5acd517e3cd0a67b999626",
+    "historical-inputs/mechanism_expanding_time_folds.csv": "afc6d0e2cff82fae468821f7ffcd6d9e9cbdf804cc7442a5f389b984466d3f1f"
+  },
+  "code_sha256": "64c713bb1c2139cb4d82f9b94868790eb1ec786fd4cec2c4bbce2edf6adb49e0",
+  "original_c1_code_sha256": "1647aaf820d291acc6b325c7f6a8611356806735324db3d47a037bfc225b83b4"
+}
