@@ -1,10 +1,8 @@
-"""Cell-level support diagnostics for the C1 original-protocol rerun (plan section C3).
+"""Cell-level support diagnostics for the C1 original protocol.
 
-One row per branch x lens x exposure/state x H with fold statuses, calibration
-support, pooled clipping and every applicable failure code. Reads only this
-module's outputs; writes data/support_diagnostics.csv, data/support_counts.csv
-and SUMMARY.md (the frozen combine step's markdown table needs `tabulate`,
-which the research environment does not provide).
+One row per branch x lens x exposure/state x H records fold status, calibration
+support, pooled clipping and applicable failure codes. Reads the C1 outputs and
+writes data/support_diagnostics.csv, data/support_counts.csv and SUMMARY.md.
 """
 
 import json

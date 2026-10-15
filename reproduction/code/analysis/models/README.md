@@ -1,9 +1,9 @@
 # Predictive models and attention diagnostics
 
-Run from `reproduction`:
+Run from the repository root with the [local configuration](../../../config/README.md):
 
 ```shell
-python code/analysis/models/run.py --config config/local.json --stages B2,C2,C1,C1S,E1,Risk,N1,R2,R4,S6bounds
+python reproduction/code/analysis/models/run.py --config local.json --stages B2,C2,C1,C1S,E1,Risk,N1,R2,R4,S6bounds
 ```
 
 Build the research inputs and core scores first. Outputs are written to `output_root/models`. `--prepare-only` binds inputs and compiles source without fitting models. Each separate run requires a new output directory.

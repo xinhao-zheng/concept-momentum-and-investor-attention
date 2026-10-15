@@ -1,4 +1,4 @@
-# table-s06: Annual H3 Top20 selection spreads
+# Table S6: Annual H3 Top20 selection spreads
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

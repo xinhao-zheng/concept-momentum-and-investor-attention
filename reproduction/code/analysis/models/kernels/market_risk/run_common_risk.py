@@ -1,7 +1,15 @@
-"""Frozen four-model common-risk diagnostic; immutable source, private outputs."""
+"""Fixed four-model common-risk diagnostic with read-only source inputs."""
 
 from pathlib import Path
-import os, sys, json, hashlib, datetime, time, importlib.util, traceback, gc
+import os
+import sys
+import json
+import hashlib
+import datetime
+import time
+import importlib.util
+import traceback
+import gc
 
 D = Path(__file__).resolve().parent
 R = D.parents[1]
@@ -16,7 +24,11 @@ for k in [
     os.environ[k] = "4"
 sys.dont_write_bytecode = True
 sys.path.insert(0, "__MODELS__/runtime_source/feature_increment/vendor")
-import numpy as np, pandas as pd, polars as pl, sklearn, joblib
+import numpy as np
+import pandas as pd
+import polars as pl
+import sklearn
+import joblib
 from sklearn.ensemble import HistGradientBoostingRegressor
 from threadpoolctl import threadpool_limits
 

@@ -1,7 +1,16 @@
-"""Portable kernel loading and optional comparison of current results with supplied reference tables. Input and output paths are configured; current selection and code fingerprints are checked."""
+"""Load research kernels with configured paths and compare optional references."""
 
 from pathlib import Path
-import os, sys, ast, types, shutil, json, time, hashlib, traceback, gc
+import os
+import sys
+import ast
+import types
+import shutil
+import json
+import time
+import hashlib
+import traceback
+import gc
 from runtime_config import load_config
 
 CONFIG = load_config()
@@ -26,7 +35,9 @@ os.environ["TEMP"] = os.environ["TMP"] = str(ROOT / "tmp")
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cutoff as CFG
-import numpy as np, pandas as pd, polars as pl
+import numpy as np
+import pandas as pd
+import polars as pl
 
 NAMES = {k: k for k in ["S2", "D1", "D4", "AGG", "B1", "B3", "V", "T2", "T3", "S9"]}
 S2 = REP / NAMES["S2"]

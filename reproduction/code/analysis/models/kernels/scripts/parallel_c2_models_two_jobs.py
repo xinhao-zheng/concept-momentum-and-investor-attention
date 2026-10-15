@@ -3,7 +3,12 @@ Run only after the isolated C2 input driver has completely frozen its panel/fold
 No output files are shared by workers. Combining is strictly after all three finish.
 """
 
-import os, sys, json, subprocess, importlib.util, time
+import os
+import sys
+import json
+import subprocess
+import importlib.util
+import time
 from pathlib import Path
 from source_bindings import bind_threads
 

@@ -1,7 +1,7 @@
 """Concept IC landscapes: alpha/beta/membership-lag gamma, 2026-08-31.
 
-Run with Python -B. Inputs are the sibling frozen S2 cache. This module never
-imports or writes to an earlier delivery and never runs a trading backtest.
+Reads the sibling frozen S2 cache and writes analysis outputs locally.
+This module computes research statistics; it does not simulate trading accounts.
 """
 
 from __future__ import annotations

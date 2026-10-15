@@ -1,7 +1,12 @@
 """Construct research prices, calendar and memberships from source observations."""
 
 from pathlib import Path
-import argparse, csv, hashlib, json, re, zipfile
+import argparse
+import csv
+import hashlib
+import json
+import re
+import zipfile
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import pandas as pd

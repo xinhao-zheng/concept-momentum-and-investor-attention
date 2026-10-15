@@ -1,4 +1,10 @@
-import os, sys, json, types, shutil, time, importlib.util
+import os
+import sys
+import json
+import types
+import shutil
+import time
+import importlib.util
 from pathlib import Path
 from source_bindings import replace_nodes, bind_threads
 
@@ -52,7 +58,9 @@ sys.path[:0] = [
     str(SRC / "config"),
     str(ROOT / "vendor"),
 ]
-import numpy as np, pandas as pd, polars as pl
+import numpy as np
+import pandas as pd
+import polars as pl
 
 
 def js(p, x):
@@ -272,7 +280,7 @@ else:
         dict(status="SKIPPED_ARCHIVED_REFERENCE_UNAVAILABLE_OR_DISABLED"),
     )
 stage("all C1 and C1S models")
-# Historical diagnostics compare current audit with the frozen source, never an unrelated older archive.
+# Compare the current run with its frozen source reference.
 for kind in ["dml", "aipw"]:
     for lens in ["alpha", "beta", "gamma"]:
         ref = REFERENCE / f"C1/data/{kind}_{lens}_legacy_replay.csv"

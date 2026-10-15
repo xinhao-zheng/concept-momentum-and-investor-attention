@@ -1,4 +1,4 @@
-# table-bootstrap-settings: Bootstrap settings
+# Bootstrap settings
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

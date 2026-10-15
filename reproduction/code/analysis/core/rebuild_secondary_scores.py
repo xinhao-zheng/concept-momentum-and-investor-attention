@@ -1,7 +1,4 @@
-"""Fresh-card D1/B1/B3 rebuild and new-score economic sensitivity.
-This deliberately retains new floating-point results and never substitutes
-stored authoritative score doubles to recover legacy rankings.
-"""
+"""Evaluate D1, B1 and B3 using newly computed scores and ranks."""
 
 import os
 from pathlib import Path
@@ -21,8 +18,14 @@ os.environ.update(
     }
 )
 os.environ["TEMP"] = os.environ["TMP"] = str(ROOT / "tmp")
-import sys, time, json, shutil, gc
-import numpy as np, pandas as pd, polars as pl
+import sys
+import time
+import json
+import shutil
+import gc
+import numpy as np
+import pandas as pd
+import polars as pl
 import score_engine as IS
 from exact_rank_util import add_aggregations, ranks as exact_ranks
 import replay_frozen_estimands as RP

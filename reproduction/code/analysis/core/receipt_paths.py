@@ -1,8 +1,4 @@
-"""Portable receipt references for separate scientific-source and output roots.
-
-Only receipt serialization and its later hash lookup are adapted. Scientific
-inputs, ranking, samples, calculations and preserved source files are untouched.
-"""
+"""Serialize and resolve source and output paths in calculation receipts."""
 
 from pathlib import Path
 

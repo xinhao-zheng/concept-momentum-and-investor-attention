@@ -13,8 +13,8 @@ from statsmodels.stats.multitest import multipletests
 from s2_prepare import ROOT, CACHE, AUDIT, METHODS, CUTOFF, digest, save_json
 
 DATA = ROOT / "data"
-# Signal-date segments of the 2026-09-18 version, re-bounded at the new cutoff;
-# the paper uses FULL. NEW_SHORT is empty by construction after truncation.
+# Signal-date segments use the configured cutoff; the paper uses FULL.
+# NEW_SHORT is empty after truncation.
 SEGMENT_HISTORICAL_END = "2026-07-01"
 SEGMENT_SEEN_END = CUTOFF
 HORIZONS = [1, 3, 5, 10, 20, 60, 120, 250]

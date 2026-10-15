@@ -1,5 +1,11 @@
 # Supplementary Figure S12: rendering
 
-Run `python plotting/render.py` from this figure folder, or `python reproduction/code/plotting/render_all.py --figure fig-s12` from the repository root. The command reads this folder’s aggregate inputs and writes `analysis/rebuilt`. It leaves the frozen publication files in `figures` unchanged. Shared rendering code is in `reproduction/code/plotting`.
+Run from the repository root in the plotting environment:
 
-The output recreates the figure from aggregate results; it does not rerun the underlying empirical experiment.
+```text
+python reproduction/code/plotting/render_all.py --figure fig-s12
+```
+
+The renderer reads this figure's bundled inputs and writes to `analysis/rebuilt/` within the figure directory. It preserves the publication assets in `figures/`. Paths resolve from the repository location.
+
+[Shared renderer](../../../code/plotting/README.md) · [Research calculations](../../../RAW_REBUILD.md)

@@ -1,4 +1,4 @@
-# table-s11: Support and correction in the temporal audit
+# Table S11: Support and correction in the temporal audit
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

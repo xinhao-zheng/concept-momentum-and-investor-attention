@@ -1,4 +1,4 @@
-# table-s12: Own-popularity residual projections on a common γ/H3 sample
+# Table S12: Own-popularity residual projections on a common γ/H3 sample
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

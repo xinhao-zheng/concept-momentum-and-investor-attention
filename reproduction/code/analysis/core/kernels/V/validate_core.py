@@ -1,7 +1,14 @@
 """Reconstruction, annual stability and temporal-sensitivity checks for retained core results."""
 
 from pathlib import Path
-import os, sys, json, hashlib, datetime, math, platform, time
+import os
+import sys
+import json
+import hashlib
+import datetime
+import math
+import platform
+import time
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "config"))
@@ -521,7 +528,7 @@ def main():
     )
     daily = reconstruct()
     temporal(daily)
-    parameters()  # simulation() omitted: backtests left blank in this version
+    parameters()  # Trading-account simulation is outside this research-statistics check.
     after = manifest(inputs)
     dump("core_input_manifest_after.json", after)
     assert before == after

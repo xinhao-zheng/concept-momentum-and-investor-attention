@@ -1,5 +1,9 @@
 from pathlib import Path
-import os, sys, importlib.util, json, hashlib
+import os
+import sys
+import importlib.util
+import json
+import hashlib
 
 OUT = Path(__file__).resolve().parent
 W = OUT.parents[2]

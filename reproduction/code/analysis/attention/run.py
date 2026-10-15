@@ -1,10 +1,15 @@
 """Run the retained attention estimators from explicit local inputs."""
 
 from pathlib import Path
-import argparse, sys, os, subprocess, json
+import argparse
+import sys
+import os
+import subprocess
+import json
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from runtime_config import load_config
+from input_checks import validate_measurement_calendar
 
 
 def main():
@@ -29,6 +34,8 @@ def main():
         branch = "all"
     else:
         branch = next(iter(groups))
+    if branch in {"all", "m2"}:
+        validate_measurement_calendar(cfg.snapshot_root, cfg.cutoff)
     env = os.environ.copy()
     env["CQ_SNAPSHOT_ROOT"] = str(cfg.snapshot_root)
     env["PYTHONDONTWRITEBYTECODE"] = "1"

@@ -1,9 +1,9 @@
 # Core research calculations
 
-Run from `reproduction`:
+Run from the repository root with the [local configuration](../../../config/README.md):
 
 ```shell
-python code/analysis/core/run_core.py --config config/local.json
+python reproduction/code/analysis/core/run_core.py --config local.json
 ```
 
 The engine constructs F/W scores and evaluates the declared stock-selection designs. It uses configured research inputs and writes to `output_root/core`; it does not simulate trading accounts.

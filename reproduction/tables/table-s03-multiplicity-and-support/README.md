@@ -1,4 +1,4 @@
-# table-s03: Multiplicity families and temporal support
+# Table S3: Multiplicity families and temporal support
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

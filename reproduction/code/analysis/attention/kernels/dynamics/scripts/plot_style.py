@@ -1,4 +1,4 @@
-"""Shared publication figure style for the CURRENT research package."""
+"""Shared style for publication figures."""
 
 from __future__ import annotations
 

@@ -1,7 +1,12 @@
 """Reconstruct missing-outcome weights on the declared 2349/2346-date supports."""
 
 from pathlib import Path
-import os, json, hashlib, datetime, time, gc
+import os
+import json
+import hashlib
+import datetime
+import time
+import gc
 
 for k in [
     "POLARS_MAX_THREADS",
@@ -10,7 +15,9 @@ for k in [
     "MKL_NUM_THREADS",
 ]:
     os.environ[k] = "2"
-import polars as pl, numpy as np, pandas as pd
+import polars as pl
+import numpy as np
+import pandas as pd
 
 O = Path(__file__).resolve().parent
 C = Path("__CORE_CACHE__")

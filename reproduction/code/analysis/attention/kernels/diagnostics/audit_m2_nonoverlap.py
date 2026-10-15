@@ -14,7 +14,7 @@ B = 100000
 for length in [20, 40]:
     for (transform, h), g in daily.groupby(["transform", "H"]):
         g = g.sort_values("date")
-        # Keep the actual full 96-cell family; unsupported endpoints stay p=1.
+        # Retain all 96 hypotheses; unsupported endpoints use p=1.
         L = max(length, int(h))
         k = len(g) // L
         if k < 20:
@@ -76,7 +76,7 @@ print(df.assign(reject=df.p_holm_96 < 0.05).groupby("L_floor").reject.sum())
 g = daily[(daily["transform"] == "delta20") & (daily.H == 1)].sort_values("date")
 PREFIX = 40 * (
     len(g) // 40
-)  # the dates used by the 40-day block analysis; 1040 in the 2026-09-18 version
+)  # Match the complete-block date prefix used by the 40-day analysis.
 same = g[names].to_numpy()[:PREFIX]
 out = []
 for L in [20, 40]:

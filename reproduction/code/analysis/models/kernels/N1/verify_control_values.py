@@ -1,5 +1,9 @@
 from pathlib import Path
-import os, sys, json, hashlib, datetime
+import os
+import sys
+import json
+import hashlib
+import datetime
 
 HERE = Path(__file__).resolve().parent
 RUN = HERE / "run"
@@ -12,7 +16,9 @@ for k in [
     os.environ[k] = "2"
 sys.path.insert(0, str(HERE / "environment_vendor"))
 sys.dont_write_bytecode = True
-import polars as pl, numpy as np, pandas as pd
+import polars as pl
+import numpy as np
+import pandas as pd
 
 f = pd.read_parquet(RUN / "preoutcome_frame.parquet")
 base = [

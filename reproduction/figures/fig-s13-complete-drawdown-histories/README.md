@@ -1,6 +1,6 @@
 # Supplementary Figure S13
 
-Complete drawdown histories for the fixed configuration in Fig.
+Complete drawdown histories for the fixed configuration in Fig. 8a.
 
 [Data](data/) · [Publication figures](figures/) · [Renderer](plotting/render.py)
 

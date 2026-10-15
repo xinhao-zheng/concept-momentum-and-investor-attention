@@ -1,8 +1,11 @@
-"""Post-hoc WY 6-1-6 concept mapping. Read-only old inputs; own-directory outputs."""
+"""Post-hoc WY 6-1-6 concept mapping with read-only inputs and local outputs."""
 
 from pathlib import Path
 from datetime import datetime, timezone
-import argparse, hashlib, json, os
+import argparse
+import hashlib
+import json
+import os
 
 os.environ.setdefault("POLARS_MAX_THREADS", "4")
 import numpy as np
@@ -504,7 +507,7 @@ def test():
         1.0,
         3.0,
         6.0,
-    ]  # window at m=3 includes m=1,2,3, not m=0
+    ]  # The window ending at m=3 includes m=1,2,3 and excludes m=0.
     dump(
         "unit_tests.json",
         {

@@ -1,4 +1,10 @@
-import os, sys, json, types, time, importlib.util, shutil
+import os
+import sys
+import json
+import types
+import time
+import importlib.util
+import shutil
 from pathlib import Path
 from source_bindings import replace_nodes, bind_threads
 
@@ -27,7 +33,12 @@ os.environ["TEMP"] = os.environ["TMP"] = os.environ["JOBLIB_TEMP_FOLDER"] = str(
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(SRC / "feature_increment/vendor"))
 sys.path.insert(0, str(SRC / "config"))
-import numpy as np, pandas as pd, polars as pl, pyarrow, sklearn, scipy
+import numpy as np
+import pandas as pd
+import polars as pl
+import pyarrow
+import sklearn
+import scipy
 
 env = {
     m.__name__: {"version": m.__version__, "path": m.__file__}

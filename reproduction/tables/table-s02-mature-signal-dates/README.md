@@ -1,4 +1,4 @@
-# table-s02: Mature signal dates by horizon
+# Table S2: Mature signal dates by horizon
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

@@ -1,7 +1,10 @@
 """Rebuild C1 inputs using the original date/hash sampling and network algorithms."""
 
 from pathlib import Path
-import argparse, sys, json, importlib.util
+import argparse
+import sys
+import json
+import importlib.util
 import numpy as np
 import pandas as pd
 import polars as pl

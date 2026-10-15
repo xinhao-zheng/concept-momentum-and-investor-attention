@@ -1,10 +1,15 @@
 """Independent NumPy bound algebra and pandas stock-weight spot reconstruction."""
 
 from pathlib import Path
-import os, json, hashlib, datetime
+import os
+import json
+import hashlib
+import datetime
 
 os.environ["POLARS_MAX_THREADS"] = "2"
-import numpy as np, pandas as pd, polars as pl
+import numpy as np
+import pandas as pd
+import polars as pl
 
 O = Path(__file__).resolve().parent
 C = Path("__CORE_CACHE__")

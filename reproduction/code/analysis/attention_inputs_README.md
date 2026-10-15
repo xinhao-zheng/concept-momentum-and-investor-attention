@@ -2,11 +2,13 @@
 
 `attention_inputs.py` builds the 51-column daily panel from local raw CSVs, a market calendar and the released date/security index.
 
+Run from the repository root with the [local configuration](../../config/README.md):
+
 ```shell
-python code/analysis/attention_inputs.py --config config/local.json --workers 4
+python reproduction/code/analysis/attention_inputs.py --config local.json --workers 4
 ```
 
-Run from `reproduction`. Default inputs are `snapshot_root/raw_snapshot/stock-popular-concept-detail` and `snapshot_root/raw_snapshot/stock-main-index-data/sh000300.csv`. Override them with `--raw-attention`, `--calendar`, `--observation-index` and `--output`. The default output is `output_root/attention-inputs/attention_daily.parquet`.
+Default inputs are `snapshot_root/raw_snapshot/stock-popular-concept-detail` and `snapshot_root/raw_snapshot/stock-main-index-data/sh000300.csv`. Override them with `--raw-attention`, `--calendar`, `--observation-index` and `--output`. The default output is `output_root/attention-inputs/attention_daily.parquet`.
 
 The raw format uses GB18030, an introductory line and a header. After the first two columns, fields are observation date, total popularity T, watchlist popularity S, stickiness K and concepts. `--encoding` changes text encoding; field order and units must match.
 

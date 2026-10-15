@@ -1,16 +1,23 @@
-"""Replay the attention modules to a NEW directory using retained local inputs.
+"""Prepare and run attention analyses in a separate output directory.
 
-This launcher never writes over the completed audit. Default all mode permits
-two pipelines concurrently, with two numerical threads per child process.
-Python/package versions are recorded in logs/*_environment.json.
-"""
+The complete chain uses two concurrent pipelines and two numerical threads
+per process. Input hashes, source bindings and package versions are recorded."""
 
 from pathlib import Path
-import argparse, os, sys, subprocess, json, re, shutil, hashlib, datetime
+import argparse
+import os
+import sys
+import subprocess
+import json
+import re
+import shutil
+import hashlib
+import datetime
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "models/kernels/scripts"))
 from source_bindings import bind_paths
+from input_checks import validate_measurement_calendar
 
 PACKAGE = Path(__file__).resolve().parent / "kernels"
 SCI = Path(os.environ["CQ_SNAPSHOT_ROOT"])
@@ -51,7 +58,14 @@ os.environ["MPLBACKEND"] = "Agg"
 vendor = (
     PACKAGE / "vendor"
 )  # Optional import directory; install pinned dependencies in the environment.
-import numpy, pandas, scipy, polars, pyarrow, sklearn, statsmodels, matplotlib
+import numpy
+import pandas
+import scipy
+import polars
+import pyarrow
+import sklearn
+import statsmodels
+import matplotlib
 
 versions = {
     "python": sys.version,
@@ -96,6 +110,11 @@ PIT = Path(
 )
 RAW = SCI / "raw_snapshot"
 C2 = Path(os.environ.get("CQ_C2_ROOT", str(SCI / "models/C2")))
+measurement_calendar = (
+    validate_measurement_calendar(SCI, "2026-08-31")
+    if args.branch in {"all", "m2"}
+    else None
+)
 targets = {
     "attention_daily.parquet": Path(
         os.environ.get("CQ_ATTENTION_PANEL", str(inputs / "attention_daily.parquet"))
@@ -124,6 +143,14 @@ for rec in orig["inputs"]:
     ):
         assert actual == rec["sha256"], f"Input changed: {p}"
     checked.append({"path": str(p), "sha256": actual, "bytes": p.stat().st_size})
+if measurement_calendar is not None:
+    checked.append(
+        {
+            "path": str(measurement_calendar),
+            "sha256": sha(measurement_calendar),
+            "bytes": measurement_calendar.stat().st_size,
+        }
+    )
 DEST.mkdir(parents=True, exist_ok=True)
 for rel in [
     "logs",

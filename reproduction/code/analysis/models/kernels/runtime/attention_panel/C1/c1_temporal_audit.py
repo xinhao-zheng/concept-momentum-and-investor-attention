@@ -1,4 +1,4 @@
-"""One predeclared historical-calibration sensitivity; never overwrite old work."""
+"""Prespecified historical-calibration sensitivity with separate outputs."""
 
 from __future__ import annotations
 import os
@@ -10,7 +10,12 @@ for _k in (
     "NUMEXPR_NUM_THREADS",
 ):
     os.environ[_k] = "4"
-import argparse, hashlib, json, math, sys, time
+import argparse
+import hashlib
+import json
+import math
+import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 

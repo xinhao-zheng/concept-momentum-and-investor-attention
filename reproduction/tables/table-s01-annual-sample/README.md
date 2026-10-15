@@ -1,4 +1,4 @@
-# table-s01: Sample description by year
+# Table S1: Sample description by year
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

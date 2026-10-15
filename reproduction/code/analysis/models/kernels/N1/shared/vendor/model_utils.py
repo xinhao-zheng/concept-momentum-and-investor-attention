@@ -83,17 +83,16 @@ def purged_fold_masks(
     lens: str,
     target_date_role: str,
 ) -> tuple[list[tuple[int, np.ndarray, np.ndarray]], pd.DataFrame]:
-    """Build auditable expanding-time folds purged by label availability.
+    """Build expanding-time folds purged by label availability.
 
     A row is eligible for an outcome-model training fold only when both its
     signal date and the date on which the complete label is known are strictly
     earlier than the fold's test start.  Rows with a missing target date are
-    excluded rather than silently treated as available.  Test membership is
-    still defined by signal date; this is the usual honest out-of-fold
-    prediction target once the later outcome is observed.
+    excluded. Test membership is defined by signal date; test outcomes are
+    evaluated after they become observable.
 
     The returned audit has one row per fold and records the maximum retained
-    target date.  Callers should persist it and hard-gate
+    target date. Callers must persist it and require
     ``target_strictly_before_test``.
     """
 
@@ -199,9 +198,8 @@ def control_matrices(
         .apply(pd.to_numeric, errors="coerce")
         .to_numpy(float)
     )
-    # Column-wise conversion avoids the noisy all-NaN slice warning for the
-    # pre-2022 part of the S series; an unavailable training column is still
-    # deterministically assigned a zero median below.
+    # Convert columns separately to handle the all-NaN pre-2022 S history.
+    # Training columns with no finite values receive a zero median below.
     medians = np.asarray(
         [
             (

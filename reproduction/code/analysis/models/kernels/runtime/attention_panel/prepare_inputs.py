@@ -99,7 +99,7 @@ def main():
                 }
             )
     pd.DataFrame(rows).to_csv(ROOT / "data/abg/abg_horizon_calendar.csv", index=False)
-    # Vendor only source paths and inclusive cutoff; algorithms are unchanged.
+    # Bind source paths and the inclusive cutoff; retain the source algorithms.
     for p in (ROOT / "vendor").glob("*.py"):
         s = p.read_text(encoding="utf-8")
         s = s.replace(

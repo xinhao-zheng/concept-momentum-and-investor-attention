@@ -1,8 +1,4 @@
-"""Explicit checks for the article's fixed Figure 8 axes geometry.
-
-This project-local checker uses Matplotlib rectangles directly. It is not a
-copy of the more general historical figure_qa module and imports no skill code.
-"""
+"""Check Figure 8 panel alignment using Matplotlib axes rectangles."""
 
 from pathlib import Path
 import json

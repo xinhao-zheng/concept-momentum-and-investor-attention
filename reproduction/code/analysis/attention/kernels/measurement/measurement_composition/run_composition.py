@@ -1,4 +1,4 @@
-"""Post-hoc M2 rank-reference-set decomposition; never writes to old project/source."""
+"""Post-hoc M2 rank-reference-set decomposition with read-only source inputs."""
 
 from __future__ import annotations
 import argparse

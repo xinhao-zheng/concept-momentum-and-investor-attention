@@ -1,7 +1,12 @@
 """Independent paired list-width diagnostic. Frozen local inputs only; no fits."""
 
 from pathlib import Path
-import argparse, hashlib, json, platform, sys, time
+import argparse
+import hashlib
+import json
+import platform
+import sys
+import time
 import numpy as np
 import pandas as pd
 import pyarrow
@@ -238,7 +243,7 @@ def main():
             for y in sorted(set(series.index.year))
         ]
     ).to_csv(out / "leave_year_out_descriptive.csv", index=False, encoding="utf-8-sig")
-    # Monte Carlo uncertainty of old boundary p: it is conditional on its resampling distribution.
+    # Monte Carlo uncertainty of the reference p value is conditional on its resampling distribution.
     old = pd.read_csv(inp / "increment_inference.csv")
     old = old.loc[(old.H == 5) & (old.model == "ridge") & (old.metric == "return")]
     mc = []

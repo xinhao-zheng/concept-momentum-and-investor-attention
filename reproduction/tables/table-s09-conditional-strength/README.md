@@ -1,4 +1,4 @@
-# table-s09: F and FW added jointly to W and ordinary predictors
+# Table S9: F and FW added jointly to W and ordinary predictors
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

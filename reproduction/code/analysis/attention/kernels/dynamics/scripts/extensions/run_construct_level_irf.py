@@ -894,7 +894,7 @@ def plot_results(main: pd.DataFrame) -> None:
             if (DATA / "construct_CF1_level_irf.csv").exists()
             else None
         )
-        # During first build, use the already-written SourceData if available.
+        # Reuse existing SourceData when available.
         src = main[main["proxy"].eq(proxy)].sort_values("holding_h")
         ax.plot(
             x,

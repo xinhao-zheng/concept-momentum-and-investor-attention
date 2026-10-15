@@ -1,14 +1,12 @@
 """Build covariates from separately obtained daily observations.
 
-Input data are not bundled with this constructor. Every feature is computed
-from the supplied CSV observations and market calendar. No cached covariate
-values or archived result rows are read. All stocks found in the daily input
-directory are processed; this is a feature constructor, not a reconstruction
-of an undocumented historical sample-admission rule.
+Compute features for every stock in the input directory from its CSV records
+and the market calendar. Historical sample selection is applied separately
+using the published observation index.
 
-CSV columns follow the accompanying schema contract. Reader metadata-line and
-encoding settings are explicit. The first line is skipped without inspection
-when --skip-metadata-rows=1. Original inputs are never modified.
+CSV columns follow the accompanying schema contract. Encoding and metadata-row
+settings are explicit; --skip-metadata-rows=1 skips the first line without
+inspection. Source files are read-only.
 """
 
 from __future__ import annotations

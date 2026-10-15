@@ -41,10 +41,10 @@ Linux 或 macOS 使用 `bin/python`。跨平台科学环境可安装 `requiremen
 
 ## Inputs and outputs | 输入与输出
 
-Copy `config/local.example.json` to `local.json` and set the local data, snapshot and output directories. Pass `--config local.json` or set `CONCEPT_QUANT_CONFIG`. [RAW_REBUILD.md](RAW_REBUILD.md) gives the source layout and execution order; [DATA_ACCESS.md](../DATA_ACCESS.md) gives acquisition routes and required fields.
-复制示例配置为 `local.json`，设置本地数据、快照及输出目录，通过参数或环境变量传入。原始文件布局与执行顺序见[输入准备](RAW_REBUILD.md)，获取途径及字段见[数据说明](../DATA_ACCESS.md)。
+From the repository root, copy `reproduction/config/local.example.json` to `local.json` and set the data, snapshot and output directories. Pass `--config local.json` or set `CONCEPT_QUANT_CONFIG`. [Configuration](config/README.md) defines path resolution; [RAW_REBUILD.md](RAW_REBUILD.md) gives the source layout and execution order; [DATA_ACCESS.md](../DATA_ACCESS.md) gives acquisition routes and required fields.
+在仓库根目录将示例配置复制为 `local.json`，设置数据、快照及输出目录，通过参数或环境变量传入。[配置说明](config/README.md)定义相对路径的解析基准；原始文件布局与执行顺序见[输入准备](RAW_REBUILD.md)，获取途径及字段见[数据说明](../DATA_ACCESS.md)。
 
-Select `all` to run shared dependencies in order. A single-object call assumes its stated prerequisites have been prepared. Calculations write to `output_root`; figure redraws use `analysis/rebuilt/` within the selected figure. Released manuscript files and figures remain the reference outputs.
-选择 `all` 按依赖顺序计算；单对象调用需先备好其上游输入。计算写入 `output_root`，重绘图写入对应图目录的 `analysis/rebuilt/`。公开论文与图件保留为参照输出。
+Select `all` to run shared dependencies in order. A single-object call assumes its stated prerequisites have been prepared. Calculations write to `output_root`, which defaults to `reproduction/work/`. Rendering reads bundled results using paths relative to the repository and writes each figure to its `analysis/rebuilt/` directory. Released manuscript files and figures remain the reference outputs.
+选择 `all` 按依赖顺序计算；单对象调用需先备好其上游输入。计算写入 `output_root`，默认位置为 `reproduction/work/`。绘图按仓库相对路径读取随包结果，写入对应图目录的 `analysis/rebuilt/`。公开论文与图件保留为参照输出。
 
 [`figures/`](figures/README.md) · [`tables/`](tables/) · [`sections/`](sections/) · [Recorded checks](REPRODUCIBILITY.md)

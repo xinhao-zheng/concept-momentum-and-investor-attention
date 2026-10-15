@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 """CF3: bidirectional attention--trading timing with frozen negative controls.
 
-The module is intentionally self-contained under ``extensions/CF3_*``.  It
-uses the already frozen full-market attention panel, exact point-in-time stock
-trading covariates, expanding-time out-of-fold nuisance fits, and a shared
-circular moving-date-block bootstrap.  It does *not* interpret observational
-lead/lag associations as structural causality.
+Uses the frozen full-market attention panel, dated stock-trading covariates,
+expanding-time out-of-fold nuisance fits and a shared circular moving-date-block
+bootstrap. Lead/lag associations are observational; they do not identify
+structural causality.
 """
 
 from __future__ import annotations

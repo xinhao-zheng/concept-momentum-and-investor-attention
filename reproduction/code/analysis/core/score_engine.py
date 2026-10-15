@@ -1,6 +1,4 @@
-"""Rebuild LOO pairs, card scores and ranks independently of preserved QA.
-All numerical differences are retained, not replaced by legacy doubles.
-"""
+"""Compute leave-one-out returns, card scores and ranks from research inputs."""
 
 import os
 from pathlib import Path
@@ -22,7 +20,9 @@ os.environ.update(
     }
 )
 os.environ["TEMP"] = os.environ["TMP"] = str(OUT / "tmp")
-import json, time, gc
+import json
+import time
+import gc
 import numpy as np
 import pandas as pd
 import polars as pl

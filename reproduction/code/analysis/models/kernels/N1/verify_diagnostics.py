@@ -1,5 +1,11 @@
 from pathlib import Path
-import os, sys, json, hashlib, datetime, shutil, math
+import os
+import sys
+import json
+import hashlib
+import datetime
+import shutil
+import math
 
 HERE = Path(__file__).resolve().parent
 RUN = HERE / "run"
@@ -14,7 +20,8 @@ for k in [
     os.environ[k] = "2"
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(HERE / "environment_vendor"))
-import numpy as np, pandas as pd
+import numpy as np
+import pandas as pd
 from scipy.stats import norm
 from threadpoolctl import threadpool_limits
 
@@ -35,7 +42,7 @@ def save(p, obj):
     )
 
 
-# Only path adapt the copied original functions. Preserve the original package unchanged.
+# Bind copied functions to the configured paths; preserve source files.
 PKG = HERE / "verification_package"
 PKG.mkdir(exist_ok=True)
 edits = []
@@ -106,7 +113,8 @@ sys.path[:0] = [
     str(PKG / "C1S"),
     str(PKG / "vendor"),
 ]
-import c1_temporal_audit as c1, c1_s_window_branch as c1s
+import c1_temporal_audit as c1
+import c1_s_window_branch as c1s
 
 fr = pd.read_parquet(RUN / "preoutcome_frame.parquet")
 out = pd.read_parquet(

@@ -10,7 +10,7 @@ from matplotlib.lines import Line2D
 
 
 def render(b):
-    """Render through the existing source, recording and export interfaces."""
+    """Render account comparisons from the registered figure inputs."""
     fig = b.canvas(170)
     fig.set_size_inches(190 / 25.4, 170 / 25.4)
     summary = b.read("bt_summary")
@@ -52,8 +52,8 @@ def render(b):
             label="Two-level",
         ),
     }
-    # A dominant wealth panel and one readable underwater path share a clock.
-    # Full comparative risk remains in panel b and Supplementary Fig. S13.
+    # Wealth and reference drawdown share the same date axis.
+    # Panel b and Supplementary Fig. S13 compare all account drawdowns.
     left, right = 0.110, 0.975
     nav = fig.add_axes([left, 0.630, right - left, 0.270])
     dd = fig.add_axes([left, 0.470, right - left, 0.115], sharex=nav)
@@ -310,7 +310,7 @@ def render(b):
     )
     fig._fig08_geometry["pair_count"] = sum(len(q) for q in plotted)
     assert fig._fig08_geometry["pair_count"] == 128
-    # The cutoff and cost statement belongs in the caption.
+    # The caption states the observation cutoff and transaction costs.
     for ax in (nav, dd, risk, contrasts):
         ax.tick_params(axis="both", labelsize=8)
         for spine in ax.spines.values():
@@ -332,7 +332,7 @@ def render(b):
         json.dumps(fig._fig08_geometry, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     en, zh = b.FROZEN_CAPTION["caption_en"], b.FROZEN_CAPTION["caption_zh"]
-    # Full accepted records remain available alongside the displayed subset.
+    # Retain the complete source table alongside the displayed subset.
     b.record("fig_08", summary)
     b.record("fig_08", pd.concat(plotted, ignore_index=True), "paired_differences")
     b.record("fig_08", curves, "curves")
@@ -348,7 +348,7 @@ def render(b):
 
 
 def chinese_labels(reference):
-    """Complete new labels for the existing artist-level localization pass."""
+    """Translate figure labels through the shared localization pass."""
     labels = {
         "a  Fixed Top10 configuration": "a  固定Top10配置下的择时比较",
         "b  All 48 account simulations": "b  全部48组账户模拟",

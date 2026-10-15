@@ -6,7 +6,10 @@ Source descriptive headers are skipped and are never copied into outputs.
 """
 
 from pathlib import Path
-import argparse, hashlib, json, math
+import argparse
+import hashlib
+import json
+import math
 import numpy as np
 import pandas as pd
 

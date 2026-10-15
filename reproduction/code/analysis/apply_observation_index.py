@@ -17,7 +17,10 @@ for k in (
     os.environ[k] = "1"
 from pathlib import Path
 from functools import lru_cache
-import argparse, datetime, hashlib, json
+import argparse
+import datetime
+import hashlib
+import json
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq

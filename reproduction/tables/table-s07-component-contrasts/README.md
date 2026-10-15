@@ -1,4 +1,4 @@
-# table-s07: Direct contrasts in the main specification
+# Table S7: Direct contrasts in the main specification
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

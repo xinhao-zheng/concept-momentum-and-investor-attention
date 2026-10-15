@@ -1,4 +1,4 @@
-# table-s13: Implementation backtest grid
+# Table S13: Implementation backtest grid
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

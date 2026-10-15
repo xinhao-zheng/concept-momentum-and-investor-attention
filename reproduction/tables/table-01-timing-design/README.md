@@ -1,4 +1,4 @@
-# table-01: Membership timing and return timing
+# Table 1: Membership timing and return timing
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

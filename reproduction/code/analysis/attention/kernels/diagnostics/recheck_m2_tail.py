@@ -1,7 +1,11 @@
 """Fixed post-audit tail-coverage sensitivity, with unchanged primary M2 rules."""
 
 from pathlib import Path
-import os, json, hashlib, datetime, time
+import os
+import json
+import hashlib
+import datetime
+import time
 
 os.environ.update(OMP_NUM_THREADS="2", OPENBLAS_NUM_THREADS="2", MKL_NUM_THREADS="2")
 import numpy as np

@@ -1,6 +1,6 @@
 # S16: Additional source and mechanism diagnostics
 
-Cross-platform sources and additional mechanism diagnostics.
+Supplier-labelled popularity lists and additional mechanism diagnostics.
 
 ```text
 python reproduction/run.py --artifact section-s16 --mode analyse --config local.json --plan

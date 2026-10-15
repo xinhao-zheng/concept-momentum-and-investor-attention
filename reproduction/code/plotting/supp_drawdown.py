@@ -22,7 +22,7 @@ from .figure_style import PALETTE
 STEM = "fig_s13"
 
 
-def sha(path):
+def file_sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
@@ -147,7 +147,7 @@ def render(root, language="en", output_root=None, data_root=None, caption_record
         fig.savefig(target, dpi=450)
         outputs[ext] = {
             "path": str(target.relative_to(output_root)),
-            "sha256": sha(target),
+            "sha256": file_sha256(target),
         }
     fig.savefig(qa / f"{STEM}_print_size.png", dpi=150)
     plotted = pd.concat(selected, ignore_index=True)
@@ -161,8 +161,8 @@ def render(root, language="en", output_root=None, data_root=None, caption_record
         "observations_per_panel": 2368,
         "daily_observations_retained": True,
         "panels": [x[0] for x in specs],
-        "source_sha256": sha(source),
-        "summary_source_sha256": sha(summary_source),
+        "source_sha256": file_sha256(source),
+        "summary_source_sha256": file_sha256(summary_source),
         "inference_recomputed": False,
     }
     metadata = {

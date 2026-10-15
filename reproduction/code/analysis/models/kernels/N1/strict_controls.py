@@ -1,7 +1,14 @@
 """Frozen historical diagnostic. No treatment-effect identification claim."""
 
 from pathlib import Path
-import sys, os, hashlib, json, datetime, shutil, math, time
+import sys
+import os
+import hashlib
+import json
+import datetime
+import shutil
+import math
+import time
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE / "run"
@@ -18,7 +25,9 @@ for k in [
 os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(HERE / "environment_vendor"))
-import numpy as np, pandas as pd, polars as pl
+import numpy as np
+import pandas as pd
+import polars as pl
 from sklearn.ensemble import HistGradientBoostingRegressor
 from threadpoolctl import threadpool_limits
 from scipy.stats import norm

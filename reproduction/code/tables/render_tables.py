@@ -1,7 +1,9 @@
 """Render published table values without changing their stored precision."""
 
 from pathlib import Path
-import argparse, csv, json
+import argparse
+import csv
+import json
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -21,7 +23,7 @@ def render(directory):
         ]
         lines += ["| " + " | ".join(r) + " |" for r in rows[1:]]
         target = out / (src.stem + ".md")
-        target.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        target.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
         emitted.append(str(target.relative_to(ROOT)))
     return emitted
 

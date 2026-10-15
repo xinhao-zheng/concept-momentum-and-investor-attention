@@ -1,4 +1,4 @@
-"""Post-primary-result requested fixed block-40/60 sensitivity; no new models."""
+"""Post-hoc sensitivity with fixed 40/60-date blocks and retained model predictions."""
 
 from __future__ import annotations
 import json

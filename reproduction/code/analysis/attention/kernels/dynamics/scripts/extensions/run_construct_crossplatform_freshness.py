@@ -102,8 +102,8 @@ PRIMARY_METRIC = {
     "retention": "pr_auc",
     "conditional_score": "spearman",
 }
-# Frozen practical-equivalence margins, in headline-metric units.  These are
-# deliberately small absolute changes, not post-result standard deviations.
+# Prespecified equivalence margins use absolute headline-metric units;
+# they are not scaled by the observed standard deviation.
 EQUIVALENCE_MARGIN = {
     "presence": 0.0025,
     "new_entry": 0.0025,

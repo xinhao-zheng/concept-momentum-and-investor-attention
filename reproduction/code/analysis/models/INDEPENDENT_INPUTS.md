@@ -10,6 +10,7 @@ The default `input_mode: raw-rebuilt` constructs research inputs from local raw 
 | C2 panel | Core scores, indexed PIT panel and indexed daily attention |
 | N1 | C2 panel/folds and PIT covariates |
 | Attention dynamics | Indexed panels; C2 sample keys/cards for D2; 1h/24h ranking snapshots for cross-source measurement |
+| M2 measurement | Raw T/S/K observations and the `sh000001.csv` market calendar |
 
 Run `prepare_inputs.py` for the four input-construction steps, then the core and model entrypoints. Generated panels are stored at:
 

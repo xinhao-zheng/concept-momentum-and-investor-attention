@@ -2,7 +2,12 @@
 
 from pathlib import Path
 from datetime import datetime, timezone
-import argparse, hashlib, json, os, sys, time
+import argparse
+import hashlib
+import json
+import os
+import sys
+import time
 
 os.environ.setdefault("POLARS_MAX_THREADS", "4")
 import numpy as np
@@ -22,7 +27,7 @@ METHODS = ["FW", "F_only", "W_only", "A", "P"]
 BASES = ["pool", "F_only", "W_only", "A", "P"]
 CUTOFF = CFG.OBSERVATION_CUTOFF
 B, SEED = 100000, 20260924
-# Fourth identity date moved from 2026-09-08 (beyond the new cutoff) to the last signal date.
+# Use the last eligible signal date for the fourth identity check.
 IDENTITY_DATES = ["2017-01-03", "2020-06-30", "2023-01-03", "2026-08-31"]
 
 

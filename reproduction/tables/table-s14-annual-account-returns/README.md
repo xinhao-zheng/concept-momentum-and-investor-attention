@@ -1,4 +1,4 @@
-# table-s14: Calendar-year returns of the reference configurations
+# Table S14: Calendar-year returns of the reference configurations
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

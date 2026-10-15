@@ -641,7 +641,7 @@ def prepare_xy(
     )
     x_train = np.column_stack([x_train_num, tr_cat]).astype(np.float32, copy=False)
     x_test = np.column_stack([x_test_num, te_cat]).astype(np.float32, copy=False)
-    y_train = task_rows(train, task)[1]  # caller passes task-filtered frame
+    y_train = task_rows(train, task)[1]  # The caller supplies the task-filtered frame.
     y_test = task_rows(test, task)[1]
     return x_train, y_train, x_test, y_test, [x_train.shape[1] - 1]
 
@@ -770,7 +770,7 @@ def calibration_summary(pred: pd.DataFrame, model: str) -> tuple[dict, pd.DataFr
     y = pred["y"].to_numpy(int)
     p = np.clip(pred[model].to_numpy(float), 1e-6, 1 - 1e-6)
     logit = np.log(p / (1 - p))
-    # Deterministic cap keeps the slope fit cheap without changing reliability bins.
+    # Cap slope-fit rows deterministically; reliability bins use the full sample.
     if len(y) > 250_000:
         h = pd.util.hash_pandas_object(
             pred[["signal_date", "stock_code"]], index=False
@@ -974,7 +974,7 @@ def model_horizon(horizon: str) -> dict:
                     pred_p["task"] = task
                     pred_p["horizon"] = horizon
                     pred_p["sample"] = "placebo_common_support"
-                    # A compact prediction file is useful for exact paired re-analysis.
+                    # Retain predictions for paired re-analysis.
                     predictions.append(pred_p)
 
             fold_rows.append(
@@ -1362,7 +1362,7 @@ def plot_results(daily: pd.DataFrame, summary: pd.DataFrame) -> None:
     save_figure(fig, FIGURES / "Fig_MV2_tsk_placebo_specificity")
     plt.close(fig)
 
-    # Fold-by-fold headline increment, exposing instability rather than hiding it.
+    # Report fold-level increments to show variation across evaluation periods.
     main_daily = daily.loc[daily["sample"].eq("main_common_support")]
     records = []
     for (horizon, task, fold), group in main_daily.groupby(["horizon", "task", "fold"]):

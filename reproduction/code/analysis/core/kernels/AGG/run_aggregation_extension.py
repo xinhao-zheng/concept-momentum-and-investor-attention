@@ -1,7 +1,7 @@
 """Frozen-cache, post-hoc 192-comparison aggregation extension.
 
-Every output is confined to this new directory. No original scripts are imported.
-Selection is persisted and fingerprinted before opening any return endpoints.
+Outputs remain in the analysis directory. Selection is persisted and
+fingerprinted before any return endpoint is read.
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ HORIZONS = [1, 3, 5, 10, 20, 60, 120, 250]
 BASELINES = ["additive_mean", "product_of_means"]
 MISSING = ["complete", "zero"]
 B, SEED, CUTOFF = 100000, 20260923, CFG.OBSERVATION_CUTOFF
-# Fourth identity date moved from 2026-09-08 (beyond the new cutoff) to the last signal date.
+# Use the last eligible signal date for the fourth identity check.
 IDENTITY_DATES = ["2017-01-03", "2020-06-30", "2023-01-03", "2026-08-31"]
 INPUTS = [
     "cache/frozen_common_scores.parquet",

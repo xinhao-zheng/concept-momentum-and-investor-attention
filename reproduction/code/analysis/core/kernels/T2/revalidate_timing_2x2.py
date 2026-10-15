@@ -1,10 +1,15 @@
-"""Fixed current-calendar F5/W10/H3/Top20 timing sensitivity; read-only sources.
-
-Run with Python -B to avoid writing bytecode into archived dependency paths.
+"""Fixed-calendar F5/W10/H3/Top20 timing sensitivity with read-only source data.
 """
 
 from pathlib import Path
-import os, sys, json, hashlib, datetime, time, math, platform
+import os
+import sys
+import json
+import hashlib
+import datetime
+import time
+import math
+import platform
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent

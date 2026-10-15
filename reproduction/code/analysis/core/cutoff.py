@@ -2,7 +2,8 @@
 
 from pathlib import Path
 from runtime_config import load_config
-import hashlib, json
+import hashlib
+import json
 
 RUNTIME = load_config()
 OBSERVATION_CUTOFF = LAST_ALLOWED_MARKET_DATE = RUNTIME.cutoff

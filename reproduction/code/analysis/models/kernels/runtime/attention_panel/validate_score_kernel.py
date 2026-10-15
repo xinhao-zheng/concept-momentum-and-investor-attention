@@ -1,7 +1,9 @@
-"""Independent NumPy checks and transparent replacement of stale score references."""
+"""Verify score covariates with NumPy and replace historical reference values."""
 
 from pathlib import Path
-import json, gc, shutil
+import json
+import gc
+import shutil
 import numpy as np
 import pandas as pd
 import polars as pl

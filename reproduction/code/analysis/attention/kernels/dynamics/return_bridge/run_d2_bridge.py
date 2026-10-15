@@ -1,4 +1,4 @@
-"""One historical observational bridge; original inputs are read-only."""
+"""Historical observational return bridge with read-only inputs."""
 
 from __future__ import annotations
 import os
@@ -10,7 +10,11 @@ for k in (
     "NUMEXPR_NUM_THREADS",
 ):
     os.environ[k] = "2"
-import argparse, hashlib, json, sys, time
+import argparse
+import hashlib
+import json
+import sys
+import time
 from pathlib import Path
 from datetime import datetime, timezone
 import numpy as np

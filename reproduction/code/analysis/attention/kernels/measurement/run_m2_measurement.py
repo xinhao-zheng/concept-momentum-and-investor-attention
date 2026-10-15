@@ -1,7 +1,8 @@
-"""M2 frozen descriptive rank-persistence audit; reads raw sources, writes here only.
+"""M2 descriptive rank-persistence audit under the fixed measurement protocol.
 
-Protocol: README.md (frozen before new statistics). No return/causal estimator.
-Run with the project 00_环境/.venv/Scripts/python.exe -X utf8.
+Reads configured raw inputs and writes within the generated analysis directory.
+The estimates describe rank persistence; they do not estimate returns or causal
+effects. Run through the public attention-analysis entry point.
 """
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# table-s08: Full-training-date H3 paired increments
+# Table S8: Full-training-date H3 paired increments
 
 [Published values and numerical inputs](data/) · [Manuscript layout](tables/) · [Calculation mapping](../index.json)
 

@@ -1,7 +1,12 @@
 """Whole-family simulation-precision diagnostic; uses retained prediction paths."""
 
 from pathlib import Path
-import argparse, json, shutil, sys, time, datetime
+import argparse
+import json
+import shutil
+import sys
+import time
+import datetime
 import numpy as np
 import pandas as pd
 from scipy.stats import beta

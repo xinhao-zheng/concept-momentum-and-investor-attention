@@ -1,7 +1,9 @@
 """Render the nine frozen N1 contrasts; no estimator or fitting code is invoked."""
 
 from pathlib import Path
-import hashlib, json, re
+import hashlib
+import json
+import re
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -14,7 +16,7 @@ from matplotlib.ticker import MaxNLocator
 KEY = "fig_s12"
 
 
-def sha(p):
+def file_sha256(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
@@ -180,7 +182,7 @@ def render(root, language, data_root, caption_record, palette_path):
         fig.savefig(p, dpi=450)
         outputs[ext] = {
             "path": str(p.relative_to(root)),
-            "sha256": sha(p),
+            "sha256": file_sha256(p),
             "bytes": p.stat().st_size,
         }
     fig.savefig(qa / (KEY + "_print_size.png"), dpi=160)

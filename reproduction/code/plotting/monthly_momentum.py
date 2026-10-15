@@ -97,7 +97,7 @@ def render(b):
         fig, f"{nmon} mature formation months; one-month skip and six-month holding."
     )
 
-    # Retain the accepted source tables and record the exact display transform.
+    # Retain source values and record the display transformation.
     b.record("fig_s05", d, "cells")
     b.record("fig_s05", q, "contrasts")
     display = d[["C", "D", "months", "mean_complete"]].copy()

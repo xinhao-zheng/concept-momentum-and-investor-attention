@@ -1,14 +1,18 @@
 """Compare regenerated figures and plot tables with publication assets."""
 
 from pathlib import Path
-import argparse, hashlib, json, re
+import argparse
+import hashlib
+import json
+import re
 import numpy as np
 import pandas as pd
 from PIL import Image, ImageDraw
 import pymupdf as fitz
 
 ROOT = Path(__file__).resolve().parents[2]
-sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+def file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
@@ -144,10 +148,10 @@ def main():
             final_captions_retained=receipt["caption_en"] == r["caption_en"]
             and receipt["caption_zh"] == r["caption_zh"],
             frozen_publication_files_unchanged=all(
-                sha(folder / x["file"]) == x["sha256"] for x in r["figures"]
+                file_sha256(folder / x["file"]) == x["sha256"] for x in r["figures"]
             ),
             inputs_unchanged=all(
-                sha(folder / x["file"]) == x["sha256"] for x in r["data"]
+                file_sha256(folder / x["file"]) == x["sha256"] for x in r["data"]
             ),
         )
         results.append(result)

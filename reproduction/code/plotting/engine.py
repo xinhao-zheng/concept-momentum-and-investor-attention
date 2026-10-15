@@ -10,11 +10,11 @@ from datetime import datetime, timezone
 import importlib.metadata as metadata
 
 
-def sha(path):
+def file_sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def dump(path, value):
+def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -38,10 +38,10 @@ def render_figure(repository_root, record, output=None):
     inputs = {}
     for entry in record["data"]:
         path = folder / entry["file"]
-        if sha(path) != entry["sha256"]:
+        if file_sha256(path) != entry["sha256"]:
             raise ValueError(f'Input hash mismatch: {record["id"]}/{entry["file"]}')
         inputs[entry["key"]] = dict(path=path, sha256=entry["sha256"])
-    before = {entry["file"]: sha(folder / entry["file"]) for entry in record["figures"]}
+    before = {entry["file"]: file_sha256(folder / entry["file"]) for entry in record["figures"]}
     for entry in record["figures"]:
         if before[entry["file"]] != entry["sha256"]:
             raise ValueError(f'Frozen figure hash mismatch: {entry["file"]}')
@@ -106,18 +106,18 @@ def render_figure(repository_root, record, output=None):
         generated.append(
             dict(
                 file=final_name.relative_to(output).as_posix(),
-                sha256=sha(final_name),
+                sha256=file_sha256(final_name),
                 bytes=final_name.stat().st_size,
             )
         )
-    after = {entry["file"]: sha(folder / entry["file"]) for entry in record["figures"]}
+    after = {entry["file"]: file_sha256(folder / entry["file"]) for entry in record["figures"]}
     if before != after:
         raise RuntimeError("Frozen publication assets changed during rendering.")
     for entry in record["data"]:
-        if sha(folder / entry["file"]) != entry["sha256"]:
+        if file_sha256(folder / entry["file"]) != entry["sha256"]:
             raise RuntimeError("Input file changed during rendering.")
 
-    # Store only portable provenance. Local installation and output paths are not part of the public record.
+    # Record reproducible inputs and software without machine-specific paths.
     report = dict(
         figure=record["id"],
         display_label=record["display_label"],
@@ -136,12 +136,12 @@ def render_figure(repository_root, record, output=None):
         },
         python=platform.python_version(),
         font_family="Arial",
-        font_file_sha256=sha(font),
+        font_file_sha256=file_sha256(font),
         generated_files=generated,
         warnings=[str(x.message) for x in caught],
         render_metadata=render_metadata,
     )
-    dump(output / "regeneration.json", report)
+    write_json(output / "regeneration.json", report)
     return report
 
 

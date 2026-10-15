@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "code/analysis"))
 from runtime_config import load_config
 from prepare_inputs import preparation_plan, execute_preparation
+from attention.input_checks import validate_measurement_calendar
 
 ALIASES = {
     "Core": ["scores"],
@@ -47,21 +48,22 @@ PREREQUISITES = {
     "T3": "models C2 full scores and core input caches.",
     "Sample": "Core input/score caches, B1 results and B2 model results.",
     "AccountMetrics": "Released daily account paths in section S17.",
+    "M2": "Attention/PIT panels, C2 keys/cards and raw_snapshot/stock-main-index-data/sh000001.csv.",
 }
 
 
-def read(path):
+def read_json(path):
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
-def sha(path):
+def file_sha256(path):
     with path.open("rb") as f:
         return hashlib.file_digest(f, "sha256").hexdigest()
 
 
 def inventory():
     entries = {}
-    for record in read(ROOT / "figures/index.json")["figures"]:
+    for record in read_json(ROOT / "figures/index.json")["figures"]:
         entries[record["id"]] = {
             "kind": "figure",
             "id": record["id"],
@@ -70,7 +72,7 @@ def inventory():
             "modules": record["experiment_modules"],
             "record": record,
         }
-    for record in read(ROOT / "tables/index.json"):
+    for record in read_json(ROOT / "tables/index.json"):
         entries[record["id"]] = {
             "kind": "table",
             "id": record["id"],
@@ -79,7 +81,7 @@ def inventory():
             "modules": record["modules"],
             "record": record,
         }
-    for record in read(ROOT / "sections/index.json"):
+    for record in read_json(ROOT / "sections/index.json"):
         identity = "section-s" + record["id"][1:].zfill(2)
         entries[identity] = {
             "kind": "section",
@@ -216,7 +218,8 @@ def verify(entry):
                 checks.append(
                     {
                         "file": str(p.relative_to(ROOT)).replace("\\", "/"),
-                        "sha256_equal": p.is_file() and sha(p) == item["sha256"],
+                        "sha256_equal": p.is_file()
+                        and file_sha256(p) == item["sha256"],
                     }
                 )
     elif entry["kind"] == "table":
@@ -226,7 +229,7 @@ def verify(entry):
             checks.append(
                 {
                     "file": str(p.relative_to(ROOT)).replace("\\", "/"),
-                    "sha256_equal": p.is_file() and sha(p) == item["sha256"],
+                    "sha256_equal": p.is_file() and file_sha256(p) == item["sha256"],
                 }
             )
         for p in sorted((folder / "data").glob("published*.csv")):
@@ -353,6 +356,8 @@ def main():
             p.error(
                 "Required analysis entry is absent: " + ", ".join(sorted(set(missing)))
             )
+        if "M2" in modules(entries):
+            validate_measurement_calendar(config.snapshot_root, config.cutoff)
         if preparation:
             execute_preparation(config, preparation)
         receipt_path = config.output("execution-index.json")
