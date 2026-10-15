@@ -12,4 +12,4 @@ Absolute paths are accepted. A null `output_root` selects `<repository>/reproduc
 
 The published observation cutoff is fixed at `2026-08-31`; the loader rejects a different date. `threads` controls the numerical worker limits. Pass the JSON through `--config` on a public runner or set `CONCEPT_QUANT_CONFIG`. Input constructors with explicit path flags can receive paths from the same configuration through their coordinating runner.
 
-`local.json`, `local.*.json` and the default output directories are ignored by Git. Keep other local configurations and output locations outside version control. This configuration does not require credentials.
+`local.json`, `local.*.json`, local notes matching `local.*.md` and the default output directories are ignored by Git. Keep other local configurations and output locations outside version control. This configuration does not require credentials.

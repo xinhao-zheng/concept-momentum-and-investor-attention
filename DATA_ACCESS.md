@@ -19,6 +19,22 @@ Product pages identify access channels; they do not establish the availability o
 The retained list records do not establish official platform identity or independence between upstream sources.
 留存榜单记录不认证官方平台身份或上游来源之间的独立性。
 
+## Input directories | 输入目录
+
+The published runners read the following directories under `snapshot_root`. Set that root in the [local configuration](reproduction/config/README.md); the linked readers specify filenames, columns and transformations.
+公开程序从 `snapshot_root` 下的以下目录读取输入。根目录在[本地配置](reproduction/config/README.md)中设置；各读取程序定义具体文件、字段和计算规则。
+
+| Directory | Contents used | Reader |
+|---|---|---|
+| `raw_snapshot/stock-trading-data/` | Daily prices for return calculations | [Core inputs](reproduction/code/analysis/core_inputs.py) |
+| `raw_snapshot/stock-trading-data-pro/` | Daily prices, capitalization, industry, index-membership and order-flow fields for covariates | [Covariate constructor](reproduction/code/analysis/input_build.py) |
+| `raw_snapshot/stock-main-index-data/` | `sh000300.csv` for market dates and returns; `sh000001.csv` for M2 dates | [Core inputs](reproduction/code/analysis/core_inputs.py), [M2 calendar check](reproduction/code/analysis/attention/input_checks.py) |
+| `raw_snapshot/stock-popular-concept-detail/` | Daily T/S/K measurements and recorded concept strings | [Attention constructor](reproduction/code/analysis/attention_inputs.py) |
+| `attention/inputs/` | Historical `沪深_1h.csv` and `沪深_24h.csv` popularity lists | [Attention analyses](reproduction/code/analysis/attention/README.md) |
+
+Corrected daily files, when applicable, reside in `input_recovery/patched_raw/stock-trading-data/` and `input_recovery/patched_raw/stock-trading-data-pro/`; they replace the corresponding raw files. The published membership input is `concept-data/concept-data.zip` in this repository. [Input preparation](reproduction/RAW_REBUILD.md) describes the complete layout and generated panels.
+适用时，日行情修正文件分别放在上述两个 `input_recovery/patched_raw/` 子目录，覆盖对应原始文件。概念成员输入为仓库内的 `concept-data/concept-data.zip`。[输入准备](reproduction/RAW_REBUILD.md)说明完整目录结构与生成面板。
+
 ## Field contracts | 字段约定
 
 - [Concept membership](concept-data/README.md): three published fields, recorded dates and empty-membership handling.

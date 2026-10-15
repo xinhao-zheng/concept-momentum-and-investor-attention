@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 local.json
 local.*.json
+local.*.md
 !reproduction/config/local.example.json
 reproduction/work/
 reproduction/figures/*/analysis/rebuilt/
